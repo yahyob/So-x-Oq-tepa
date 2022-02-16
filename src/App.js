@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import Banner from './pages/Banner';
 import NavbarMain from './pages/Navbar';
 import Home from './pages/Home';
+
+import Boshqarma from './pages/Boshqarma'
 import BoshqarmaHaqida from './pages/Boshqarma/BoshqarmaHaqida';
 import Rahbariyat from './pages/Boshqarma/Rahbariyat';
 import BoshqarmaNizomi from './pages/Boshqarma/BoshqarmaNizomi';
@@ -27,6 +29,29 @@ import OAVVakillar from './pages/Yangiliklar/OAV';
 import Fotogalereya from './pages/Mediagalereya/Fotogalereya';
 import VideoMaterial from './pages/Mediagalereya/VideoMaterial';
 
+import SuvXojaligiFidoiylari from './pages/Malumotlar/SuvXojaligiFidoiylari';
+import KorrupsiyagaQarshiKurash from './pages/Malumotlar/KorrupsiyagaQarshiKurash';
+import RahbariyatMaruzalari from './pages/Malumotlar/RahbariyatMaruzalari';
+import Statistika from './pages/Malumotlar/Statistika';
+import SuvXojalikFaoliyatiTogrisida from './pages/Malumotlar/SuvXo’jalikFaoliyatiTo’g’risida';
+import AxborotdanFoydalanuvchilarningSorovnomasi from './pages/Malumotlar/AxborotdanFoydalanuvchilarningSo’rovnomasi';
+import RasmiyWebSahifa from './pages/Malumotlar/RasmiyWebSahifa';
+
+import Qonunlar from './pages/Hujjatlar/Qonunlar';
+import Qarorlar from './pages/Hujjatlar/Qarorlar';
+import Farmonlar from './pages/Hujjatlar/Farmonlar';
+import NormativHujjatlar from './pages/Hujjatlar/NormativHujjatlar';
+import Dasturlar from './pages/Hujjatlar/Dasturlar';
+import Loyihalar from './pages/Hujjatlar/Loyihalar';
+
+import JismoniyVaYuridikShaxslarMurojati from './pages/InteraktivXizmatlar/JismoniyVaYuridikShaxslarMurojati';
+import MurojatYollash from './pages/InteraktivXizmatlar/MurojatYollash';
+import TarjimaiHol from './pages/InteraktivXizmatlar/TarjimaiHol';
+import IshTartibi from './pages/InteraktivXizmatlar/IshTartibi';
+
+import FoydaliMaslahatlar from './pages/FoydaliMaslahatlar/index';
+import Boglanish from './pages/Boglanish/index';
+
 function App() {
 
   const { t } = useTranslation();
@@ -34,11 +59,12 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <h1 className='text-center mt-5 pt-5 fw-bold'>{t('title')}</h1>
       <BrowserRouter>
       <NavbarMain />
         <Routes>
           <Route path='/' element={<Home />} />
+
+          <Route path='boshqarma' element={<Boshqarma />} />
           <Route path='boshqarmaHaqida' element={<BoshqarmaHaqida />} />
           <Route path='raxbariyat' element={<Rahbariyat />} />
           <Route path='boshqarmaNizomi' element={<BoshqarmaNizomi />} />
@@ -61,12 +87,29 @@ function App() {
 
           <Route path='Fotogalereya' element={<Fotogalereya />} />
           <Route path='VideoMaterial' element={<VideoMaterial />} />
-          <Route path='boshqarmaHaqida' element={<BoshqarmaHaqida />} />
-          <Route path='boshqarmaHaqida' element={<BoshqarmaHaqida />} />
-          <Route path='boshqarmaHaqida' element={<BoshqarmaHaqida />} />
-          <Route path='boshqarmaHaqida' element={<BoshqarmaHaqida />} />
-          <Route path='boshqarmaHaqida' element={<BoshqarmaHaqida />} />
-          <Route path='boshqarmaHaqida' element={<BoshqarmaHaqida />} />
+          
+          <Route path='SuvXojaligiFidoiylari' element={<SuvXojaligiFidoiylari />} />
+          <Route path='KorrupsiyagaQarshiKurash' element={<KorrupsiyagaQarshiKurash />} />
+          <Route path='RahbariyatMaruzalari' element={<RahbariyatMaruzalari />} />
+          <Route path='Statistika' element={<Statistika />} />
+          <Route path='SuvXojalikFaoliyatiTogrisida' element={<SuvXojalikFaoliyatiTogrisida />} />
+          <Route path='RasmiyWebSahifa' element={<RasmiyWebSahifa />} />
+          <Route path='AxborotdanFoydalanuvchilarningSorovnomasi' element={<AxborotdanFoydalanuvchilarningSorovnomasi />} />
+          
+          <Route path='Qonunlar' element={<Qonunlar />} />
+          <Route path='Qarorlar' element={<Qarorlar />} />
+          <Route path='Farmonlar' element={<Farmonlar />} />
+          <Route path='NormativHujjatlar' element={<NormativHujjatlar />} />
+          <Route path='Dasturlar' element={<Dasturlar />} />
+          <Route path='Loyihalar' element={<Loyihalar />} />
+          
+          <Route path='JismoniyVaYuridikShaxslar' element={<JismoniyVaYuridikShaxslarMurojati />} />
+          <Route path='MurojatYollash' element={<MurojatYollash />} />
+          <Route path='TarjimaiHol' element={<TarjimaiHol />} />
+          <Route path='IshTartibi' element={<IshTartibi />} />
+          
+          <Route path='FoydaliMaslahatlar' element={<FoydaliMaslahatlar />} />
+          <Route path='Boglanish' element={<Boglanish />} />
         </Routes>
       </BrowserRouter>
     </div>

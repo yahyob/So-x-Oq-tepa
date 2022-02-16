@@ -1,34 +1,37 @@
 import React from 'react';
 import { Container, Navbar, NavDropdown, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
+import './style.css';
 
 const NavbarMain = () => {
     return (
-        <div>
-            <Navbar bg="light" expand="lg">
+        <div className='Navbar' style={{position: "sticky", top: "0", zIndex: "12"}}>
+            <Navbar expand="lg">
                 <Container>
-                    {/* <Navbar.Brand href="#home"> */}
-                    <Link className="navbar-brand" to="/">Logo</Link>
-                    {/* </Navbar.Brand> */}
+                    <Link className="navbar-brand" to="/">
+                        <HomeIcon sx={{ color: 'white' }} fontSize="large" />
+                    </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-
-                            <NavDropdown title="Boshqarma" id="basic-nav-dropdown">
-                                <Link className='dropdown-item' to="/boshqarmaHaqida">Boshqarma haqida</Link>
-                                <Link className='dropdown-item' to="/raxbariyat">Raxbariyat</Link>
-                                <Link className='dropdown-item' to="/boshqarmaNizomi">Boshqarma nizomi</Link>
-                                <Link className='dropdown-item' to="/boshqarmaTuzilmasi">Boshqarma tuzilmasi</Link>
-                                <Link className='dropdown-item' to="/hayat">Hayat</Link>
-                                <Link className='dropdown-item' to="/suvBolimlari">Suv bo’limlari</Link>
-                                <Link className='dropdown-item' to="/markaziyAparat">Markaziy aparat</Link>
-                                <Link className='dropdown-item' to="/byudjetQonun">Byujet to’grisidagi qonunchilik</Link>
-                                <Link className='dropdown-item' to="/ochiqMalumotlar">Ochiq ma’lumot</Link>
-                                <Link className='dropdown-item' to="/elektronHukumat">Elektron hukumat</Link>
-                                <Link className='dropdown-item' to="/boshIsh">Bo’sh ish o’rinlari</Link>
-                                <Link className='dropdown-item' to="/tenderlarTanlov">Tenderlar va tanlovlar</Link>
-                                <Link className='dropdown-item' to="/tadbirlar">Tadbirlar</Link>
-                            </NavDropdown>
+                            <Link to="boshqarma">
+                                <NavDropdown title="Boshqarma" id="basic-nav-dropdown">
+                                    <Link className='dropdown-item' to="/boshqarmaHaqida">Boshqarma haqida</Link>
+                                    <Link className='dropdown-item' to="/raxbariyat">Raxbariyat</Link>
+                                    <Link className='dropdown-item' to="/boshqarmaNizomi">Boshqarma nizomi</Link>
+                                    <Link className='dropdown-item' to="/boshqarmaTuzilmasi">Boshqarma tuzilmasi</Link>
+                                    <Link className='dropdown-item' to="/hayat">Hayat</Link>
+                                    <Link className='dropdown-item' to="/suvBolimlari">Suv bo’limlari</Link>
+                                    <Link className='dropdown-item' to="/markaziyAparat">Markaziy aparat</Link>
+                                    <Link className='dropdown-item' to="/byudjetQonun">Byujet to’grisidagi qonunchilik</Link>
+                                    <Link className='dropdown-item' to="/ochiqMalumotlar">Ochiq ma’lumot</Link>
+                                    <Link className='dropdown-item' to="/elektronHukumat">Elektron hukumat</Link>
+                                    <Link className='dropdown-item' to="/boshIsh">Bo’sh ish o’rinlari</Link>
+                                    <Link className='dropdown-item' to="/tenderlarTanlov">Tenderlar va tanlovlar</Link>
+                                    <Link className='dropdown-item' to="/tadbirlar">Tadbirlar</Link>
+                                </NavDropdown>
+                            </Link>
 
                             <NavDropdown title="Yangiliklar" id="basic-nav-dropdown">
                                 <Link className='dropdown-item' to="/Yangiliklar">Yangiliklar</Link>
@@ -44,33 +47,33 @@ const NavbarMain = () => {
                             </NavDropdown>
 
                             <NavDropdown title="Ma'lumotlar" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Suv xo’jaligi fidoiylari</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Korrupsiyaga qarshi kurash</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Rahbariyat maruzalari</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Statistika</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Suv xo’jalik faoliyati to’g’risida</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Rasmiy web sahifa</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Axborotdan foydalanuvchilarning so’rovnomasi</NavDropdown.Item>
+                                <Link className='dropdown-item' to="/SuvXojaligiFidoiylari">Suv xo’jaligi fidoiylari</Link>
+                                <Link className='dropdown-item' to="/KorrupsiyagaQarshiKurash">Korrupsiyaga qarshi kurash</Link>
+                                <Link className='dropdown-item' to="/RahbariyatMaruzalari">Rahbariyat maruzalari</Link>
+                                <Link className='dropdown-item' to="/Statistika">Statistika</Link>
+                                <Link className='dropdown-item' to="/SuvXojalikFaoliyatiTogrisida">Suv xo’jalik faoliyati to’g’risida</Link>
+                                <Link className='dropdown-item' to="/RasmiyWebSahifa">Rasmiy web sahifa</Link>
+                                <Link className='dropdown-item' to="/AxborotdanFoydalanuvchilarningSorovnomasi">Axborotdan foydalanuvchilarning so’rovnomasi</Link>
+                                <Link className='dropdown-item' to="/FoydaliMaslahatlar">Foydali Maslahatlar</Link>
                             </NavDropdown>
 
                             <NavDropdown title="Hujjatlar" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Qonunlar</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Qarorlar</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Farmonlar</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Normativ hujjatlar</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Dasturlar</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Loyihalar</NavDropdown.Item>
+                                <Link className='dropdown-item' to="/Qonunlar">Qonunlar</Link>
+                                <Link className='dropdown-item' to="/Qarorlar">Qarorlar</Link>
+                                <Link className='dropdown-item' to="/Farmonlar">Farmonlar</Link>
+                                <Link className='dropdown-item' to="/NormativHujjatlar">Normativ hujjatlar</Link>
+                                <Link className='dropdown-item' to="/Dasturlar">Dasturlar</Link>
+                                <Link className='dropdown-item' to="/Loyihalar">Loyihalar</Link>
                             </NavDropdown>
 
                             <NavDropdown title="Interaktiv xizmatlar" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Jismoniy va yuridik shaxslar murojati</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Murojat yo’llash</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Tarjimai hol</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Ish tartibi</NavDropdown.Item>
+                                <Link className='dropdown-item' to="/JismoniyVaYuridikShaxslar">Jismoniy va yuridik shaxslar murojati</Link>
+                                <Link className='dropdown-item' to="/MurojatYollash">Murojat yo’llash</Link>
+                                <Link className='dropdown-item' to="/TarjimaiHol">Tarjimai hol</Link>
+                                <Link className='dropdown-item' to="/IshTartibi">Ish tartibi</Link>
                             </NavDropdown>
-
-                            <Nav.Link href="#link">Foydali maslahatlar</Nav.Link>
-                            <Nav.Link href="#link">Bog’lanish </Nav.Link>
+                            {/* <Link className='nav-link' to="/FoydaliMaslahatlar">Foydali maslahatlar</Link> */}
+                            <Link className='nav-link' to="/Boglanish">Bog’lanish</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ptb{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title h1{
+  font-weight: 700;
+}
+
+.main-title p{
+  margin: 10px auto;
+  margin-bottom: 50px;
+  max-width: 600px;
+  color: #757171;
+}
+
+@media (max-width: 767px) {
+  .main-title p{
+    margin: 10px auto;
+    margin-bottom: 30px;
+  }
+}
+
+.container-fluid{
+  max-width: 1440px;
+}

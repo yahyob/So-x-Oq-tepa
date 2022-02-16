@@ -1,0 +1,70 @@
+
+.banner-section{
+    padding: 18px 0;
+    background-color: #fff;
+}
+.logo img{
+    max-width: 80px;
+}
+.logo-title{
+    max-width: 330px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #006D7C;
+    margin-left: 10px;
+}
+.address span, .phone span{
+    font-size: 15px;
+    color: #C4C4C4;
+}
+
+.address h6, .phone h6{
+    color: #006D7C;
+}
+
+.address .icon , .phone .icon{
+    color:  #006D7C;
+    font-size: 38px;
+}
+
+.address, .phone{
+    line-height: 100%;
+}
+
+#langu{
+    min-width: auto !important;
+}
+
+#language #dropdownMenuButton1{
+    color: #1E8FEB !important;
+}
+
+#lang .dropdown-item:hover li{
+    background-color: #1E8FEB !important;
+}
+
+.dropdown-menu {
+    padding: 0 !important;
+}
+
+.dropdown-item{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item:hover{
+    background-color: #5350EC !important;
+    transition: all 0.3s ease-in-out;
+    color: #fff !important;
+}
+
+@media (max-width: 504px) {
+    .logo img{
+        max-width: 70px;
+    }
+    .logo-title{
+        max-width: 100% !important;
+        font-size: 15px;
+    }
+}
