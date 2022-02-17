@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Banner from './pages/Banner';
 import NavbarMain from './pages/Navbar';
 import Home from './pages/Home';
@@ -20,6 +20,7 @@ import TenderlarTanlovlar from './pages/Boshqarma/TenderlarTanlovlar';
 import Tadbirlar from './pages/Boshqarma/Tadbirlar';
 import Hayat from './pages/Boshqarma/Hayat';
 
+import News from './pages/Yangiliklar'
 import Yangiliklar from './pages/Yangiliklar/Yangiliklar';
 import AxborotXizmati from './pages/Yangiliklar/AxborotXizmati';
 import Elonlar from './pages/Yangiliklar/Elonlar';
@@ -29,6 +30,7 @@ import OAVVakillar from './pages/Yangiliklar/OAV';
 import Fotogalereya from './pages/Mediagalereya/Fotogalereya';
 import VideoMaterial from './pages/Mediagalereya/VideoMaterial';
 
+import Datas from './pages/Malumotlar'
 import SuvXojaligiFidoiylari from './pages/Malumotlar/SuvXojaligiFidoiylari';
 import KorrupsiyagaQarshiKurash from './pages/Malumotlar/KorrupsiyagaQarshiKurash';
 import RahbariyatMaruzalari from './pages/Malumotlar/RahbariyatMaruzalari';
@@ -37,6 +39,7 @@ import SuvXojalikFaoliyatiTogrisida from './pages/Malumotlar/SuvXo’jalikFaoliy
 import AxborotdanFoydalanuvchilarningSorovnomasi from './pages/Malumotlar/AxborotdanFoydalanuvchilarningSo’rovnomasi';
 import RasmiyWebSahifa from './pages/Malumotlar/RasmiyWebSahifa';
 
+import Hujjatlar from './pages/Hujjatlar';
 import Qonunlar from './pages/Hujjatlar/Qonunlar';
 import Qarorlar from './pages/Hujjatlar/Qarorlar';
 import Farmonlar from './pages/Hujjatlar/Farmonlar';
@@ -44,6 +47,7 @@ import NormativHujjatlar from './pages/Hujjatlar/NormativHujjatlar';
 import Dasturlar from './pages/Hujjatlar/Dasturlar';
 import Loyihalar from './pages/Hujjatlar/Loyihalar';
 
+import Interaktive from './pages/InteraktivXizmatlar'
 import JismoniyVaYuridikShaxslarMurojati from './pages/InteraktivXizmatlar/JismoniyVaYuridikShaxslarMurojati';
 import MurojatYollash from './pages/InteraktivXizmatlar/MurojatYollash';
 import TarjimaiHol from './pages/InteraktivXizmatlar/TarjimaiHol';
@@ -60,54 +64,63 @@ function App() {
     <div className="App">
       <Banner />
       <BrowserRouter>
-      <NavbarMain />
+        <NavbarMain />
         <Routes>
           <Route path='/' element={<Home />} />
 
-          <Route path='boshqarma' element={<Boshqarma />} />
-          <Route path='boshqarmaHaqida' element={<BoshqarmaHaqida />} />
-          <Route path='raxbariyat' element={<Rahbariyat />} />
-          <Route path='boshqarmaNizomi' element={<BoshqarmaNizomi />} />
-          <Route path='boshqarmaTuzilmasi' element={<BoshqarmaTuzilmasi />} />
-          <Route path='hayat' element={<Hayat />} />
-          <Route path='suvBolimlari' element={<SuvBolimlari />} />
-          <Route path='markaziyAparat' element={<MarkaziyApparat />} />
-          <Route path='byudjetQonun' element={<ByudjetQonun />} />
-          <Route path='ochiqMalumotlar' element={<OchiqMalumot />} />
-          <Route path='elektronHukumat' element={<ElektronJamiyat />} />
-          <Route path='boshIsh' element={<BoshIshOrnlari />} />
-          <Route path='tenderlarTanlov' element={<TenderlarTanlovlar />} />
-          <Route path='tadbirlar' element={<Tadbirlar />} />
+          <Route path='boshqarma' element={<Boshqarma />}>
+            <Route index element={<BoshqarmaHaqida />} />
+            <Route path='raxbariyat' element={<Rahbariyat />} />
+            <Route path='boshqarmaNizomi' element={<BoshqarmaNizomi />} />
+            <Route path='boshqarmaTuzilmasi' element={<BoshqarmaTuzilmasi />} />
+            <Route path='hayat' element={<Hayat />} />
+            <Route path='suvBolimlari' element={<SuvBolimlari />} />
+            <Route path='markaziyAparat' element={<MarkaziyApparat />} />
+            <Route path='byudjetQonun' element={<ByudjetQonun />} />
+            <Route path='ochiqMalumotlar' element={<OchiqMalumot />} />
+            <Route path='elektronHukumat' element={<ElektronJamiyat />} />
+            <Route path='boshIsh' element={<BoshIshOrnlari />} />
+            <Route path='tenderlarTanlov' element={<TenderlarTanlovlar />} />
+            <Route path='tadbirlar' element={<Tadbirlar />} />
+          </Route>
 
-          <Route path='Yangiliklar' element={<Yangiliklar />} />
-          <Route path='AxborotXizmati' element={<AxborotXizmati />} />
-          <Route path='Elonlar' element={<Elonlar />} />
-          <Route path='PresRelizlar' element={<PresRelizlar />} />
-          <Route path='OAVVakillar' element={<OAVVakillar />} />
+          <Route path='News' element={<News />}>
+            <Route index element={<Yangiliklar />} />
+            <Route path='AxborotXizmati' element={<AxborotXizmati />} />
+            <Route path='Elonlar' element={<Elonlar />} />
+            <Route path='PresRelizlar' element={<PresRelizlar />} />
+            <Route path='OAVVakillar' element={<OAVVakillar />} />
+          </Route>
 
           <Route path='Fotogalereya' element={<Fotogalereya />} />
           <Route path='VideoMaterial' element={<VideoMaterial />} />
-          
-          <Route path='SuvXojaligiFidoiylari' element={<SuvXojaligiFidoiylari />} />
-          <Route path='KorrupsiyagaQarshiKurash' element={<KorrupsiyagaQarshiKurash />} />
-          <Route path='RahbariyatMaruzalari' element={<RahbariyatMaruzalari />} />
-          <Route path='Statistika' element={<Statistika />} />
-          <Route path='SuvXojalikFaoliyatiTogrisida' element={<SuvXojalikFaoliyatiTogrisida />} />
-          <Route path='RasmiyWebSahifa' element={<RasmiyWebSahifa />} />
-          <Route path='AxborotdanFoydalanuvchilarningSorovnomasi' element={<AxborotdanFoydalanuvchilarningSorovnomasi />} />
-          
-          <Route path='Qonunlar' element={<Qonunlar />} />
-          <Route path='Qarorlar' element={<Qarorlar />} />
-          <Route path='Farmonlar' element={<Farmonlar />} />
-          <Route path='NormativHujjatlar' element={<NormativHujjatlar />} />
-          <Route path='Dasturlar' element={<Dasturlar />} />
-          <Route path='Loyihalar' element={<Loyihalar />} />
-          
-          <Route path='JismoniyVaYuridikShaxslar' element={<JismoniyVaYuridikShaxslarMurojati />} />
-          <Route path='MurojatYollash' element={<MurojatYollash />} />
-          <Route path='TarjimaiHol' element={<TarjimaiHol />} />
-          <Route path='IshTartibi' element={<IshTartibi />} />
-          
+
+          <Route path='datas' element={<Datas />}>
+            <Route index element={<SuvXojaligiFidoiylari />} />
+            <Route path='KorrupsiyagaQarshiKurash' element={<KorrupsiyagaQarshiKurash />} />
+            <Route path='RahbariyatMaruzalari' element={<RahbariyatMaruzalari />} />
+            <Route path='Statistika' element={<Statistika />} />
+            <Route path='SuvXojalikFaoliyatiTogrisida' element={<SuvXojalikFaoliyatiTogrisida />} />
+            <Route path='RasmiyWebSahifa' element={<RasmiyWebSahifa />} />
+            <Route path='AxborotdanFoydalanuvchilarningSorovnomasi' element={<AxborotdanFoydalanuvchilarningSorovnomasi />} />
+          </Route>
+
+          <Route path='Hujjatlar' element={<Hujjatlar />}>
+            <Route index element={<Qonunlar />} />
+            <Route path='Qarorlar' element={<Qarorlar />} />
+            <Route path='Farmonlar' element={<Farmonlar />} />
+            <Route path='NormativHujjatlar' element={<NormativHujjatlar />} />
+            <Route path='Dasturlar' element={<Dasturlar />} />
+            <Route path='Loyihalar' element={<Loyihalar />} />
+          </Route>
+
+          <Route path='Interaktive' element={<Interaktive />}>
+            <Route index element={<JismoniyVaYuridikShaxslarMurojati />} />
+            <Route path='MurojatYollash' element={<MurojatYollash />} />
+            <Route path='TarjimaiHol' element={<TarjimaiHol />} />
+            <Route path='IshTartibi' element={<IshTartibi />} />
+          </Route>
+
           <Route path='FoydaliMaslahatlar' element={<FoydaliMaslahatlar />} />
           <Route path='Boglanish' element={<Boglanish />} />
         </Routes>

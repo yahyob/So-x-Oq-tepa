@@ -13,7 +13,7 @@ const Section3Home = () => {
                         <h1 className='mb-4 mt-4 text-white'>Statistika</h1>
                     </div>
                 </div>
-            <div class="container">
+            <div className="container">
                 <div className='row sta pt-4 pb-4'>
                     <div className='col-sm-6 col-md-4 col-lg-3 mb-4'>
                         <div className='sta-item text-center'>

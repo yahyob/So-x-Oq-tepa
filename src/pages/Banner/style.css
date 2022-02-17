@@ -68,3 +68,9 @@
         font-size: 15px;
     }
 }
+
+@media (max-width: 599px) {
+    .banner-section{
+        margin-top: 50px;
+    }
+}

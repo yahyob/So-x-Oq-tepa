@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IshOrin = () => {
+const BoshIshOrinlari = () => {
     return (
         <div>
             <h1>Bosh ish orni</h1>
@@ -8,4 +8,4 @@ const IshOrin = () => {
     );
 }
 
-export default IshOrin;
+export default BoshIshOrinlari;

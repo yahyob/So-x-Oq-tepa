@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Section2 = () => {
     return (
         <section className='ptb'>
-            <div class="container">
+            <div className="container">
                 <div className='row main-title text-center'>
                     <div className='col'>
                         <h1 className='mb-5'>So'ngi Yangiliklar</h1>
@@ -20,7 +20,7 @@ const Section2 = () => {
                                 <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus tristique nulla risus euismod. Egestas magnis vel hac urna porta orci dignissim consequat ultrices. Diam phasellus enim quis placerat volutpat pretium lacus maecenas a. Phasellus eu in amet augue habitasse cursus nullam elit in. Urna nec aliquam nulla nullam nulla.
                                 </Card.Text>
-                                <Link to="Yangiliklar"><Button variant="primary">Batafsil</Button></Link>
+                                <Link to="datas"><Button variant="primary">Batafsil</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>
@@ -32,7 +32,7 @@ const Section2 = () => {
                                 <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus tristique nulla risus euismod. Egestas magnis vel hac urna porta orci dignissim consequat ultrices. Diam phasellus enim quis placerat volutpat pretium lacus maecenas a. Phasellus eu in amet augue habitasse cursus nullam elit in. Urna nec aliquam nulla nullam nulla.
                                 </Card.Text>
-                                <Link to="Yangiliklar"><Button variant="primary">Batafsil</Button></Link>
+                                <Link to="datas"><Button variant="primary">Batafsil</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>
@@ -44,9 +44,14 @@ const Section2 = () => {
                                 <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus tristique nulla risus euismod. Egestas magnis vel hac urna porta orci dignissim consequat ultrices. Diam phasellus enim quis placerat volutpat pretium lacus maecenas a. Phasellus eu in amet augue habitasse cursus nullam elit in. Urna nec aliquam nulla nullam nulla.
                                 </Card.Text>
-                                <Link to="Yangiliklar"><Button variant="primary">Batafsil</Button></Link>
+                                <Link to="datas"><Button variant="primary">Batafsil</Button></Link>
                             </Card.Body>
                         </Card>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col text-center'>
+                    <Link to="datas"><Button variant="outline-primary">Barcha yangiliklar</Button></Link>
                     </div>
                 </div>
             </div>

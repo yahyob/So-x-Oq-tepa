@@ -1,8 +1,17 @@
 .Navbar{
-     background: #5350EC;
+     background: #1976D2;
+     position: relative;
+     z-index: 98989898;
+     width: 100%;
 }
 
 .Navbar #basic-nav-dropdown, .Navbar .nav-link{
     color: #fff !important;
     font-size: 17px !important;
+}
+
+@media (max-width: 599px) {
+    .Navbar{
+        z-index: 900;
+    }
 }

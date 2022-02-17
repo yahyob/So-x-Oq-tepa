@@ -1,0 +1,81 @@
+.sidenav {
+    /* height: 100vh; */
+    /* min-width: 250px; */
+    /* position: sticky; */
+    /* z-index: 1;
+    top: 55px;
+    left: 0;
+    background-color: #5350EC;
+    overflow: auto;
+    padding-top: 20px; */
+  }
+  
+  .sidenav .dropdown-item {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+  }
+  
+  .sidenav .dropdown-item:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+     /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    background-color: #1976D2;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .dropdown-item{
+      font-size: 17px !important;
+      word-wrap: break-word !important;
+  }
+
+  .dropdown-item:hover {
+      background-color: rgb(27, 27, 185) !important;
+  }
+
+
+  
+  
+  .MuiPaper-root{
+    /* position: relative; */
+    margin-top: 187px !important;
+  }
+
+  .css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+    /* position: relative !important; */
+    background-color: #1976D2 !important;
+    color: #fff !important;
+  }
+
+  .margin{
+    margin-top: 0 !important;
+  }
+  
+  .MuiToolbar-root{
+  /* top: 200px !important; */
+}
+  @media (max-width: 599px) {
+    /* .sidenav {
+      position: relative;
+      transform: translateX(-100%);
+    } */
+    .css-zxtyt4-MuiPaper-root-MuiAppBar-root{
+      margin-top: 0 !important;
+    }
+    #sideNav{
+      top: 0 !important;
+    }
+    .MuiPaper-root{
+      margin-top: 0 !important;
+    }
+  }
