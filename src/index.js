@@ -18,13 +18,13 @@ i18n
   .init({
     supportedLngs: ['en', 'ru', 'uz'],
     // lng: "uz",
-    fallbackLng: "uz",
+    // fallbackLng: "uz",
     detection: {
       order: ['htmlTag', 'cookie', 'localStorage', 'path', 'subdomain'],
       caches: ['cookie']
     },
     backend: {
-      loadPath: "/assets/locales/{{lng}}/translation.json"
+      loadPath: "/assets/locales/uz/translation.json"
     },
     // react: { useSuspense: false }
   });

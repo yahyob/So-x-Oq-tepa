@@ -1,9 +1,9 @@
 import React from 'react';
-import i18next from 'i18next';
-import { useTranslation } from 'react-i18next';
 import './style.css';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
+import { changeLang, setLang } from '../../helpers';
+import {useT} from '../../custom/hooks/useT';
 
 
 const language = [
@@ -24,14 +24,19 @@ const language = [
   },
 ]
 
+const handleChangeLng = (code) => {
+  changeLang(code)
+  setLang(code)
+}
+
+
 const Banner = () => {
 
-  const { t } = useTranslation()
+const {t, lang} = useT()
 
   return (
     <section className='banner-section'>
       <div className="container-fluid d-flex justify-content-between align-items-center">
-
         <div className='logo d-flex align-items-center'>
           <img src='/logo.png' alt='logo' />
           <font className='logo-title w-50'>SO’X-OQTEPA IRRIGATSIYA TIZIMI BOSHQARMASI</font>
@@ -53,15 +58,15 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="dropdown language" style={{zIndex: "2001"}}>
+        <div className="dropdown language"  style={{zIndex: "999898989898898"}}>
           <button className="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             {t('changelang')}
           </button>
           <ul id='langu' className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             {
-              language.map(({ code, country_code, name }) => (
+              language.map(({ code, country_code }) => (
                 <li
-                  onClick={() => i18next.changeLanguage(code)}
+                  onClick={() => handleChangeLng(code)}
                   key={country_code}>
                   <a className="dropdown-item" href="#">{country_code}</a>
                 </li>

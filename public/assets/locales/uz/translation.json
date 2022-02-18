@@ -1,4 +1,8 @@
 {
-    "title": "Salom",
+    "title": {
+        "uz": "Salom",
+        "ru": "Privet",
+        "en": "Hello"
+    },
     "changelang": "Uz"
 }

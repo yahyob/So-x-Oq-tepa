@@ -51,8 +51,8 @@ const MarkaziyApparat = () => {
                                             <TabsUnstyled>
                                                 <TabsListUnstyled defaultValue={0} className='w-100 text-center mt-5 pt-5'>
                                                     <TabUnstyled className="btn btn-primary w-25 mr-5 d-none">Biografiya</TabUnstyled>
-                                                    <TabUnstyled className="btn btn-primary w-25 mr-5">Biografiya</TabUnstyled>
-                                                    <TabUnstyled className="btn btn-primary w-25">Nizom</TabUnstyled>
+                                                    <TabUnstyled className="btn btn-primary mr-4">Biografiya</TabUnstyled>
+                                                    <TabUnstyled className="btn btn-primary">Nizom</TabUnstyled>
                                                 </TabsListUnstyled>
                                                 <TabPanelUnstyled value={0}> </TabPanelUnstyled>
                                                 <TabPanelUnstyled className='rah-text' value={1}>
@@ -102,8 +102,8 @@ const MarkaziyApparat = () => {
                                             <TabsUnstyled>
                                                 <TabsListUnstyled defaultValue={0} className='w-100 text-center mt-5 pt-5'>
                                                     <TabUnstyled className="btn btn-primary w-25 mr-5 d-none">Biografiya</TabUnstyled>
-                                                    <TabUnstyled className="btn btn-primary w-25 mr-5">Biografiya</TabUnstyled>
-                                                    <TabUnstyled className="btn btn-primary w-25">Nizom</TabUnstyled>
+                                                    <TabUnstyled className="btn btn-primary mr-4">Biografiya</TabUnstyled>
+                                                    <TabUnstyled className="btn btn-primary">Nizom</TabUnstyled>
                                                 </TabsListUnstyled>
                                                 <TabPanelUnstyled value={0}> </TabPanelUnstyled>
                                                 <TabPanelUnstyled className='rah-text' value={1}>
@@ -153,8 +153,8 @@ const MarkaziyApparat = () => {
                                             <TabsUnstyled>
                                                 <TabsListUnstyled defaultValue={0} className='w-100 text-center mt-5 pt-5'>
                                                     <TabUnstyled className="btn btn-primary w-25 mr-5 d-none">Biografiya</TabUnstyled>
-                                                    <TabUnstyled className="btn btn-primary w-25 mr-5">Biografiya</TabUnstyled>
-                                                    <TabUnstyled className="btn btn-primary w-25">Nizom</TabUnstyled>
+                                                    <TabUnstyled className="btn btn-primary mr-4">Biografiya</TabUnstyled>
+                                                    <TabUnstyled className="btn btn-primary">Nizom</TabUnstyled>
                                                 </TabsListUnstyled>
                                                 <TabPanelUnstyled value={0}> </TabPanelUnstyled>
                                                 <TabPanelUnstyled className='rah-text' value={1}>
@@ -204,8 +204,8 @@ const MarkaziyApparat = () => {
                                             <TabsUnstyled>
                                                 <TabsListUnstyled defaultValue={0} className='w-100 text-center mt-5 pt-5'>
                                                     <TabUnstyled className="btn btn-primary w-25 mr-5 d-none">Biografiya</TabUnstyled>
-                                                    <TabUnstyled className="btn btn-primary w-25 mr-5">Biografiya</TabUnstyled>
-                                                    <TabUnstyled className="btn btn-primary w-25">Nizom</TabUnstyled>
+                                                    <TabUnstyled className="btn btn-primary mr-4">Biografiya</TabUnstyled>
+                                                    <TabUnstyled className="btn btn-primary">Nizom</TabUnstyled>
                                                 </TabsListUnstyled>
                                                 <TabPanelUnstyled value={0}> </TabPanelUnstyled>
                                                 <TabPanelUnstyled className='rah-text' value={1}>

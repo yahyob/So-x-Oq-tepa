@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Banner from './pages/Banner';
 import NavbarMain from './pages/Navbar';
@@ -54,8 +54,24 @@ import IshTartibi from './pages/InteraktivXizmatlar/IshTartibi';
 
 import FoydaliMaslahatlar from './pages/FoydaliMaslahatlar/index';
 import Boglanish from './pages/Boglanish/index';
+import { fallbackLng, languages } from './constants';
+import i18next from 'i18next';
+import Section4Home from './pages/Footer';
 
 function App() {
+
+
+  useEffect(() => {
+    let currentLang = localStorage.getItem("langu");
+
+    if (!currentLang) {
+      localStorage.setItem("langu", fallbackLng);
+    } else if (languages.includes(currentLang)) {
+      i18next.changeLanguage(currentLang);
+    };
+
+    // console.log = () => null
+  }, [i18next]);
 
   return (
     <div className="App">
@@ -121,6 +137,7 @@ function App() {
           <Route path='FoydaliMaslahatlar' element={<FoydaliMaslahatlar />} />
           <Route path='Boglanish' element={<Boglanish />} />
         </Routes>
+        <Section4Home />
       </BrowserRouter>
     </div>
   );
