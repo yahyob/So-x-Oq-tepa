@@ -11,7 +11,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div style={{ display: 'flex', height: '73vh', overflow: 'scroll initial' }}>
+    <div id='zindex' style={{ display: 'flex', height: '73vh', overflow: 'scroll initial', zIndex:"21" }}>
       <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -21,22 +21,22 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <Link exact to="/Hujjatlar">
+            <Link   to="/Hujjatlar">
               <CDBSidebarMenuItem icon="columns">Qonunlar</CDBSidebarMenuItem>
             </Link>
-            <NavLink exact to="/Hujjatlar/Qarorlar">
+            <NavLink   to="/Hujjatlar/Qarorlar">
               <CDBSidebarMenuItem icon="user">Qarorlar</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/Hujjatlar/Farmonlar">
+            <NavLink   to="/Hujjatlar/Farmonlar">
               <CDBSidebarMenuItem icon="table">Farmonlar</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/Hujjatlar/NormativHujjatlar">
+            <NavLink   to="/Hujjatlar/NormativHujjatlar">
               <CDBSidebarMenuItem icon="chart-line">Normativ Hujjatlar</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/Hujjatlar/Dasturlar">
+            <NavLink   to="/Hujjatlar/Dasturlar">
               <CDBSidebarMenuItem icon="table">Dasturlar</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/Hujjatlar/Loyihalar">
+            <NavLink   to="/Hujjatlar/Loyihalar">
               <CDBSidebarMenuItem icon="table">Loyihalar</CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>

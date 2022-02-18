@@ -1,15 +1,4 @@
-.sidenav {
-    /* height: 100vh; */
-    /* min-width: 250px; */
-    /* position: sticky; */
-    /* z-index: 1;
-    top: 55px;
-    left: 0;
-    background-color: #5350EC;
-    overflow: auto;
-    padding-top: 20px; */
-  }
-  
+
   .sidenav .dropdown-item {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -78,4 +67,9 @@
     .MuiPaper-root{
       margin-top: 0 !important;
     }
+  }
+
+  #zindex{
+    position: relative;
+    z-index: 21 !important;
   }

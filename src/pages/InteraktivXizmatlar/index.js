@@ -11,7 +11,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div style={{ display: 'flex', height: '75vh', overflow: 'scroll initial' }}>
+    <div id='zindex' style={{ display: 'flex', height: '75vh', overflow: 'scroll initial', zIndex:"21" }}>
       <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -21,16 +21,16 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <Link exact to="/Interaktive">
+            <Link   to="/Interaktive">
               <CDBSidebarMenuItem icon="columns">Jismoniy Va Yuridik Shaxslar Murojati</CDBSidebarMenuItem>
             </Link>
-            <NavLink exact to="/Interaktive/MurojatYollash">
+            <NavLink   to="/Interaktive/MurojatYollash">
               <CDBSidebarMenuItem icon="user">Murojat Yo'llash</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/Interaktive/TarjimaiHol">
+            <NavLink   to="/Interaktive/TarjimaiHol">
               <CDBSidebarMenuItem icon="table">TarjimaiHol</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/Interaktive/IshTartibi">
+            <NavLink   to="/Interaktive/IshTartibi">
               <CDBSidebarMenuItem icon="chart-line">IshTartibi</CDBSidebarMenuItem>
             </NavLink>
             

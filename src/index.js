@@ -2,13 +2,14 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import i18n, { use } from 'i18next';
+import i18n from 'i18next';
 import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
+
 
 i18n
   .use(initReactI18next)
@@ -27,6 +28,7 @@ i18n
     },
     // react: { useSuspense: false }
   });
+
 
 const loading = (
   <div style={{ position: 'fixed', backgroundColor: '#fff', display: 'flex', width: '100%', height: '100%', justifyContent: "center", alignItems: "center" }}>

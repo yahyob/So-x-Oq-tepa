@@ -11,7 +11,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div style={{ display: 'flex', height: '75vh', overflow: 'scroll initial' }}>
+    <div id='zindex' style={{ display: 'flex', height: '75vh', overflow: 'scroll initial', zIndex:"21" }}>
       <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -21,19 +21,19 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <Link exact to="/Yangiliklar">
+            <Link   to="/Yangiliklar">
               <CDBSidebarMenuItem icon="columns">Yangiliklar</CDBSidebarMenuItem>
             </Link>
-            <NavLink exact to="/News/AxborotXizmati">
+            <NavLink   to="/News/AxborotXizmati">
               <CDBSidebarMenuItem icon="user">Axborot Xizmati</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/News/Elonlar">
+            <NavLink   to="/News/Elonlar">
               <CDBSidebarMenuItem icon="table">E'lonlar</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/News/PresRelizlar">
+            <NavLink   to="/News/PresRelizlar">
               <CDBSidebarMenuItem icon="chart-line">Pres Relizlar</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/News/OAVVakillar">
+            <NavLink   to="/News/OAVVakillar">
               <CDBSidebarMenuItem icon="table">OAV Vakillar</CDBSidebarMenuItem>
             </NavLink>
             

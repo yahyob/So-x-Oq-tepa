@@ -11,7 +11,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div style={{ display: 'flex', height: '80vh', overflow: 'scroll initial' }}>
+    <div id='zindex' style={{ display: 'flex', height: '80vh', overflow: 'scroll initial', zIndex:"21" }}>
       <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -21,25 +21,25 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <Link exact to="/datas">
+            <Link   to="/datas">
               <CDBSidebarMenuItem icon="columns">SuvXojaligi Fidoiylari</CDBSidebarMenuItem>
             </Link>
-            <NavLink exact to="/datas/KorrupsiyagaQarshiKurash">
+            <NavLink   to="/datas/KorrupsiyagaQarshiKurash">
               <CDBSidebarMenuItem icon="user">Korrupsiyaga Qarshi Kurash</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/datas/RahbariyatMaruzalari">
+            <NavLink   to="/datas/RahbariyatMaruzalari">
               <CDBSidebarMenuItem icon="table">Rahbariyat Maruzalari</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/datas/Statistika">
+            <NavLink   to="/datas/Statistika">
               <CDBSidebarMenuItem icon="chart-line">Statistika</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/datas/SuvXojalikFaoliyatiTogrisida">
+            <NavLink   to="/datas/SuvXojalikFaoliyatiTogrisida">
               <CDBSidebarMenuItem icon="table">Suv Xo'jalik Faoliyati Tog'risida</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/datas/RasmiyWebSahifa">
+            <NavLink   to="/datas/RasmiyWebSahifa">
               <CDBSidebarMenuItem icon="table">Rasmiy Web Sahifa</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/datas/AxborotdanFoydalanuvchilarningSorovnomasi">
+            <NavLink   to="/datas/AxborotdanFoydalanuvchilarningSorovnomasi">
               <CDBSidebarMenuItem icon="table">Axborotdan Foydalanuvchilarning So'rovnomasi</CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>

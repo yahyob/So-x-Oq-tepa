@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Section2 = () => {
     return (
-        <section className='ptb'>
+        <section className='ptb w-100'>
             <div className="container">
                 <div className='row main-title text-center'>
                     <div className='col'>
@@ -14,7 +14,7 @@ const Section2 = () => {
                 <div className='row'>
                     <div className='col-md-6 col-lg-4 mb-4'>
                         <Card style={{ width: '100%' }}>
-                            <Card.Img variant="top" src="/assets/img/1.png" />
+                            <Card.Img variant="top" src="/img/1.png" />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
@@ -26,7 +26,7 @@ const Section2 = () => {
                     </div>
                     <div className='col-md-6 col-lg-4 mb-4'>
                         <Card style={{ width: '100%' }}>
-                            <Card.Img variant="top" src="/assets/img/1.png" />
+                            <Card.Img variant="top" src="/img/1.png" />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
@@ -38,7 +38,7 @@ const Section2 = () => {
                     </div>
                     <div className='col-md-6 col-lg-4 mb-4'>
                         <Card style={{ width: '100%' }}>
-                            <Card.Img variant="top" src="/assets/img/1.png" />
+                            <Card.Img variant="top" src="/img/1.png" />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
                                 <Card.Text>
@@ -51,7 +51,7 @@ const Section2 = () => {
                 </div>
                 <div className='row'>
                     <div className='col text-center'>
-                    <Link to="datas"><Button variant="outline-primary">Barcha yangiliklar</Button></Link>
+                    <Link to="news"><Button variant="outline-primary">BARCHA YANGILIKLAR</Button></Link>
                     </div>
                 </div>
             </div>

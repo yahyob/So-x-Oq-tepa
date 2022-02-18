@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const HomeSection1 = () => {
     return (
-        <section className='about-section ptb'>
+        <section className='about-section ptb w-100'>
             <div className='container'>
                 <div className='row main-title text-center'>
                     <div className='col'>
@@ -19,7 +19,7 @@ const HomeSection1 = () => {
                     </div>
                     <div className='col-md-5'>
                         <Card style={{ width: '100%' }}>
-                            <Card.Img variant="top" src='/assets/img/1.png' />
+                            <Card.Img variant="top" src='/img/1.png' />
                             <Card.Body>
                                 <Card.Title>Biz haqimizda</Card.Title>
                                 <Card.Text>

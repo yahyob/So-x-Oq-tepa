@@ -1,5 +1,4 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Banner from './pages/Banner';
 import NavbarMain from './pages/Navbar';
@@ -57,8 +56,6 @@ import FoydaliMaslahatlar from './pages/FoydaliMaslahatlar/index';
 import Boglanish from './pages/Boglanish/index';
 
 function App() {
-
-  const { t } = useTranslation();
 
   return (
     <div className="App">

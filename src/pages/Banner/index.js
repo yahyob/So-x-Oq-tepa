@@ -33,7 +33,7 @@ const Banner = () => {
       <div className="container-fluid d-flex justify-content-between align-items-center">
 
         <div className='logo d-flex align-items-center'>
-          <img src='./logo.png' alt='logo' />
+          <img src='/logo.png' alt='logo' />
           <font className='logo-title w-50'>SO’X-OQTEPA IRRIGATSIYA TIZIMI BOSHQARMASI</font>
         </div>
 
@@ -53,7 +53,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="dropdown language">
+        <div className="dropdown language" style={{zIndex: "2001"}}>
           <button className="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             {t('changelang')}
           </button>

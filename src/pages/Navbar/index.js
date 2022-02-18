@@ -15,16 +15,16 @@ const NavbarMain = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Link className='nav-link' to="/boshqarma">BOSHQARMA</Link>
-                            <Link className='nav-link' to="/News">YANGILIKLAR</Link>
-                            <NavDropdown title="MEDIAGALEREYA" id="basic-nav-dropdown">
+                            <Link className='nav-link' to="/boshqarma">Boshqarma</Link>
+                            <Link className='nav-link' to="/News">Yangiliklar</Link>
+                            <NavDropdown title="Mediagalereya" id="basic-nav-dropdown">
                                 <Link className='dropdown-item' to="/Fotogalereya">Fotogalereya</Link>
                                 <Link className='dropdown-item' to="/VideoMaterial">Video material</Link>
                             </NavDropdown>
-                            <Link className='nav-link' to="/datas">MA'LUMOTLAR</Link>
-                            <Link className='nav-link' to="/Hujjatlar">HUJJATLAR</Link>
-                            <Link className='nav-link' to="/Interaktive">INTERAKTIV</Link>
-                            <Link className='nav-link' to="/Boglanish">BOG'LANISH</Link>
+                            <Link className='nav-link' to="/datas">Ma'lumotlar</Link>
+                            <Link className='nav-link' to="/Hujjatlar">Hujjatlar</Link>
+                            <Link className='nav-link' to="/Interaktive">Interaktiv</Link>
+                            <Link className='nav-link' to="/Boglanish">Bog'lanish</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

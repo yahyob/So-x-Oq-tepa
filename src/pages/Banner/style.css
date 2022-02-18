@@ -10,7 +10,7 @@
     max-width: 330px;
     font-size: 17px;
     font-weight: 500;
-    color: #006D7C;
+    color: #1976D2;
     margin-left: 10px;
 }
 .address span, .phone span{
@@ -19,11 +19,11 @@
 }
 
 .address h6, .phone h6{
-    color: #006D7C;
+    color: #1976D2;
 }
 
 .address .icon , .phone .icon{
-    color:  #006D7C;
+    color:  #1976D2;
     font-size: 38px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 #lang .dropdown-item:hover li{
-    background-color: #1E8FEB !important;
+    background-color: #1976D2 !important;
 }
 
 .dropdown-menu {
@@ -54,7 +54,7 @@
 }
 
 .dropdown-item:hover{
-    background-color: #5350EC !important;
+    background-color: #1976D2 !important;
     transition: all 0.3s ease-in-out;
     color: #fff !important;
 }
