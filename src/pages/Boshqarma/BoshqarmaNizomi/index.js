@@ -7,7 +7,7 @@ const BoshqarmaNizomi = () => {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Boshqarma nizommi</h3>
+                            <h3>Boshqarma nizomi</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './style.css'
+import { Link, useParams } from 'react-router-dom';
 
 const tend = [
     {
@@ -23,10 +22,15 @@ const tend = [
     },
 ]
 
-const TenderTanlovlar = () => {
+const Tenddetails = () => {
+    const { id } = useParams();
+    console.log(id);
+
+    // const topic = tend.find((item) => item.id === id);
+
     return (
         <section className='text-section'>
-            <div className='container-fluid'>
+            <div className='container-fluid pl-5 pr-5'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
@@ -37,23 +41,13 @@ const TenderTanlovlar = () => {
                 </div>
                 <div className='row'>
                     {
-                        tend.map((item) => (
-                            <div key={item.id} className='col-12 mb-3'>
-                                <div className="card mb-3">
-                                    <div className="row g-0">
-                                        <div className="col-md-4">
-                                            <img src={item.img} className="img-fluid rounded-start" alt="image"/>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div className="card-body">
-                                                <Link to={`${item.id}`} className="card-title"><h5>{item.title}</h5></Link>
-                                                <p className="card-text">
-                                                    {item.body.slice(0, 300)}
-                                                </p>
-                                            </div>
-                                        </div>
+                        tend.filter(item => item.id == id).map(card => (
+                            <div class="card mb-3">
+                                <img src={card.img} class="card-img-top w-100" alt="..."/>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{card.title}</h5>
+                                        <p class="card-text">{card.body}</p>
                                     </div>
-                                </div>
                             </div>
                         ))
                     }
@@ -63,4 +57,4 @@ const TenderTanlovlar = () => {
     );
 }
 
-export default TenderTanlovlar;
+export default Tenddetails;

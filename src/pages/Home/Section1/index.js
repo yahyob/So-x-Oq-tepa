@@ -10,7 +10,7 @@ const HomeSection1 = () => {
                 <div className='row main-title text-center'>
                     <div className='col'>
                         <h1>Xush kelibsiz</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quisque imperdiet etiam id vitae faucibus. Amet sed lectus a scelerisque eu auctor dolor.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quisque imperdiet etiam id vitae faucibus. Amet sed  dolor.</p>
                     </div>
                 </div>
                 <div className='row'>
@@ -25,7 +25,7 @@ const HomeSection1 = () => {
                                 <Card.Text>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consectetur pretium lectus ut. Dapibus enim tempus, fusce aliquet morbi quis. Arcu, ut tempor mauris morbi facilisis ultrices hendrerit ipsum arcu. Sed curabitur nunc proin euismod risus. Molestie vestibulum pharetra consectetur nunc. Lacus habitant accumsan sed vitae aliquam suspendisse a a ante.
                                 </Card.Text>
-                                <Link to="boshqarmaHaqida"><Button variant="primary">Batafsil</Button></Link>
+                                <Link to="boshqarma"><Button variant="primary">Batafsil</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>

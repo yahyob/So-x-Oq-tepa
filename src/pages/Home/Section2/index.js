@@ -20,7 +20,7 @@ const Section2 = () => {
                                 <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus tristique nulla risus euismod. Egestas magnis vel hac urna porta orci dignissim consequat ultrices. Diam phasellus enim quis placerat volutpat pretium lacus maecenas a. Phasellus eu in amet augue habitasse cursus nullam elit in. Urna nec aliquam nulla nullam nulla.
                                 </Card.Text>
-                                <Link to="datas"><Button variant="primary">Batafsil</Button></Link>
+                                <Link to="News"><Button variant="primary">Batafsil</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>
@@ -32,7 +32,7 @@ const Section2 = () => {
                                 <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus tristique nulla risus euismod. Egestas magnis vel hac urna porta orci dignissim consequat ultrices. Diam phasellus enim quis placerat volutpat pretium lacus maecenas a. Phasellus eu in amet augue habitasse cursus nullam elit in. Urna nec aliquam nulla nullam nulla.
                                 </Card.Text>
-                                <Link to="datas"><Button variant="primary">Batafsil</Button></Link>
+                                <Link to="News"><Button variant="primary">Batafsil</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>
@@ -44,7 +44,7 @@ const Section2 = () => {
                                 <Card.Text>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus tristique nulla risus euismod. Egestas magnis vel hac urna porta orci dignissim consequat ultrices. Diam phasellus enim quis placerat volutpat pretium lacus maecenas a. Phasellus eu in amet augue habitasse cursus nullam elit in. Urna nec aliquam nulla nullam nulla.
                                 </Card.Text>
-                                <Link to="datas"><Button variant="primary">Batafsil</Button></Link>
+                                <Link to="News"><Button variant="primary">Batafsil</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>

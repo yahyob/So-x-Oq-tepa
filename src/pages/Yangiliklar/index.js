@@ -21,7 +21,7 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <Link   to="/Yangiliklar">
+            <Link   to="/News">
               <CDBSidebarMenuItem icon="columns">Yangiliklar</CDBSidebarMenuItem>
             </Link>
             <NavLink   to="/News/AxborotXizmati">

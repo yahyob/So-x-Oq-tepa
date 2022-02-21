@@ -57,6 +57,7 @@ import Boglanish from './pages/Boglanish/index';
 import { fallbackLng, languages } from './constants';
 import i18next from 'i18next';
 import Section4Home from './pages/Footer';
+import Tenddetails from './pages/Boshqarma/TenderlarTanlovlar/tendDetails';
 
 function App() {
 
@@ -94,6 +95,7 @@ function App() {
             <Route path='elektronHukumat' element={<ElektronJamiyat />} />
             <Route path='boshIsh' element={<BoshIshOrnlari />} />
             <Route path='tenderlarTanlov' element={<TenderlarTanlovlar />} />
+            <Route path="tenderlarTanlov/:id" element={<Tenddetails />} />
             <Route path='tadbirlar' element={<Tadbirlar />} />
           </Route>
 
