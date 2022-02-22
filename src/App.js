@@ -62,6 +62,7 @@ import TadDetails from './pages/Boshqarma/Tadbirlar/tadDetails';
 import Newdetails from './pages/Yangiliklar/Yangiliklar/newDetails';
 import ElonDetails from './pages/Yangiliklar/Elonlar/elonDetails';
 import FotoDetails from './pages/Mediagalereya/Fotogalereya/fotoDetails';
+import VideoDetails from './pages/Mediagalereya/VideoMaterial/videoDetails';
 
 function App() {
 
@@ -117,6 +118,7 @@ function App() {
           <Route path='Fotogalereya' element={<Fotogalereya />} />
           <Route path='Fotogalereya/:id' element={<FotoDetails />} />
           <Route path='VideoMaterial' element={<VideoMaterial />} />
+          <Route path='VideoMaterial/:id' element={<VideoDetails />} />
 
           <Route path='datas' element={<Datas />}>
             <Route index element={<SuvXojaligiFidoiylari />} />

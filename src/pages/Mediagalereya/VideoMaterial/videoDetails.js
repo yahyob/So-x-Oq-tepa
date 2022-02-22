@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './style.css'
+import { Link, useParams } from 'react-router-dom';
 
 const tend = [
     {
@@ -44,10 +43,12 @@ const tend = [
     },
 ]
 
-const VideoMaterial = () => {
+const VideoDetails = () => {
+    const { id } = useParams();
+
     return (
         <section className='text-section'>
-            <div className='container-fluid'>
+            <div className='container-fluid pl-5 pr-5'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
@@ -58,22 +59,14 @@ const VideoMaterial = () => {
                 </div>
                 <div className='row'>
                     {
-                        tend.map((item) => (
-                            <div key={item.id} className='col-md-4 mb-4'>
-                                <div class="card">
+                        tend.filter(item => item.id == id).map(card => (
+                            card.detail.map(item => (
+                                <div className='col-md-6 mb-4'>
                                     <iframe width="100%" height="315"
-                                        src={item.detail[0]}>
+                                        src={item}>
                                     </iframe>
-                                    <div class="card-body">
-                                        <div className='d-flex justify-content-between'>
-                                            <Link to={`${item.id}`} className="card-title"><h5>{item.title}</h5></Link>
-                                            <p class="card-text"><small class="text-muted">{item.start}</small></p>
-                                        </div>
-                                        <h5>{item.person}</h5>
-                                        {/* <p class="card-text">{item.body.slice(0, 190)}....</p> */}
-                                    </div>
                                 </div>
-                            </div>
+                            ))
                         ))
                     }
                 </div>
@@ -82,5 +75,4 @@ const VideoMaterial = () => {
     );
 }
 
-export default VideoMaterial;
-
+export default VideoDetails;

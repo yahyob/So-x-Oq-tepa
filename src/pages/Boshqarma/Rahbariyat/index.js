@@ -216,13 +216,13 @@ const Rahbariyat = () => {
                                                 <TabPanelUnstyled className='rah-text' value={1}>
                                                     <h5>Biografiya</h5>
                                                     <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium in turpis imperdiet ut tortor et consectetur a pellentesque. Ut fermentum ultricies amet volutpat dignissim dignissim semper dignissim. Quis hendrerit tempus velit interdum tincidunt nulla nec. Viverra pretium convallis massa gravida tellus malesuada. Ut ac nunc
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium in turpis imperdiet ut tortor et consectetur a pellentesque. Ut fermentum ultricies amet volutpat dignissim dignissim semper dignissim. Quis hendrerit tempus velit interdum tincidunt nulla nec. Viverra pretium convallis massa gravida tellus malesuada. Ut ac nunc
                                                     </p>
                                                 </TabPanelUnstyled>
                                                 <TabPanelUnstyled className='rah-text' value={2}>
-                                                <h5>Nizom</h5>
+                                                    <h5>Nizom</h5>
                                                     <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium in turpis imperdiet ut tortor et consectetur a pellentesque. Ut fermentum ultricies amet volutpat dignissim dignissim semper dignissim. Quis hendrerit tempus velit interdum tincidunt nulla nec. Viverra pretium convallis massa gravida tellus malesuada. Ut ac nunc
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium in turpis imperdiet ut tortor et consectetur a pellentesque. Ut fermentum ultricies amet volutpat dignissim dignissim semper dignissim. Quis hendrerit tempus velit interdum tincidunt nulla nec. Viverra pretium convallis massa gravida tellus malesuada. Ut ac nunc
                                                     </p>
                                                 </TabPanelUnstyled>
                                             </TabsUnstyled>

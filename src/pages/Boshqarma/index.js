@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const Sidebar = () => {
   return (
     <div className='d-flex w-100'>
-      <div style={{ display: 'flex', height: '130vh', overflow: 'scroll initial', zIndex: "21" }}>
+      <div style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21" }}>
         <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
           <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
             <a className="text-decoration-none" style={{ color: 'inherit' }}>
