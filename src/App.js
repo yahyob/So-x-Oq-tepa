@@ -58,6 +58,10 @@ import { fallbackLng, languages } from './constants';
 import i18next from 'i18next';
 import Section4Home from './pages/Footer';
 import Tenddetails from './pages/Boshqarma/TenderlarTanlovlar/tendDetails';
+import TadDetails from './pages/Boshqarma/Tadbirlar/tadDetails';
+import Newdetails from './pages/Yangiliklar/Yangiliklar/newDetails';
+import ElonDetails from './pages/Yangiliklar/Elonlar/elonDetails';
+import FotoDetails from './pages/Mediagalereya/Fotogalereya/fotoDetails';
 
 function App() {
 
@@ -75,7 +79,7 @@ function App() {
   }, [i18next]);
 
   return (
-    <div className="App">
+    <div className="App container-fluid p-0">
       <Banner />
       <BrowserRouter>
         <NavbarMain />
@@ -97,17 +101,21 @@ function App() {
             <Route path='tenderlarTanlov' element={<TenderlarTanlovlar />} />
             <Route path="tenderlarTanlov/:id" element={<Tenddetails />} />
             <Route path='tadbirlar' element={<Tadbirlar />} />
+            <Route path='tadbirlar/:id' element={<TadDetails />} />
           </Route>
 
           <Route path='News' element={<News />}>
             <Route index element={<Yangiliklar />} />
+            <Route path=':id' element={<Newdetails />} />
             <Route path='AxborotXizmati' element={<AxborotXizmati />} />
             <Route path='Elonlar' element={<Elonlar />} />
+            <Route path='Elonlar/:id' element={<ElonDetails />} />
             <Route path='PresRelizlar' element={<PresRelizlar />} />
             <Route path='OAVVakillar' element={<OAVVakillar />} />
           </Route>
 
           <Route path='Fotogalereya' element={<Fotogalereya />} />
+          <Route path='Fotogalereya/:id' element={<FotoDetails />} />
           <Route path='VideoMaterial' element={<VideoMaterial />} />
 
           <Route path='datas' element={<Datas />}>

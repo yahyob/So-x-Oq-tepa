@@ -48,7 +48,7 @@ const TenderTanlovlar = () => {
                                             <div className="card-body">
                                                 <Link to={`${item.id}`} className="card-title"><h5>{item.title}</h5></Link>
                                                 <p className="card-text">
-                                                    {item.body.slice(0, 300)}
+                                                    {item.body.slice(0, 300)}...
                                                 </p>
                                             </div>
                                         </div>

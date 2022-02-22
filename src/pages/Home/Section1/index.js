@@ -15,7 +15,7 @@ const HomeSection1 = () => {
                 </div>
                 <div className='row'>
                     <div className='col-md-7 mb-3 mb-md-0'>
-                        <iframe className='iframe-video-about' width="100%" height='100%' src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"></iframe>
+                        <iframe className='iframe-video-about' width="100%" height='100%' src="https://www.youtube.com/embed/FDEcIGWQoFs?playlist=FDEcIGWQoFs&loop=1"></iframe>
                     </div>
                     <div className='col-md-5'>
                         <Card style={{ width: '100%' }}>

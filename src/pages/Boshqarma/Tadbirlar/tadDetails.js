@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './style.css'
+import { Link, useParams } from 'react-router-dom';
 
 const tend = [
     {
@@ -29,33 +28,38 @@ const tend = [
     },
 ]
 
-const Tadbirlar = () => {
+const TadDetails = () => {
+    const { id } = useParams();
+    console.log(id);
+
+    // const topic = tend.find((item) => item.id === id);
+
     return (
         <section className='text-section'>
-            <div className='container-fluid'>
+            <div className='container-fluid pl-5 pr-5'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Tadbirlar</h3>
+                            <h3>Tendir va tanlovlar</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>
                 </div>
                 <div className='row'>
                     {
-                        tend.map((item) => (
-                            <div key={item.id} className='col-12 mb-3'>
+                        tend.filter(item => item.id == id).map(card => (
+                            <div key={card.id} className='col-12 mb-3'>
                                 <div className="card mb-3 p-3 tad-card">
                                     <div className="row g-0">
-                                        <div className="col-md-4">
-                                            <img src={item.img} className="img-fluid rounded-start" alt="image"/>
+                                        <div className="col-12">
+                                            <img src={card.img} className="img-fluid rounded-start" alt="image" />
                                         </div>
-                                        <div className="col-md-8 p-3">
+                                        <div className="col-12">
                                             <div className="card-body">
-                                                <Link to={`${item.id}`} className="card-title"><h5>{item.title}</h5></Link>
-                                                <p className="card-text">Tashkilotchi: {item.person}</p>
-                                                <p className="card-text">Boshlanish sanasi: {item.start}</p>
-                                                <p className="card-text">Tugash sanasi: {item.end}</p>
+                                                <Link to={`${card.id}`} className="card-title"><h5>{card.title}</h5></Link>
+                                                <p className="card-text">Tashkilotchi: {card.person}</p>
+                                                <p className="card-text">Boshlanish sanasi: {card.start}</p>
+                                                <p className="card-text">Tugash sanasi: {card.end}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -69,4 +73,4 @@ const Tadbirlar = () => {
     );
 }
 
-export default Tadbirlar;
+export default TadDetails;
