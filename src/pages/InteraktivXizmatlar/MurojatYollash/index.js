@@ -8,7 +8,7 @@ const MurojatYollash = () => {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name w-100'>
-                            <h3>Jismoniy va yuridik shaxslar murojati </h3>
+                            <h3>Murojat yo’llash</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>
@@ -56,16 +56,12 @@ const MurojatYollash = () => {
                                     <option>Yuridik select</option>
                                 </Form.Select>
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Qisqacha murojat matni :</Form.Label>
-                                <Form.Control type="text" placeholder="Qisqacha murojat matn kiriting..." />
-                            </Form.Group>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Qisqacha murojat matni :</Form.Label>
                                 <Form.Control placeholder='Qisqacha murojat matni kiriting....' as="textarea" rows={3} />
                             </Form.Group>
                             <Button variant="primary" type="submit">
-                                Submit
+                                Jo'natish
                             </Button>
                         </Form>
                     </div>
