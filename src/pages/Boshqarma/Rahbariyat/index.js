@@ -10,7 +10,7 @@ import TabUnstyled from '@mui/base/TabUnstyled';
 
 const Rahbariyat = () => {
 
-    const { t } = useTranslation()
+    const { t } = useTranslation();
 
     return (
         <div>
