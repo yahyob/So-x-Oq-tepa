@@ -64,14 +64,14 @@ const BoshIshOrinlari = () => {
                         <h5 className='mt-3 mb-3 ish-orin '>BIZDAGI BO’SH ISH O’RINLARI</h5>
                     </div>
                 </div>
-                <div className='row pl-3 pr-3 mt-4'>
+                <div className='row bosh-ish pl-3 pr-3 mt-4'>
                     <div className='col'>
                         <Accordion>
                             {
                                 accor.map(item => (
                                     <Accordion.Item eventKey={item.id}>
                                         <Accordion.Header className='d-flex justify-content-center w-100'>
-                                            <h5 className='p-0 m-0'>{item.name}</h5> <span className='text-secondary p-0 mt-1 ml-5'> Shartlari</span>
+                                            <h5 className='p-0 m-0'>{item.name}</h5> <span className='text-secondary p-0 mt-1 ml-auto'> Shartlari</span>
                                         </Accordion.Header>
                                         <Accordion.Body>
                                             <ListGroup variant="flush">

@@ -1,6 +1,6 @@
 import React from 'react';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 const qonunlar = [
@@ -125,28 +125,27 @@ const qonunlar = [
         ]
     },
 ]
+export default function DasturlarDetails() {
 
+    const { id } = useParams()
 
-const Qonunlar = () => {
     return (
         <section className='text-section'>
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Qonunlar</h3>
+                            <h3>Dasturlar</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>
                 </div>
                 <div className='row pl-5 pr-5'>
                     {
-                        qonunlar.map(item => (
-                            <div key={item.id} className='col-12 mb-4 p-2'>
-                                <Link className='text-dark text-decoration-none' to={`${item.id}`}>
-                                    <h6>{item.title}</h6>
-                                </Link>
-                                <div className='qonun-date d-flex justify-content-between align-items-center'>
+                        qonunlar.filter(qonun => qonun.id == id).map(item => (
+                            <div className='col-12 mb-4 p-2'>
+                                <h5>{item.title}</h5>
+                                <div className='qonun-date d-flex justify-content-between align-items-center mb-5'>
                                     <div>
                                         <span className='p-1 bg-secondary text-white'>Ro’yxatdan o’tish sanasi: {item.date}</span>
                                         <span className='p-1 bg-secondary text-white ml-3'>Raqami {item.number}</span>
@@ -160,6 +159,16 @@ const Qonunlar = () => {
                                         </a>
                                     </div>
                                 </div>
+                                <div>
+                                    {
+                                        item.body.map(bodyy => (
+                                            <div className='mb-3'>
+                                                <h5 className='text-primary'>{bodyy.title}</h5>
+                                                <p>{bodyy.body}</p>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
                             </div>
                         ))
                     }
@@ -167,7 +176,5 @@ const Qonunlar = () => {
 
             </div>
         </section>
-    );
+    )
 }
-
-export default Qonunlar;

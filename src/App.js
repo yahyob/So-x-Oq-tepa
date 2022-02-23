@@ -40,11 +40,16 @@ import RasmiyWebSahifa from './pages/Malumotlar/RasmiyWebSahifa';
 
 import Hujjatlar from './pages/Hujjatlar';
 import Qonunlar from './pages/Hujjatlar/Qonunlar';
+import QonunDetails from './pages/Hujjatlar/Qonunlar/qonunDetails';
 import Qarorlar from './pages/Hujjatlar/Qarorlar';
+import QarorlarDetails from './pages/Hujjatlar/Qarorlar/qarorlarDetails';
 import Farmonlar from './pages/Hujjatlar/Farmonlar';
+import FarmonlarDetails from './pages/Hujjatlar/Farmonlar/FarmonDetails'
 import NormativHujjatlar from './pages/Hujjatlar/NormativHujjatlar';
+import NormativeDetails from './pages/Hujjatlar/NormativHujjatlar/normativeDetails';
 import Dasturlar from './pages/Hujjatlar/Dasturlar';
 import Loyihalar from './pages/Hujjatlar/Loyihalar';
+import LoyihalarDetails from './pages/Hujjatlar/Loyihalar/LoyihalarDetails';
 
 import Interaktive from './pages/InteraktivXizmatlar'
 import JismoniyVaYuridikShaxslarMurojati from './pages/InteraktivXizmatlar/JismoniyVaYuridikShaxslarMurojati';
@@ -63,6 +68,7 @@ import Newdetails from './pages/Yangiliklar/Yangiliklar/newDetails';
 import ElonDetails from './pages/Yangiliklar/Elonlar/elonDetails';
 import FotoDetails from './pages/Mediagalereya/Fotogalereya/fotoDetails';
 import VideoDetails from './pages/Mediagalereya/VideoMaterial/videoDetails';
+import DasturlarDetails from './pages/Hujjatlar/Dasturlar/farmonlarDetails';
 
 function App() {
 
@@ -132,11 +138,17 @@ function App() {
 
           <Route path='Hujjatlar' element={<Hujjatlar />}>
             <Route index element={<Qonunlar />} />
+            <Route path=':id' element={<QonunDetails />} />
             <Route path='Qarorlar' element={<Qarorlar />} />
+            <Route path='Qarorlar/:id' element={<QarorlarDetails />} />
             <Route path='Farmonlar' element={<Farmonlar />} />
+            <Route path='Farmonlar/:id' element={<FarmonlarDetails />} />
             <Route path='NormativHujjatlar' element={<NormativHujjatlar />} />
+            <Route path='NormativHujjatlar/:id' element={<NormativeDetails />} />
             <Route path='Dasturlar' element={<Dasturlar />} />
+            <Route path='Dasturlar/:id' element={<DasturlarDetails />} />
             <Route path='Loyihalar' element={<Loyihalar />} />
+            <Route path='Loyihalar/:id' element={<LoyihalarDetails />} />
           </Route>
 
           <Route path='Interaktive' element={<Interaktive />}>

@@ -37,10 +37,10 @@ const Sidebar = () => {
             </CDBSidebarMenu>
           </CDBSidebarContent>
         </CDBSidebar>
+      </div>
         <div>
           <Outlet />
         </div>
-      </div>
     </div>
   );
 };
