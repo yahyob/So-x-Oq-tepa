@@ -5,7 +5,7 @@ import './style.css';
 
 const Carousels = () => {
     return (
-        <div className='container-fluid p-0'>
+        <div className='w-100'>
             <Carousel>
                 <Carousel.Item>
                     <img height='100%'

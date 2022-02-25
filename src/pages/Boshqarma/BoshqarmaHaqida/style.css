@@ -17,3 +17,7 @@
     padding: 0 0 0 50px;
     box-sizing: border-box;
 }
+
+.text-section p{
+    font-weight: 500;
+}

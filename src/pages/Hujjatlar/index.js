@@ -11,7 +11,8 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className='d-flex w-100'>
+    <div >
+      <div className='container-fluid d-flex w-100 p-0'>
       <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex:"21" }}>
         <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
           <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
@@ -45,6 +46,7 @@ const Sidebar = () => {
         <div>
           <Outlet />
         </div>
+      </div>
       </div>
     </div>
   );

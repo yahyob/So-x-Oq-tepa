@@ -59,8 +59,6 @@ import IshTartibi from './pages/InteraktivXizmatlar/IshTartibi';
 
 import FoydaliMaslahatlar from './pages/FoydaliMaslahatlar/index';
 import Boglanish from './pages/Boglanish/index';
-import { fallbackLng, languages } from './constants';
-import i18next from 'i18next';
 import Section4Home from './pages/Footer';
 import Tenddetails from './pages/Boshqarma/TenderlarTanlovlar/tendDetails';
 import TadDetails from './pages/Boshqarma/Tadbirlar/tadDetails';
@@ -69,6 +67,10 @@ import ElonDetails from './pages/Yangiliklar/Elonlar/elonDetails';
 import FotoDetails from './pages/Mediagalereya/Fotogalereya/fotoDetails';
 import VideoDetails from './pages/Mediagalereya/VideoMaterial/videoDetails';
 import DasturlarDetails from './pages/Hujjatlar/Dasturlar/farmonlarDetails';
+import { fallbackLng, languages } from './constants';
+import i18next from 'i18next';
+import SuvXojalikBoshqarmasi from './pages/Boglanish/SuvXojalikBoshqarmasi';
+import MurojatYollashBoglanish from './pages/Boglanish/MurojatYollash';
 
 function App() {
 
@@ -86,7 +88,7 @@ function App() {
   }, [i18next]);
 
   return (
-    <div className="App container-fluid p-0">
+    <div className="App p-0">
       <Banner />
       <BrowserRouter>
         <NavbarMain />
@@ -159,7 +161,10 @@ function App() {
           </Route>
 
           <Route path='FoydaliMaslahatlar' element={<FoydaliMaslahatlar />} />
-          <Route path='Boglanish' element={<Boglanish />} />
+          <Route path='Boglanish' element={<Boglanish />} >
+            <Route index element={<SuvXojalikBoshqarmasi />} />
+            <Route path='murojat' element={<MurojatYollashBoglanish />} />
+          </Route>
         </Routes>
         <Section4Home />
       </BrowserRouter>

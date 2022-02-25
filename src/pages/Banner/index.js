@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
-import { changeLang, setLang } from '../../helpers';
+import { changeLang, setLang, getLang } from '../../helpers';
 import {useT} from '../../custom/hooks/useT';
 
 
@@ -27,6 +27,7 @@ const language = [
 const handleChangeLng = (code) => {
   changeLang(code)
   setLang(code)
+  window.location.reload();
 }
 
 
@@ -59,8 +60,8 @@ const {t, lang} = useT()
         </div>
 
         <div className="dropdown language"  style={{zIndex: "999898989898898"}}>
-          <button className="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            {t('changelang')}
+          <button className="btn btn-outline-primary dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            {getLang()}
           </button>
           <ul id='langu' className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             {

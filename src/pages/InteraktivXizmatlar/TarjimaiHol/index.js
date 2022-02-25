@@ -3,23 +3,23 @@ import { Button, Form } from 'react-bootstrap';
 
 const TarjimaiyHol = () => {
 
-    const [autobi, setAutobi] = useState({
-        fish: "",
-        email: "",
-        phoneNumber: "",
-        descr: ""
-    })
+    // const [autobi, setAutobi] = useState({
+    //     fish: "",
+    //     email: "",
+    //     phoneNumber: "",
+    //     descr: ""
+    // })
 
-    const { fish, email, phoneNumber, descr } = autobi;
+    // const { fish, email, phoneNumber, descr } = autobi;
 
-    changeHandler = e => {
-        setAutobi({ [e.target.name]: e.target.value })
-    }
+    // changeHandler = e => {
+    //     setAutobi({ [e.target.name]: e.target.value })
+    // }
 
-    submitHandler = e => {
-        e.preventDefault();
-        console.log(autobi);
-    }
+    // submitHandler = e => {
+    //     e.preventDefault();
+    //     console.log(autobi);
+    // }
 
     return (
         <section className='text-section'>
@@ -39,43 +39,43 @@ const TarjimaiyHol = () => {
                 </div>
                 <div className='row pl-5 pr-5 pb-5 '>
                     <div className='col-12'>
-                        <Form onSubmit={submitHandler}>
+                        <Form>
 
                             <Form.Group className="mb-3 w-100" controlId="formBasicEmail">
                                 <Form.Label>F.I.SH. :</Form.Label>
-                                <Form.Control onChange={changeHandler}
+                                <Form.Control
                                     type="text"
-                                    value={fish}
+                                    // value={fish}
                                     placeholder="To’liq isimsharfingizni kiriting ..." />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>El. pochta :</Form.Label>
-                                <Form.Control onChange={changeHandler}
+                                <Form.Control
                                     type="text"
-                                    value={email}
+                                    // value={email}
                                     placeholder="Elektron pochta manzilingizni kiriting ..." />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Tel. raqam :</Form.Label>
-                                <Form.Control onChange={changeHandler}
+                                <Form.Control
                                     type="text"
-                                    value={phoneNumber}
+                                    // value={phoneNumber}
                                     placeholder="Telefon raqamingizni kiriting ..." />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Qisqacha murojat matni :</Form.Label>
-                                <Form.Control onChange={changeHandler}
-                                    value={descr}
+                                <Form.Control
+                                    // value={descr}
                                     placeholder='Qisqacha murojat matni kiriting....'
                                     as="textarea" rows={3} />
                             </Form.Group>
 
                             <Form.Group className="mb-3 w-50" controlId="formBasicPassword">
                                 <Form.Label>Fayl biriktirish :</Form.Label>
-                                <Form.Control onChange={changeHandler} type="file" />
+                                <Form.Control type="file" />
                             </Form.Group>
 
                             <Button variant="primary" type="submit">

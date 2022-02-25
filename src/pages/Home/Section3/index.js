@@ -7,17 +7,17 @@ import './style.css';
 
 const Section3Home = () => {
     return (
-        <section className=' statistikaHomeSection container-fluid'>
-                <div className='row main-title text-center bgsta'>
-                    <div className='col'>
-                        <h1 className='mb-4 mt-4 text-white'>Statistika</h1>
-                    </div>
+        <section className=' statistikaHomeSection w-100'>
+            <div className='row main-title text-center bgsta'>
+                <div className='col'>
+                    <h1 className='mb-4 mt-4 text-white'>Statistika</h1>
                 </div>
+            </div>
             <div className="container">
                 <div className='row sta pt-4 pb-4'>
                     <div className='col-sm-6 col-md-4 col-lg-3 mb-4'>
                         <div className='sta-item text-center'>
-                            <BrowserUpdatedIcon  sx={{fontSize: "60px", marginBottom: "20px"}}/>
+                            <BrowserUpdatedIcon sx={{ fontSize: "60px", marginBottom: "20px" }} />
                             <div className='sta-number-text'>
                                 <h3>100</h3>
                                 <p>Quis aliquet in a enim ipsum non sodales.</p>
@@ -26,7 +26,7 @@ const Section3Home = () => {
                     </div>
                     <div className='col-sm-6 col-md-4 col-lg-3 mb-4'>
                         <div className='sta-item text-center'>
-                            <GroupIcon sx={{fontSize: "60px", marginBottom: "20px"}}/>
+                            <GroupIcon sx={{ fontSize: "60px", marginBottom: "20px" }} />
                             <div className='sta-number-text'>
                                 <h3>100</h3>
                                 <p>Quis aliquet in a enim ipsum non sodales.</p>
@@ -35,7 +35,7 @@ const Section3Home = () => {
                     </div>
                     <div className='col-sm-6 col-md-4 col-lg-3 mb-4'>
                         <div className='sta-item text-center'>
-                            <ComputerIcon sx={{fontSize: "60px", marginBottom: "20px"}}/>
+                            <ComputerIcon sx={{ fontSize: "60px", marginBottom: "20px" }} />
                             <div className='sta-number-text'>
                                 <h3>100</h3>
                                 <p>Quis aliquet in a enim ipsum non sodales.</p>
@@ -44,7 +44,7 @@ const Section3Home = () => {
                     </div>
                     <div className='col-sm-6 col-md-4 col-lg-3 mb-4'>
                         <div className='sta-item text-center'>
-                            <BusinessCenterIcon sx={{fontSize: "60px", marginBottom: "20px"}}/>
+                            <BusinessCenterIcon sx={{ fontSize: "60px", marginBottom: "20px" }} />
                             <div className='sta-number-text'>
                                 <h3>100</h3>
                                 <p>Quis aliquet in a enim ipsum non sodales.</p>
