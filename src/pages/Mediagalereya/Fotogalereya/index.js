@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import baseApi from '../../../api/baseApi';
+import { PHOTO_URL } from '../../../api/Urls';
+import { useT } from '../../../custom/hooks/useT';
 import './style.css'
 
 const tend = [
@@ -45,6 +48,24 @@ const tend = [
 ]
 
 const Fotogalereya = () => {
+
+    const [photos, setphotos] = useState([]);
+    const [isLoading, setisLoading] = useState(true);
+    const { t, lang } = useT();
+
+    const getPhotos = useCallback(
+        async () => {
+            baseApi.fetchAll(PHOTO_URL)
+            .then(response => {
+                setphotos(response.data);
+                setisLoading(false)
+            })
+        }, []);
+
+    useEffect(() => {
+        getPhotos();
+    }, [])
+
     return (
         <section className='text-section'>
             <div className='container-fluid'>
@@ -58,17 +79,15 @@ const Fotogalereya = () => {
                 </div>
                     <div className='row'>
                         {
-                            tend.map((item) => (
-                                <div key={item.id} className='col-md-4 mb-4'>
-                                    <div class="card">
-                                        <img src={item.detail[0]} class="card-img-top" alt="..." />
-                                        <div class="card-body">
+                            isLoading ? <h5>Loading...</h5> : photos.map((item) => (
+                                <div key={item.created_at} className='col-md-4 mb-4'>
+                                    <div className="card">
+                                        <img src={item.detail[0].image} className="card-img-top" alt="image" />
+                                        <div className="card-body">
                                             <div className='d-flex justify-content-between'>
-                                            <Link to={`${item.id}`} className="card-title"><h5>{item.title}</h5></Link>
-                                                <p class="card-text"><small class="text-muted">{item.start}</small></p>
+                                            <Link to={`${item.created_at}`} className="card-title"><h5>{item.title}</h5></Link>
+                                                <p className="card-text"><small className="text-muted">{item.created_at}</small></p>
                                             </div>
-                                            <h5>{item.person}</h5>
-                                            {/* <p class="card-text">{item.body.slice(0, 190)}....</p> */}
                                         </div>
                                     </div>
                                 </div>

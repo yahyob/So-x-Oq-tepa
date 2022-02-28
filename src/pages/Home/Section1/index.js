@@ -2,15 +2,19 @@ import React from 'react';
 import './style.css';
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useT } from '../../../custom/hooks/useT'
 
 const HomeSection1 = () => {
+
+    const { t, lang } = useT();
+
     return (
         <section className='about-section ptb w-100'>
             <div className='container'>
                 <div className='row main-title text-center'>
                     <div className='col'>
-                        <h1>Xush kelibsiz</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quisque imperdiet etiam id vitae faucibus. Amet sed  dolor.</p>
+                        <h1>{t(`welcome.${lang}`)}</h1>
+                        <p>{t(`welcomeP.${lang}`)}</p>
                     </div>
                 </div>
                 <div className='row'>
@@ -21,11 +25,11 @@ const HomeSection1 = () => {
                         <Card style={{ width: '100%' }}>
                             <Card.Img variant="top" src='/img/1.png' />
                             <Card.Body>
-                                <Card.Title>Biz haqimizda</Card.Title>
+                                <Card.Title>{t(`AboutUs.${lang}`)}</Card.Title>
                                 <Card.Text>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consectetur pretium lectus ut. Dapibus enim tempus, fusce aliquet morbi quis. Arcu, ut tempor mauris morbi facilisis ultrices hendrerit ipsum arcu. Sed curabitur nunc proin euismod risus. Molestie vestibulum pharetra consectetur nunc. Lacus habitant accumsan sed vitae aliquam suspendisse a a ante.
+                                {t(`AboutUsDesc.${lang}`)}
                                 </Card.Text>
-                                <Link to="boshqarma"><Button variant="primary">Batafsil</Button></Link>
+                                <Link to="boshqarma"><Button variant="primary">{t(`ReadMore.${lang}`)}</Button></Link>
                             </Card.Body>
                         </Card>
                     </div>

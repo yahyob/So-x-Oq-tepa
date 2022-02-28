@@ -40,13 +40,13 @@ const {t, lang} = useT()
       <div className="container-fluid d-flex justify-content-between align-items-center">
         <div className='logo d-flex align-items-center'>
           <img src='/logo.png' alt='logo' />
-          <font className='logo-title w-50'>SO’X-OQTEPA IRRIGATSIYA TIZIMI BOSHQARMASI</font>
+          <font className='logo-title w-50'>{t(`tName.${lang}`)}</font>
         </div>
 
         <div className='phone d-flex align-items-center d-none d-lg-flex'>
           <PhoneIcon className='icon' sx={{ fontSize: 33 }} />
           <div className="m-2">
-            <span>A'loqa markazi</span>
+            <span>{t(`contactCenter.${lang}`)}</span>
             <h6>+998 90 000 00 00</h6>
           </div>
         </div>
@@ -54,8 +54,8 @@ const {t, lang} = useT()
         <div className='address d-flex align-items-center d-none d-lg-flex'>
           <HomeIcon className='icon' sx={{ fontSize: 33 }} />
           <div className="m-2">
-            <span>Manzil</span>
-            <h6 className='' style={{ fontSize: "14px", maxWidth: "150px" }}>Farg'ona viloyati Qo'qon shaxri 35-uy</h6>
+            <span>{t(`address.${lang}`)}</span>
+            <h6 className='' style={{ fontSize: "14px", maxWidth: "150px" }}>{t(`tAddress.${lang}`)}</h6>
           </div>
         </div>
 

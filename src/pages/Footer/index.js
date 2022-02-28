@@ -5,14 +5,18 @@ import EmailIcon from '@mui/icons-material/Email';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import RoomIcon from '@mui/icons-material/Room';
 import './style.css';
+import {useT} from '../../custom/hooks/useT';
 
 const Footer = () => {
+
+    const { t, lang } = useT();
+
     return (
         <footer className='main-footer'>
             <div className="container ptb">
                 <div className='row justify-content-between'>
                     <div className='col-lg-3 col-md-6'>
-                        <h4 className='footer-title'>Sayt xaritasi</h4>
+                        <h4 className='footer-title'>{t(`footerSmap.${lang}`)}</h4>
                         <ul>
                             <li>
                                 <Link to="boshqarma">Boshqarma haqida</Link>

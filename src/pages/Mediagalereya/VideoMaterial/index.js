@@ -1,50 +1,30 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import baseApi from '../../../api/baseApi';
+import { VIDEO_URL } from '../../../api/Urls';
+import { useT } from '../../../custom/hooks/useT';
 import './style.css'
 
-const tend = [
-    {
-        id: 1,
-        detail: [
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-        ],
-        title: "Lorem ipsum dolor sit amet 1",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-    {
-        id: 2,
-        detail: [
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-        ],
-        title: "Lorem ipsum dolor sit amet 2",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-    {
-        id: 3,
-        detail: [
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-        ],
-        title: "Lorem ipsum dolor sit amet 3",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-]
 
 const VideoMaterial = () => {
+
+    const [videos, setVideos] = useState([]);
+    const [isLoading, setisLoading] = useState(true);
+    const { t, lang }  = useT();
+
+    const getVideos = useCallback(
+        async () => {
+            baseApi.fetchAll(VIDEO_URL)
+            .then(response => {
+                setVideos(response.data);
+                setisLoading(false);
+            })
+        }, [])
+
+    useEffect(() => {
+        getVideos();
+    })
+
     return (
         <section className='text-section'>
             <div className='container-fluid'>
@@ -58,19 +38,17 @@ const VideoMaterial = () => {
                 </div>
                 <div className='row'>
                     {
-                        tend.map((item) => (
-                            <div key={item.id} className='col-md-4 mb-4'>
+                        isLoading ? <h5>Loading...</h5> : videos.map((item) => (
+                            <div key={item.created_at} className='col-md-4 mb-4'>
                                 <div class="card">
                                     <iframe width="100%" height="315"
-                                        src={item.detail[0]}>
+                                        src={`https://www.youtube.com/embed/${item.detail[0].video.substr(32)}`}>
                                     </iframe>
                                     <div class="card-body">
                                         <div className='d-flex justify-content-between'>
-                                            <Link to={`${item.id}`} className="card-title"><h5>{item.title}</h5></Link>
-                                            <p class="card-text"><small class="text-muted">{item.start}</small></p>
+                                            <Link to={`${item.created_at}`} className="card-title"><h5>{item.title}</h5></Link>
+                                            <p class="card-text"><small class="text-muted">{item.created_at}</small></p>
                                         </div>
-                                        <h5>{item.person}</h5>
-                                        {/* <p class="card-text">{item.body.slice(0, 190)}....</p> */}
                                     </div>
                                 </div>
                             </div>

@@ -10,13 +10,15 @@ import baseApi from '../../../api/baseApi';
 
 const Rahbariyat = () => {
 
-    const [employee, setEmployee] = useState([])
+    const [employee, setEmployee] = useState([]);
+    const [isLoading, setisLoading] = useState(true);
 
     const getEmployees = useCallback(
         async () => {
             baseApi.fetchAll(EMPLOYE_URL)
                 .then(response => {
                     setEmployee(response.data)
+                    setisLoading(false);
                 })
         }, []);
 
@@ -41,6 +43,7 @@ const Rahbariyat = () => {
                     <div className='row pl-3 pr-3'>
                         <div className='col rah-card'>
                             {
+                                isLoading ? <h5>Loading.....</h5> : 
                                 employee.map(item => (
                                     <Card key={item.fio} style={{ width: '100%', marginTop: "20px" }}>
                                         <Row className='no-gutters'>

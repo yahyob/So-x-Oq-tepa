@@ -1,50 +1,27 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-
-const tend = [
-    {
-        id: 1,
-        detail: [
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-        ],
-        title: "Lorem ipsum dolor sit amet 1",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-    {
-        id: 2,
-        detail: [
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-        ],
-        title: "Lorem ipsum dolor sit amet 2",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-    {
-        id: 3,
-        detail: [
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-            "https://www.youtube.com/embed/FDEcIGWQoFs",
-        ],
-        title: "Lorem ipsum dolor sit amet 3",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-]
+import baseApi from '../../../api/baseApi';
+import { VIDEO_URL } from '../../../api/Urls';
+import { useT } from '../../../custom/hooks/useT';
 
 const VideoDetails = () => {
     const { id } = useParams();
+    const [ videos, setVideos ] = useState([]);
+    const [isLoading, setisLoading] = useState(true);
+    const { t, lang } = useT();
+
+    const getVideos = useCallback(
+        async () => {
+            baseApi.fetchAll(VIDEO_URL)
+            .then(response => {
+                setVideos(response.data);
+                setisLoading(false);
+            })
+        }, []);
+
+    useEffect(() => {
+        getVideos();
+    })
 
     return (
         <section className='text-section'>
@@ -59,11 +36,11 @@ const VideoDetails = () => {
                 </div>
                 <div className='row'>
                     {
-                        tend.filter(item => item.id == id).map(card => (
+                        isLoading ? <h5>Loading...</h5> : videos.filter(item => item.created_at == id).map(card => (
                             card.detail.map(item => (
                                 <div className='col-md-6 mb-4'>
                                     <iframe width="100%" height="315"
-                                        src={item}>
+                                        src={`https://www.youtube.com/embed/${item.video.substr(32)}`}>
                                     </iframe>
                                 </div>
                             ))

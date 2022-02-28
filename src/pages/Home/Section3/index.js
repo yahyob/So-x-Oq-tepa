@@ -4,13 +4,17 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ComputerIcon from '@mui/icons-material/Computer';
 import GroupIcon from '@mui/icons-material/Group';
 import './style.css';
+import {useT} from '../../../custom/hooks/useT';
 
 const Section3Home = () => {
+
+    const { t, lang } = useT();
+
     return (
         <section className=' statistikaHomeSection w-100'>
             <div className='row main-title text-center bgsta'>
                 <div className='col'>
-                    <h1 className='mb-4 mt-4 text-white'>Statistika</h1>
+                    <h1 className='mb-4 mt-4 text-white'>{t(`Statistics.${lang}`)}</h1>
                 </div>
             </div>
             <div className="container">
@@ -51,6 +55,7 @@ const Section3Home = () => {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>

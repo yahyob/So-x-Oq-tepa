@@ -1,6 +1,141 @@
 {
-    "changelang": "Uz",
+    "changelang": {
+        "uz": "Uz",
+        "ru": "Ru",
+        "en": "En"
+    },
 
+    "tName": {
+        "uz": "SO’X-OQTEPA IRRIGATSIYA TIZIMI BOSHQARMASI",
+        "ru": "СОХ-ОКТЕПИНСКОЕ УПРАВЛЕНИЕ ИРРИГАЦИОННЫХ СИСТЕМ",
+        "en": "SOX-OKTEPA IRRIGATION SYSTEM DEPARTMENT"
+    },
+
+    "contactCenter": {
+        "uz": "A'loqa markazi",
+        "ru": "Контактный центр",
+        "en": "Contact Center"
+    },
+
+    "address": {
+        "uz": "Manzil",
+        "ru": "Адрес",
+        "en": "Address"
+    },
+
+    "tAddress": {
+        "uz": "Farg'ona viloyati Qo'qon shaxri 35-uy",
+        "ru": "Ферганская область, г. Коканд, 35",
+        "en": "35, Kokand city, Fergana region"
+    },
+
+    "Boshqarma": {
+        "uz": "Boshqarma",
+        "ru": "Управление",
+        "en": "Management"
+    },
+
+    "Yangiliklar": {
+        "uz": "Yangiliklar",
+        "ru": "Новости",
+        "en": "News"
+    },
+
+    "Mediagalereya": {
+        "uz": "Mediagalereya",
+        "ru": "Медиа-галерея",
+        "en": "Media gallery"
+    },
+
+    "Fotogalereya": {
+        "uz": "Fotogalereya",
+        "ru": "Фотогалерея",
+        "en": "Photo gallery"
+    },
+
+    "VideoMaterial": {
+        "uz": "Video material",
+        "ru": "Видео материал",
+        "en": "Video material"
+    },
+
+    "Malumotlar": {
+        "uz": "Ma'lumotlar",
+        "ru": "Информация",
+        "en": "Information"
+    },
+
+    "Hujjatlar": {
+        "uz": "Hujjatlar",
+        "ru": "Документы",
+        "en": "Documents"
+    },
+
+    "Interaktiv": {
+        "uz": "Interaktiv",
+        "ru": "Интерактивный",
+        "en": "Interactive"
+    },
+
+    "Boglanish": {
+        "uz": "Bog'lanish",
+        "ru": "Связь",
+        "en": "Contact"
+    },
+    
+    "welcome": {
+        "uz": "Xush kelibsiz",
+        "ru": "Добро пожаловать",
+        "en": "Welcome"
+    },
+    
+    "welcomeP": {
+        "uz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quisque imperdiet etiam id vitae faucibus. Amet sed  dolor.",
+        "ru": "Добро пожаловать",
+        "en": "Welcome"
+    },
+
+    "AboutUs": {
+        "uz": "Biz haqimizda",
+        "ru": "O нас",
+        "en": "About Us"
+    },
+
+    "AboutUsDesc": {
+        "uz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consectetur pretium lectus ut. Dapibus enim tempus, fusce aliquet morbi quis. Arcu, ut tempor mauris morbi facilisis ultrices hendrerit ipsum arcu. Sed curabitur nunc proin euismod risus. Molestie vestibulum pharetra consectetur nunc. Lacus habitant accumsan sed vitae aliquam suspendisse a a ante.",
+        "ru": "O нас descr",
+        "en": "About Us descr"
+    },
+
+    "ReadMore": {
+        "uz": "Batafsil",
+        "ru": "Подробнее",
+        "en": "Read More"
+    },
+
+    "LatestNews": {
+        "uz": "So'ngi Yangiliklar",
+        "ru": "Последние новости",
+        "en": "Latest News"
+    },
+
+    "AllNews": {
+        "uz": "BARCHA YANGILIKLAR",
+        "ru": "ВСЕ НОВОСТИ",
+        "en": "All News"
+    },
+
+    "Statistics": {
+        "uz": "Statistika",
+        "ru": "Статистика",
+        "en": "Statistics"
+    },
+
+    "footerSmap": {
+        "uz": "Sayt xaritasi",
+        "ru": "Карта сайта",
+        "en": "Site map"
+    },
 
     "bNizomTitle1": {
         "uz": "Boshqarma nizomi",
@@ -65,7 +200,7 @@
 
     "rahbariyat": {
         "uz": "Rahbariyat",
-        "en": "En",
+        "en": "Leadership",
         "ru": "Ru"
     }
 }
