@@ -1,25 +1,34 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useState, useCallback, useEffect } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import baseApi from '../../../api/baseApi';
+import { AUTOBI_URL } from '../../../api/Urls';
 
 const TarjimaiyHol = () => {
 
-    // const [autobi, setAutobi] = useState({
-    //     fish: "",
-    //     email: "",
-    //     phoneNumber: "",
-    //     descr: ""
-    // })
+    const [fio, setFio] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone_number, setPhone_number] = useState('');
+    const [comment, setComment] = useState('');
+    const [file, setFile] = useState();
+ 
+    var formData = new FormData();
+    formData.append("fio", fio);
+    formData.append("email", email);
+    formData.append("phone_number", phone_number);
+    formData.append("comment", comment);
+    formData.append("file", file);
+    
+    const submitHandler = () => {
+        axios
+            .post("http://94.228.124.9/api/autobiography/", formData)
+            .then((res) => {
+                alert("File Upload success");
+            })
+            .catch((err) => alert("File Upload Error"));
+    };
 
-    // const { fish, email, phoneNumber, descr } = autobi;
 
-    // changeHandler = e => {
-    //     setAutobi({ [e.target.name]: e.target.value })
-    // }
-
-    // submitHandler = e => {
-    //     e.preventDefault();
-    //     console.log(autobi);
-    // }
 
     return (
         <section className='text-section'>
@@ -45,7 +54,8 @@ const TarjimaiyHol = () => {
                                 <Form.Label>F.I.SH. :</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    // value={fish}
+                                    value={fio}
+                                    onChange={(e) => setFio(e.target.value)}
                                     placeholder="To’liq isimsharfingizni kiriting ..." />
                             </Form.Group>
 
@@ -53,7 +63,8 @@ const TarjimaiyHol = () => {
                                 <Form.Label>El. pochta :</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    // value={email}
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                     placeholder="Elektron pochta manzilingizni kiriting ..." />
                             </Form.Group>
 
@@ -61,24 +72,29 @@ const TarjimaiyHol = () => {
                                 <Form.Label>Tel. raqam :</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    // value={phoneNumber}
+                                    value={phone_number}
+                                    onChange={(e) => setPhone_number(e.target.value)}
                                     placeholder="Telefon raqamingizni kiriting ..." />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Qisqacha murojat matni :</Form.Label>
                                 <Form.Control
-                                    // value={descr}
+                                    value={comment}
+                                    onChange={(e) => setComment(e.target.value)}
                                     placeholder='Qisqacha murojat matni kiriting....'
                                     as="textarea" rows={3} />
                             </Form.Group>
 
                             <Form.Group className="mb-3 w-50" controlId="formBasicPassword">
                                 <Form.Label>Fayl biriktirish :</Form.Label>
-                                <Form.Control type="file" />
+                                <Form.Control
+                                    onChange={(e) => setFile(e.target.files[0])}
+                                    type="file"
+                                />
                             </Form.Group>
 
-                            <Button variant="primary" type="submit">
+                            <Button onClick={() => submitHandler()} variant="primary" type="button">
                                 Jo'natish
                             </Button>
                         </Form>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SuvXojalikBoshqarmasi = () => {
     return (
-        <section className='text-section'>
+        <section className='text-section container-fluid' style={{width: "100%"}}>
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-12'>

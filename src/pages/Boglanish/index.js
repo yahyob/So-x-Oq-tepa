@@ -26,7 +26,7 @@ const Sidebar = () => {
                                     <CDBSidebarMenuItem icon="columns">Suv ho’jaligi boshqarmasining aloqa ma’lumotlari </CDBSidebarMenuItem>
                                 </Link>
                                 <NavLink to="/Boglanish/murojat">
-                                    <CDBSidebarMenuItem icon="user">Murojat matni</CDBSidebarMenuItem>
+                                    <CDBSidebarMenuItem icon="user">Fikr mulohazalar qismi</CDBSidebarMenuItem>
                                 </NavLink>
                             </CDBSidebarMenu>
                         </CDBSidebarContent>

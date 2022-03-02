@@ -139,8 +139,8 @@
 
     "bNizomTitle1": {
         "uz": "Boshqarma nizomi",
-        "ru": "Ru",
-        "en": "En"
+        "ru": "Совет директоров",
+        "en": "Board of Directors"
     },
     "bNizomTitle2": {
         "uz": "Umumiy qoidalar.",
@@ -161,36 +161,34 @@
 
     "bHaqidaTitle1": {
         "uz": "Boshqarma haqida",
-        "ru": "Ru",
-        "en": "En"
+        "ru": "О Совете",
+        "en": "About the Board"
     },
     "bHaqidaTitle2": {
         "uz": "Сирдарё-Сўх ирригация тизимлари ҳавза бошқармаси ҳузуридаги Сўх-Оқтепа ирригация тизими бошқармаси тўғрисида",
-        "ru": "Ru",
-        "en": "En"
+        "ru": "О Сох-Октепинском управлении ирригационных систем Сырдарьинско-Сохского бассейнового управления ирригационных систем",
+        "en": "About Sokh-Oktepa Irrigation System Department under Syrdarya-Sokh Irrigation System Basin Department"
     },
     "bHaqidaTitle3": {
         "uz": "М А Ъ Л У М О Т",
-        "ru": "Ru",
-        "en": "En"
+        "ru": "ИНФОРМАЦИЯ",
+        "en": "INFORMATION"
     },
     "bHaqida": {
         "uz": "Сўх-Оқтепа ирригация тизими бошқармаси Ўзбекистон Республикаси Президентининг 2018 йил 29 ноябдаги “Ўзбекистон Республикаси Сув хўжалиги вазирлиги фаолиятини такомиллаштириш бўйича қўшимча  чора-тадбирлари тўғрисида” ги ПФ-4039 сонли қарори хамда Ўзбекистон Республикаси сув хўжалиги Вазирлигининг 2018 йил 7 декабрдаги “Магистрал каналлар (тизими) ва ирригация тизими бошқармалари фаолиятини ташкил этиш тўғрисида” ги 177-сонли буйруғига асосан ташкил этилган. \n  Маъмурий биноси Қўқон шахар И.Бухорий кўчаси 5 уйда жойлашган. Сўх-Оқтепа ирригация тизими бошқармаси Ўзбекистон, Олтиариқ, Учкўприк,  Данғара,  Риштон, Боғдод,  Бувайда туманлари ирригация бўлимларига сув етказиб беради, Сўх дарёси ва унинг атрофида хосил бўлган, сел ва тошқин сувларни беталофат ўтказиб юбориш бўйича чора-тадбирлар белгилайди хамда уни амалга оширади. \n  Сўх-Оқтепа ирригация тизими бошқармаси ихтиёрида 153,7 км  ирригация тармоқлари мавжуд бўлиб, шундан магистрал каналлар 62 км, хўжаликлараро каналлар 91,7 км, жумладан, бетон қопламали 66,46  км, тупроқ ўзанли 87,24 км ни ташкил этади. Шунингдек 447 дона сув иншоотлари ҳамда 132 дона сув ўлчаш иншоотлари мавжуд бўлиб, улар жами 41 700 га қишлок хўжалиги экин майдонларини сув билан таъминлайди.  Ушбу иншоотларни сув мавсумига тайёрлаш мақсадида, каналларни тозалаш ва иншоотларни таъмирлаш ишларини бажариш учун  2021 йил давомида  1100 м3 бетон, 35000 м3 механик тозалаш ишлари амалга оширилди. 40 дона сув иншоотлари, 45 дона сув ўлчаш иншоотлари таъмирланди. Ҳавза бошқармаси тасарруфидаги 1 дона бульдозер, 2 дона эксковатор ва 3 дона автосамасваллар ёрдамида жорий таъмирлаш хамда каналларда механик тозалаш ишлари бажарилиб, ишчи холатга келтириб борилмоқда. \n  Бошқарманинг асосий вазифалари: \n  - Сўх дарёси, шунингдек қўшимча сув манбаларидан хосил бўлган сув ресурслари учун сув режа ишлаб чиқиш  ва мавжуд сув ресурсларидан мақсадли ва оқилона фойдаланиш. \n  - Сув иншоотларини ишончлилигини таъминлаш. \n  - Туман ирригация бўлимларини тизимли равишда белгиланган  лимит асосида сув билан таъминлаш ва уларни хисоб китобини юритиш.",
         "ru": "Privet",
-        "en": "Hello"
+        "en": "Sokh-Oktepa Irrigation System Department Resolution of the President of the Republic of Uzbekistan No. PF-4039 of November 29, 2018 \"On additional measures to improve the activities of the Ministry of Water Resources of the Republic of Uzbekistan\" and the Decree of the Ministry of Water Resources of the Republic of Uzbekistan dated December 7, 2018 and on the organization of the activities of irrigation system departments ”No. 177. \n  The administrative building is located at 5 I.Bukhari Street, Kokand. Sokh-Oktepa Irrigation Department supplies water to irrigation departments of Uzbekistan, Altiyarik, Uchkuprik, Dangara, Rishtan, Baghdad, Buvayda districts . \n  The Sokh-Oktepa Irrigation Department has 153.7 km of irrigation networks, of which 62 km are main canals, 91.7 km are inter-farm canals, including 66.46 km with concrete pavements and 87.24 km with soil channels. There are also 447 waterworks and 132 water metering facilities, which supply water to a total of 41,700 hectares of agricultural land. In order to prepare these facilities for the water season, 1,100 m3 of concrete and 35,000 m3 of mechanical treatment works were carried out in 2021 to clean the canals and repair the facilities. 40 water facilities and 45 water metering facilities were repaired. With the help of 1 bulldozer, 2 excavators and 3 dump trucks at the disposal of the Basin Department, the current repair and mechanical cleaning of the canals is being carried out and put into operation. \n  The main tasks of the Board: \n  - Development of a water plan for the Sokh River, as well as water resources generated from additional water sources, and the targeted and rational use of available water resources. \n  - Ensuring the reliability of water facilities. \n  - Water supply of district irrigation departments on the basis of a systemically established limit and keep their records."
     },
     "bHaqidaTitleBottom": {
         "uz": "Сўҳ-Оқтепа ирригация тизими бошқармаси бошлиғи",
-        "ru": "Ru",
-        "en": "En"
+        "ru": "Начальник Сох-Октепинского отдела ирригационных систем",
+        "en": "Head of Soh-Oktepa Irrigation System Department"
     },
-
-
 
     "bTuzilmaTitle1": {
         "uz": "Boshqarma tuzilmasi",
-        "ru": "Ru",
-        "en": "En"
+        "ru": "Структура управления",
+        "en": "Management structure"
     },
     "bTuzilmaTitle2": {
         "uz": "СЎХ-ОҚТЕПА ИРРИГАЦИЯ ТИЗИМИ БОШҚАРМАСИНИНГ СТРУКТУРАСИ",
@@ -198,9 +196,121 @@
         "en": "En"
     },
 
+    "load": {
+        "uz": "Yuklanmoqda",
+        "en": "Loading",
+        "ru": "Загрузка"
+    },
+
     "rahbariyat": {
         "uz": "Rahbariyat",
         "en": "Leadership",
-        "ru": "Ru"
+        "ru": "Управление"
+    },
+    "lav": {
+        "uz": "Lavozimi",
+        "en": "Position",
+        "ru": "Позиция"
+    },
+    "handPhone": {
+        "uz": "Qo’l tel",
+        "en": "Mobile phone",
+        "ru": "Мобильный телефон"
+    },
+    "homePhone": {
+        "uz": "Qo’l tel",
+        "en": "Home phone",
+        "ru": "домашний телефон"
+    },
+    "email": {
+        "uz": "Elektron pochta",
+        "en": "Email",
+        "ru": "Эл. адрес"
+    },
+    "accceptDate": {
+        "uz": "Qabul kuni",
+        "en": "Reception day",
+        "ru": "Приемный день"
+    },
+    "bio": {
+        "uz": "Biografiya",
+        "en": "Biography",
+        "ru": "Биография"
+    },
+    "tasks": {
+        "uz": "Vazifalar taqsimoti",
+        "en": "Distribution of tasks",
+        "ru": "Распределение задач"
+    },
+
+    "Mapparat": {
+        "uz": "Markaziy aparat",
+        "en": "Central office",
+        "ru": "Центральный офис"
+    },
+
+    
+    "Hayat": {
+        "uz": "Hayat",
+        "en": "Team",
+        "ru": "Команда"
+    },
+
+    
+    "SuvBolimlari": {
+        "uz": "Suv bo’limlari",
+        "en": "Water departments",
+        "ru": "Водные ведомства"
+    },
+    
+    
+    "Byudjetto’g’risidagiqonunchilik": {
+        "uz": "Byudjet to’g’risidagi qonunchilik",
+        "en": "Budget legislation",
+        "ru": "Бюджетное законодательство"
+    },
+    
+    
+    "Ochiqma'lumotlar": {
+        "uz": "Ochiq ma'lumotlar",
+        "en": "Open data",
+        "ru": "Открытые данные"
+    },
+    
+    
+    "Elektronhukumat": {
+        "uz": "Ochiq ma'lumotlar",
+        "en": "E-government",
+        "ru": "Электронное правительство"
+    },
+    
+    
+    "ishOrni": {
+        "uz": "Bo’sh ish o’rinlari",
+        "en": "Vacancies",
+        "ru": "Свободные места"
+    },
+    "terms": {
+        "uz": "Shartlari",
+        "en": "Terms",
+        "ru": "Условия"
+    },
+    "ishOrniTitle": {
+        "uz": "BIZDAGI BO’SH ISH O’RINLARI",
+        "en": "WE HAVE VACANCIES",
+        "ru": "У НАС ЕСТЬ ВАКАНСИИ"
+    },
+    
+    "tendrTanlov": {
+        "uz": "Tenderlar va tanlovlar",
+        "en": "Tenders and competitions",
+        "ru": "Тендеры и конкурсы"
+    },
+    
+    
+    "tadbir": {
+        "uz": "Tadbirlar",
+        "en": "Events",
+        "ru": "События"
     }
 }

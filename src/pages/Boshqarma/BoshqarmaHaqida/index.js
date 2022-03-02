@@ -28,15 +28,13 @@ const BoshqarmaHaqida = () => {
                 </div>
                 <div className='row pl-3 pr-3'>
                     <div className='col'>
-                        <p>
                            {
                                letter.map(item => (
-                                   <div style={{textIndent: "30px", marginBottom: "20px"}}>
+                                   <div key={item} style={{textIndent: "30px", marginBottom: "20px"}}>
                                     {item}<br/>
                                    </div>
                                ))
                            }
-                        </p>
                         <div className='d-flex justify-content-between fw-bold mt-5 mb-5'>
                             <span>{t(`bHaqidaTitleBottom.${lang}`)}</span>
                             <span>И.Хошимов</span>

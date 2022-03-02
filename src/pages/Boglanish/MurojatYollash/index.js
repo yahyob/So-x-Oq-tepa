@@ -16,18 +16,31 @@ const MurojatYollashBoglanish = () => {
                 <div className='row pl-5 pr-5 pb-5 '>
                     <div className='col-12'>
                         <Form>
+
                             <Form.Group className="mb-3 w-100" controlId="formBasicEmail">
                                 <Form.Label>F.I.SH. :</Form.Label>
-                                <Form.Control type="text" placeholder="To’liq isimsharfingizni kiriting ..." />
+                                <Form.Control 
+                                    type="text" 
+                                    placeholder="To’liq isimsharfingizni kiriting ..." 
+                                />
                             </Form.Group>
+
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>El. pochta :</Form.Label>
-                                <Form.Control type="text" placeholder="Elektron pochta manzilingizni kiriting ..." />
+                                <Form.Control 
+                                    type="text" 
+                                    placeholder="Elektron pochta manzilingizni kiriting ..." 
+                                />
                             </Form.Group>
+
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Qisqacha murojat matni :</Form.Label>
-                                <Form.Control placeholder='Qisqacha murojat matni kiriting....' as="textarea" rows={3} />
+                                <Form.Control 
+                                    placeholder='Qisqacha murojat matni kiriting....' 
+                                    as="textarea" rows={3} 
+                                />
                             </Form.Group>
+
                             <Button variant="primary" type="submit">
                                 Jo'natish
                             </Button>
