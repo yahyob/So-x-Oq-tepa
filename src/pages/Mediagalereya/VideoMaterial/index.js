@@ -47,7 +47,7 @@ const VideoMaterial = () => {
                                     <div class="card-body">
                                         <div className='d-flex justify-content-between'>
                                             <Link to={`${item.created_at}`} className="card-title"><h5>{item.title}</h5></Link>
-                                            <p class="card-text"><small class="text-muted">{item.created_at}</small></p>
+                                            <p class="card-text"><small class="text-muted">{item.created_at.slice(0, 10)}</small></p>
                                         </div>
                                     </div>
                                 </div>

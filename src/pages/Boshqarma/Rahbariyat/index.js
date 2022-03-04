@@ -28,8 +28,6 @@ const Rahbariyat = () => {
         getEmployees();
     }, []);
 
-    console.log("emplo", employee);
-
     return (
         <div>
             <section className='text-section rah-section'>
@@ -42,7 +40,7 @@ const Rahbariyat = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='row pl-3 pr-3'>
+                    <div className='row pl-3 pr-3 pb-5'>
                         <div className='col rah-card'>
                             {
                                 isLoading ? <h5>{t(`load.${lang}`)}.....</h5> : 
