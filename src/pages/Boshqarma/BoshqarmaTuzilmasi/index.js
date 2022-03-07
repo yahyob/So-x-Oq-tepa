@@ -23,7 +23,7 @@ const BoshqarmaTuzilmasi = () => {
                     </div>
                 </div>
                 <div className='row pl-3 pr-3'>
-                    <div className='col mb-5'>
+                    <div className='col mb-5 pr-5 pl-5 mr-5 ml-5'>
                         <img src='/img/struktura.png' width="100%" alt='struktura image' />
                     </div>
                 </div>
