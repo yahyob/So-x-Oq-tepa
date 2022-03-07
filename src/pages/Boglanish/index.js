@@ -8,8 +8,10 @@ import {
 } from 'cdbreact';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import './style.css';
+import { useT } from '../../custom/hooks/useT';
 
 const Sidebar = () => {
+    const { t, lang } = useT()
     return (
         <div>
             <div className='container-fluid d-flex w-100 p-0 contact'>
@@ -17,16 +19,16 @@ const Sidebar = () => {
                     <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
                         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
                             <a className="text-decoration-none" style={{ color: 'inherit' }}>
-                                Bog'lanish
+                                {t(`Boglanish.${lang}`)}
                             </a>
                         </CDBSidebarHeader>
                         <CDBSidebarContent className="sidebar-content">
                             <CDBSidebarMenu>
                                 <Link to="/Boglanish">
-                                    <CDBSidebarMenuItem icon="columns">Suv ho’jaligi boshqarmasining aloqa ma’lumotlari </CDBSidebarMenuItem>
+                                    <CDBSidebarMenuItem icon="columns">{t(`AloqaXizmati.${lang}`)}</CDBSidebarMenuItem>
                                 </Link>
                                 <NavLink to="/Boglanish/murojat">
-                                    <CDBSidebarMenuItem icon="user">Fikr mulohazalar qismi</CDBSidebarMenuItem>
+                                    <CDBSidebarMenuItem icon="user">{t(`fikrMulohaza.${lang}`)}</CDBSidebarMenuItem>
                                 </NavLink>
                             </CDBSidebarMenu>
                         </CDBSidebarContent>

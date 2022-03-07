@@ -1,8 +1,10 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useT } from '../../../custom/hooks/useT';
 
 const MurojatYollash = () => {
+    const { t, lang } = useT()
 
     const [fio, setFio] = useState('');
     const [birthday, setBirthday] = useState('');
@@ -48,102 +50,102 @@ const MurojatYollash = () => {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name w-100'>
-                            <h3>Murojat yo’llash</h3>
+                            <h3>{t(`murojat.${lang}`)}</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>
                 </div>
                 <div className='row pl-5'>
                     <div className='col-12'>
-                        <h5 className='mt-3 mb-3'>Veb-sayt orqali murojaat shakli</h5>
+                        <h5 className='mt-3 mb-3'>{t(`murojatWeb.${lang}`)}</h5>
                     </div>
                 </div>
                 <div className='row pl-5 pr-5 pb-5 '>
                     <div className='col-12'>
                         <Form>
                             <Form.Group className="mb-3 w-100" controlId="formBasicEmail">
-                                <Form.Label>F.I.SH. :</Form.Label>
+                                <Form.Label>{t(`fio.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={fio}
                                     onChange={e => setFio(e.target.value)}
                                     type="text"
-                                    placeholder="To’liq ism-sharfingizni kiriting ..." />
+                                    placeholder={t(`fioI.${lang}`)} />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Tug’ilgan sanangiz :</Form.Label>
+                                <Form.Label>{t(`HDate.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={birthday}
                                     onChange={e => setBirthday(e.target.value)}
                                     type="date"
-                                    placeholder="Tug’ilgan sanangizni kiriting ..." />
+                                    placeholder={t(`HDateI.${lang}`)} />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Pasport ma’lumotingiz :</Form.Label>
+                                <Form.Label>{t(`Passport.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={passport}
                                     onChange={e => setPassport(e.target.value)}
                                     type="text"
-                                    placeholder="Pasport ma’lumotingizni kiriting ..." />
+                                    placeholder={t(`PassportI.${lang}`)}/>
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Manzilingiz :</Form.Label>
+                                <Form.Label>{t(`address.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={address}
                                     onChange={e => setAddress(e.target.value)}
                                     type="text"
-                                    placeholder="Pochta manzilingizni kiriting ..." />
+                                    placeholder={t(`AddressI.${lang}`)} />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Pochta indeksi :</Form.Label>
+                                <Form.Label>{t(`ZIPCode.${lang}`)}  :</Form.Label>
                                 <Form.Control
                                     value={postal_code}
                                     onChange={e => setPostal_code(e.target.value)}
                                     type="text"
-                                    placeholder="Pasport indeksini kiriting ..." />
+                                    placeholder={t(`ZIPCodeI.${lang}`)} />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>El. pochta :</Form.Label>
+                                <Form.Label>{t(`Email.${lang}`)}:</Form.Label>
                                 <Form.Control
                                     value={email}
                                     onChange={e => setEmail(e.target.value)}
                                     type="text"
-                                    placeholder="Elektron pochta manzilingizni kiriting ..." />
+                                    placeholder={t(`EmailI.${lang}`)} />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Tel. raqam :</Form.Label>
+                                <Form.Label>{t(`PhoneNumber.${lang}`)}:</Form.Label>
                                 <Form.Control
                                     value={phone_number}
                                     onChange={e => setPhone_number(e.target.value)}
                                     type="text"
-                                    placeholder="Telefon raqamingizni kiriting ..." />
+                                    placeholder={t(`PhoneNumberI.${lang}`)} />
                             </Form.Group>
 
                             <Form.Group className="mb-3">
-                                <Form.Label>Subyekt turi :</Form.Label>
+                                <Form.Label>{t(`Subyekt.${lang}`)} :</Form.Label>
                                 <Form.Select
                                     value={entity}
                                     onChange={e => setEntity(e.target.value)}
                                 >
-                                    <option value='legal'>Jismoniy shaxs</option>
-                                    <option value='physical' selected>Yuridik shaxs</option>
+                                    <option value='legal'>{t(`jismoniyShaxs.${lang}`)}</option>
+                                    <option value='physical' selected>{t(`yuridikShaxs.${lang}`)}</option>
                                 </Form.Select>
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Qisqacha murojat matni :</Form.Label>
+                                <Form.Label>{t(`qisqaMurojaat.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={content}
-                                    onChange={e => setContent(e.target.value)} placeholder='Qisqacha murojat matni kiriting....' as="textarea" rows={3} />
+                                    onChange={e => setContent(e.target.value)} placeholder='Qisqacha murojat matni kiriting...' as="textarea" rows={3} />
                             </Form.Group>
 
                             <Button onClick={() => SubmitHandler()} variant="primary" type="button">
-                                Jo'natish
+                                {t(`send.${lang}`)}
                             </Button>
                         </Form>
                     </div>

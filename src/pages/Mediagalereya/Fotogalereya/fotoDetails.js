@@ -71,7 +71,7 @@ const FotoDetails = () => {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Fotogalereya</h3>
+                            <h3>{t(`Fotogalereya.${lang}`)}</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>

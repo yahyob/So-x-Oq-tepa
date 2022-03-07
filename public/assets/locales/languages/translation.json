@@ -40,6 +40,21 @@
         "ru": "Новости",
         "en": "News"
     },
+    "AXizmati": {
+        "uz": "Axborot Xizmati",
+        "ru": "Информационная служба",
+        "en": "Information Service"
+    },
+    "Elonlar": {
+        "uz": "E'lonlar",
+        "ru": "Объявления",
+        "en": "Announcements"
+    },
+    "pres": {
+        "uz": "Pres Relizlar",
+        "ru": "Пресс-релизы",
+        "en": "Press releases"
+    },
 
     "Mediagalereya": {
         "uz": "Mediagalereya",
@@ -64,6 +79,51 @@
         "ru": "Информация",
         "en": "Information"
     },
+    "Fidoiy": {
+        "uz": "Suv Xojaligi Fidoiylari",
+        "ru": "Волонтеры водного хозяйства",
+        "en": "Volunteers of Water Resources"
+    },
+    "maruza": {
+        "uz": "Rahbariyat Maruzalari",
+        "ru": "Лекции по лидерству",
+        "en": "Leadership Lectures"
+    },
+    "faol": {
+        "uz": "Suv Xo'jalik Faoliyati Tog'risida",
+        "ru": "О водохозяйственной деятельности",
+        "en": "On Water Management Activities"
+    },
+    "web": {
+        "uz": "Rasmiy Web Sahifa",
+        "ru": "Официальная веб-страница",
+        "en": "Official Web Page"
+    },
+    "sorovnoma": {
+        "uz": "Axborotdan Foydalanuvchilarning So'rovnomasi",
+        "ru": "Опрос пользователей информации",
+        "en": "Information User Survey"
+    },
+    "farmon": {
+        "uz": "Farmonlar",
+        "ru": "Указы",
+        "en": "Decrees"
+    },
+    "normative": {
+        "uz": "Normativ Hujjatlar",
+        "ru": "Нормативная документация",
+        "en": "Нормативная документация"
+    },
+    "dastur": {
+        "uz": "Dasturlar",
+        "ru": "Software",
+        "en": "Программное обеспечение"
+    },
+    "Loyihalar": {
+        "uz": "Loyihalar",
+        "ru": "Проекты",
+        "en": "Projects"
+    },
 
     "Hujjatlar": {
         "uz": "Hujjatlar",
@@ -76,11 +136,154 @@
         "ru": "Интерактивный",
         "en": "Interactive"
     },
+    "Jismoniy": {
+        "uz": "Jismoniy Va Yuridik Shaxslar Murojati",
+        "ru": "Обращение физических и юридических лиц",
+        "en": "Appeal of Individuals and Legal Entities"
+    },
+
+    "murojat": {
+        "uz": "Murojat Yo'llash",
+        "ru": "Применить направление",
+        "en": "Apply Referral"
+    },
+    "murojatWeb": {
+        "uz": "Web-sayt orqali murojaat shakli",
+        "ru": "Форма заявки через сайт",
+        "en": "Application form through the website"
+    },
+    "fio": {
+        "uz": "F.I.O",
+        "ru": "Ф.И.О",
+        "en": "Full Name"
+    },
+    "fioI": {
+        "uz": "To’liq ism-sharfingizni kiriting ...",
+        "ru": "Введите свое полное имя ...",
+        "en": "Enter your full name ..."
+    },
+    "HDate": {
+        "uz": "Tug’ilgan sanangiz",
+        "ru": "Твоя дата рождения",
+        "en": "Your date of birth"
+    },
+    "HDateI": {
+        "uz": "Tug’ilgan sanangizni kiriting ...",
+        "ru": "Введите вашу дату рождения ...",
+        "en": "Enter your date of birth ..."
+    },
+    "Passport": {
+        "uz": "Pasport ma’lumotingiz",
+        "ru": "Ваши паспортные данные",
+        "en": "Your passport information"
+    },
+    "PassportI": {
+        "uz": "Pasport ma'lumotingizni kiriting ...",
+        "ru": "Введите паспортные данные...",
+        "en": "Enter your passport information ..."
+    },
+    "AddressI": {
+        "uz": "Pochta manzilingizni kiriting ...",
+        "ru": "Введите свой почтовый адрес...",
+        "en": "Enter your mailing address ..."
+    },
+    "ZIPCode": {
+        "uz": "Pochta indekslari",
+        "ru": "почтовый индекс",
+        "en": "ZIP Code"
+    },
+    "ZIPCodeI": {
+        "uz": "Pochta indeksini kiriting ...",
+        "ru": "Введите почтовый индекс ...",
+        "en": "Enter zip code ..."
+    },
+    "Email": {
+        "uz": "Elektron pochta",
+        "ru": "Эл. адрес",
+        "en": "Email"
+    },
+    "EmailI": {
+        "uz": "Elektron pochta manzilingizni kiriting ...",
+        "ru": "Введите ваш адрес электронной почты ...",
+        "en": "Enter your email address ..."
+    },
+    "PhoneNumber": {
+        "uz": "Tel. raqam",
+        "ru": "Tелефонный номер",
+        "en": "Phone number"
+    },
+    "PhoneNumberI": {
+        "uz": "Telefon raqamingizni kiriting ...",
+        "ru": "Введите свой номер телефона ...",
+        "en": "Enter your phone number ..."
+    },
+    "Subyekt": {
+        "uz": "Subyekt turi",
+        "ru": "Тип темы",
+        "en": "Subject type"
+    },
+    "jismoniyShaxs": {
+        "uz": "Jismoniy shaxs",
+        "ru": "Индивидуальный",
+        "en": "Individual"
+    },
+    "yuridikShaxs": {
+        "uz": "Yuridik shaxs",
+        "ru": "Юридическое лицо",
+        "en": "Legal entity"
+    },
+    "qisqaMurojaat": {
+        "uz": "Qisqacha murojat matni",
+        "ru": "Краткий справочный текст",
+        "en": "Brief reference text"
+    },
+    "qisqaMurojaatI": {
+        "uz": "Qisqacha murojat matni kiriting...'",
+        "ru": "Введите краткий справочный текст...",
+        "en": "Enter a short reference text ..."
+    },
+    "send": {
+        "uz": "Jo'natish",
+        "ru": "Отправлять",
+        "en": "Send"
+    },
+
+    "tarjimaiy": {
+        "uz": "Tarjimayi Hol",
+        "ru": "Автобиография",
+        "en": "Autobiography"
+    },
+    "tarjimaiyTitle": {
+        "uz": "Bo`sh ish o`rinlariga tarjimayi hol jo`natish",
+        "ru": "Отправка резюме на вакансии",
+        "en": "Sending resumes to vacancies"
+    },
+    "fileBiriktir": {
+        "uz": "Fayl biriktirish",
+        "ru": "Прикрепить файл",
+        "en": "Attach a file"
+    },
+
+    "ishTartib": {
+        "uz": "Ish Tartibi",
+        "ru": "Рабочий график",
+        "en": "Work schedule"
+    },
 
     "Boglanish": {
         "uz": "Bog'lanish",
         "ru": "Связь",
         "en": "Contact"
+    },
+    "AloqaXizmati": {
+        "uz": "Suv xo’jaligi boshqarmasining a'loqa ma’lumotlari",
+        "ru": "Контактные данные Департамента водного хозяйства",
+        "en": "Contact details of the Department of Water Resources"
+    },
+    "fikrMulohaza": {
+        "uz": "Fikr mulohazalar qismi",
+        "ru": "часть обратной связи",
+        "en": "Part of the feedback"
     },
     
     "welcome": {
@@ -354,5 +557,15 @@
         "uz": "Qarorlar",
         "en": "Decisions",
         "ru": "Решения"
+    },  
+    "korrupsiya": {
+        "uz": "O‘ZBEKISTON RESPUBLIKASIDA KORRUPSIYaGA QARShI KURAShISh TIZIMINI TAKOMILLAShTIRISh BO‘YIChA QO‘ShIMChA ChORA-TADBIRLAR TO‘G‘RISIDA",
+        "en": "ON ADDITIONAL MEASURES TO IMPROVE THE ANTI-CORRUPTION SYSTEM IN THE REPUBLIC OF UZBEKISTAN",
+        "ru": "О ДОПОЛНИТЕЛЬНЫХ МЕРАХ ПО СОВЕРШЕНСТВОВАНИЮ АНТИКОРРУПЦИОННОЙ СИСТЕМЫ В РЕСПУБЛИКЕ УЗБЕКИСТАН"
+    },  
+    "korrupsiyaTitle": {
+        "uz": "Korrupsiyaga qarshi kurash",
+        "en": "Fight against corruption",
+        "ru": "Борьба с коррупцией"
     }
 }

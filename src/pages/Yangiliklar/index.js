@@ -7,8 +7,12 @@ import {
   CDBSidebarMenuItem,
 } from 'cdbreact';
 import { Link, NavLink, Outlet } from 'react-router-dom';
+import { useT } from '../../custom/hooks/useT';
 
 const Sidebar = () => {
+
+  const { t, lang } = useT();
+
   return (
     <div>
       <div className='container-fluid d-flex w-100 p-0'>
@@ -16,26 +20,26 @@ const Sidebar = () => {
         <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
           <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
             <a className="text-decoration-none" style={{ color: 'inherit' }}>
-              Yangiliklar
+              {t(`Yangiliklar.${lang}`)}
             </a>
           </CDBSidebarHeader>
           <CDBSidebarContent className="sidebar-content">
             <CDBSidebarMenu>
               <Link to="/News">
-                <CDBSidebarMenuItem icon="columns">Yangiliklar</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem icon="columns">{t(`Yangiliklar.${lang}`)}</CDBSidebarMenuItem>
               </Link>
               <NavLink to="/News/AxborotXizmati">
-                <CDBSidebarMenuItem icon="user">Axborot Xizmati</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem icon="user">{t(`AXizmati.${lang}`)}</CDBSidebarMenuItem>
               </NavLink>
               <NavLink to="/News/Elonlar">
-                <CDBSidebarMenuItem icon="table">E'lonlar</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem icon="table">{t(`Elonlar.${lang}`)}</CDBSidebarMenuItem>
               </NavLink>
-              <NavLink to="/News/PresRelizlar">
-                <CDBSidebarMenuItem icon="chart-line">Pres Relizlar</CDBSidebarMenuItem>
-              </NavLink>
-              <NavLink to="/News/OAVVakillar">
+              {/* <NavLink to="/News/PresRelizlar">
+                <CDBSidebarMenuItem icon="chart-line">{t(`pres.${lang}`)}</CDBSidebarMenuItem>
+              </NavLink> */}
+              {/* <NavLink to="/News/OAVVakillar">
                 <CDBSidebarMenuItem icon="table">OAV Vakillar</CDBSidebarMenuItem>
-              </NavLink>
+              </NavLink> */}
 
             </CDBSidebarMenu>
           </CDBSidebarContent>

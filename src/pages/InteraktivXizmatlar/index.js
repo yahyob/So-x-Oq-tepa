@@ -8,8 +8,12 @@ import {
   CDBSidebarMenuItem,
 } from 'cdbreact';
 import { Link, NavLink, Outlet } from 'react-router-dom';
+import { useT } from '../../custom/hooks/useT';
 
 const Sidebar = () => {
+
+  const { t, lang } = useT();
+
   return (
     <div className=' w-100'>
       <div className='container-fluid d-flex p-0'>
@@ -17,22 +21,22 @@ const Sidebar = () => {
           <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
             <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
               <a className="text-decoration-none" style={{ color: 'inherit' }}>
-                Interaktive
+                {t(`Interaktiv.${lang}`)}
               </a>
             </CDBSidebarHeader>
             <CDBSidebarContent className="sidebar-content">
               <CDBSidebarMenu>
                 <Link to="/Interaktive">
-                  <CDBSidebarMenuItem icon="columns">Jismoniy Va Yuridik Shaxslar Murojati</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem icon="columns">{t(`Jismoniy.${lang}`)}</CDBSidebarMenuItem>
                 </Link>
                 <NavLink to="/Interaktive/MurojatYollash">
-                  <CDBSidebarMenuItem icon="user">Murojat Yo'llash</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem icon="user">{t(`murojat.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Interaktive/TarjimaiHol">
-                  <CDBSidebarMenuItem icon="table">TarjimaiHol</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem icon="table">{t(`tarjimaiy.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Interaktive/IshTartibi">
-                  <CDBSidebarMenuItem icon="chart-line">IshTartibi</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem icon="chart-line">{t(`ishTartib.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
 
               </CDBSidebarMenu>
