@@ -19,7 +19,7 @@ const HomeSection1 = () => {
                 </div>
                 <div className='row'>
                     <div className='col-md-7 mb-3 mb-md-0'>
-                        <iframe className='iframe-video-about' width="100%" height='100%' src="https://www.youtube.com/embed/FDEcIGWQoFs?playlist=FDEcIGWQoFs&loop=1"></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/FDEcIGWQoFs?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div className='col-md-5'>
                         <Card style={{ width: '100%' }}>
@@ -27,7 +27,7 @@ const HomeSection1 = () => {
                             <Card.Body>
                                 <Card.Title>{t(`AboutUs.${lang}`)}</Card.Title>
                                 <Card.Text>
-                                {t(`AboutUsDesc.${lang}`)}
+                                    {t(`AboutUsDesc.${lang}`)}
                                 </Card.Text>
                                 <Link to="boshqarma"><Button variant="primary">{t(`ReadMore.${lang}`)}</Button></Link>
                             </Card.Body>

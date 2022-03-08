@@ -30,7 +30,7 @@ const Statistika = () => {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Statistika</h3>
+                            <h3>{t(`Statistics.${lang}`)}</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>
@@ -41,12 +41,12 @@ const Statistika = () => {
                         <div className="gallery-wrapper">
                             <div className="image-wrapper">
                                 <a href="#lightbox-image-1">
-                                    <img src={statistics.statistics} alt="" />
+                                    <img src={statistics.statistics} alt="image" />
                                 </a>
                             </div>
                             <div className="image-wrapper">
                                 <a href="#lightbox-image-2">
-                                    <img src={statistics.statistics2} alt="" />
+                                    <img src={statistics.statistics2} alt="image" />
                                 </a>
                             </div>
                             {/* <div className="image-wrapper">

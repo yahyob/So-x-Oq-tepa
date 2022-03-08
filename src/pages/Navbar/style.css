@@ -1,6 +1,6 @@
 .Navbar{
      background: #1976D2;
-     position: sticky;
+     /* position: sticky; */
      top: -2px;
      z-index: 99999999;
      width: 100%;
