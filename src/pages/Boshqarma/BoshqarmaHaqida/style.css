@@ -8,7 +8,11 @@
     padding: 20px 0;
     padding-top: 40px;
     color: #006D7C;
+}
 
+.text-section{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .text-title-line{
@@ -21,6 +25,14 @@
 
 .text-section p{
     font-weight: 500;
+}
+
+.text-section h5{
+    font-weight: bold;
+}
+
+.text-section h4{
+    font-weight: 600;
 }
 
 @media (max-width: 1070px) {

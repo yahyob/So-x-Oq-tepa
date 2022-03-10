@@ -19,7 +19,7 @@ const HomeSection1 = () => {
                 </div>
                 <div className='row'>
                     <div className='col-md-7 mb-3 mb-md-0'>
-                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/FDEcIGWQoFs?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/FDEcIGWQoFs?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className='col-md-5'>
                         <Card style={{ width: '100%' }}>

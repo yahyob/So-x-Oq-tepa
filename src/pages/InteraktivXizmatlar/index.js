@@ -9,6 +9,8 @@ import {
 } from 'cdbreact';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import { useT } from '../../custom/hooks/useT';
+import '../Boshqarma/style.css'
+// import { Link } from "react-scroll";
 
 const Sidebar = () => {
 
@@ -17,8 +19,8 @@ const Sidebar = () => {
   return (
     <div className=' w-100'>
       <div className='container-fluid d-flex p-0'>
-        <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21" }}>
-          <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
+        <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21", borderRight: "1px solid rgb(197, 191, 191) " }}>
+          <CDBSidebar textColor="#000000" backgroundColor="#fff">
             <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
               <a className="text-decoration-none" style={{ color: 'inherit' }}>
                 {t(`Interaktiv.${lang}`)}
@@ -35,7 +37,7 @@ const Sidebar = () => {
                 <NavLink to="/Interaktive/TarjimaiHol">
                   <CDBSidebarMenuItem icon="table">{t(`tarjimaiy.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
-                <NavLink to="/Interaktive/IshTartibi">
+                <NavLink to="/Interaktive/IshTartibi" spy={true} smooth={true} offset={50} duration={500}>
                   <CDBSidebarMenuItem icon="chart-line">{t(`ishTartib.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
 

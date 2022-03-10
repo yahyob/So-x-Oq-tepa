@@ -9,6 +9,7 @@ import HttpApi from 'i18next-http-backend';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
+import { BrowserRouter } from 'react-router-dom';
 
 
 i18n
@@ -38,10 +39,13 @@ const loading = (
   </div>
 )
 
+
 ReactDOM.render(
   <Suspense fallback={loading}>
     <React.StrictMode>
+    <BrowserRouter>
       <App />
+      </BrowserRouter>
     </React.StrictMode>
   </Suspense>,
   document.getElementById('root')

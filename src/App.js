@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Banner from './pages/Banner';
 import NavbarMain from './pages/Navbar';
 import Home from './pages/Home';
@@ -71,8 +71,21 @@ import { fallbackLng, languages } from './constants';
 import i18next from 'i18next';
 import SuvXojalikBoshqarmasi from './pages/Boglanish/SuvXojalikBoshqarmasi';
 import MurojatYollashBoglanish from './pages/Boglanish/MurojatYollash';
+import Normative from './pages/Boshqarma/YoshlargaOidYangiliklar/normative';
+import YoshlarYangiliklar from './pages/Boshqarma/YoshlargaOidYangiliklar/yoshlargaOidYangiliklar';
+import YoshlarDetails from './pages/Boshqarma/YoshlargaOidYangiliklar/yoshlarDetails';
 
 function App() {
+  
+  const {pathname} = useLocation();
+  // pathname o'zgarganda tepaga otish
+  useEffect(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+
+  },[pathname])
 
 
   useEffect(() => {
@@ -90,7 +103,6 @@ function App() {
   return (
     <div className="App p-0">
       <Banner />
-      <BrowserRouter>
         <NavbarMain />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -106,6 +118,9 @@ function App() {
             <Route path='byudjetQonun' element={<ByudjetQonun />} />
             <Route path='ochiqMalumotlar' element={<OchiqMalumot />} />
             <Route path='elektronHukumat' element={<ElektronJamiyat />} />
+            <Route path='normativ' element={<Normative />} />
+            <Route path='yoshYangilik' element={<YoshlarYangiliklar />} />
+            <Route path='yoshYangilik/:id' element={<YoshlarDetails />} />
             <Route path='boshIsh' element={<BoshIshOrnlari />} />
             <Route path='tenderlarTanlov' element={<TenderlarTanlovlar />} />
             <Route path="tenderlarTanlov/:id" element={<Tenddetails />} />
@@ -167,7 +182,6 @@ function App() {
           </Route>
         </Routes>
         <Section4Home />
-      </BrowserRouter>
     </div>
   );
 }

@@ -11,7 +11,7 @@ const BoshqarmaHaqida = () => {
 
     return (
         <section className='text-section'>
-            <div className='container-fluid pl-5 pr-5'>
+            <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>

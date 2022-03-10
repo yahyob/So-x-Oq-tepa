@@ -12,3 +12,4 @@ export const TENDER_URL = "/tender/";
 export const AUTOBI_URL = "/autobiography/";
 export const LECTURE_URL = "/lecture/";
 export const STATISTICS_URL = "/dynamic-static/";
+export const ADULTNEWS_URL = "/adult-news/";

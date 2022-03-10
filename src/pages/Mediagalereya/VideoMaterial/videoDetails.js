@@ -40,7 +40,7 @@ const VideoDetails = () => {
                             card.detail.map(item => (
                                 <div className='col-md-6 mb-4'>
                                     <iframe width="100%" height="315"
-                                        src={`https://www.youtube.com/embed/${item.video.substr(32)}`}>
+                                        src={`https://www.youtube.com/embed/${item.video.substr(32)}`} allowFullScreen>
                                     </iframe>
                                 </div>
                             ))

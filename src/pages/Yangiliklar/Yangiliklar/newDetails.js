@@ -32,10 +32,10 @@ const Newdetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row d-flex justify-content-center'>
                     {
                         isLoading ? <h5>Loading...</h5> : news.filter(item => item.created_at == id).map(card => (
-                            <div key={card.created_at} className='col-12 mb-3'>
+                            <div key={card.created_at} className='col-8 mb-3'>
                                 <div className="card mb-3">
                                     <img src={card.image} className="card-img-top" alt="image" />
                                     <div className="card-body">

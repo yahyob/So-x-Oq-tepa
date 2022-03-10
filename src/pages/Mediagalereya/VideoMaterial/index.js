@@ -42,7 +42,7 @@ const VideoMaterial = () => {
                             <div key={item.created_at} className='col-md-4 mb-4'>
                                 <div class="card">
                                     <iframe width="100%" height="315"
-                                        src={`https://www.youtube.com/embed/${item.detail[0].video.substr(32)}`}>
+                                        src={`https://www.youtube.com/embed/${item.detail[0].video.substr(32)}`} allowFullScreen>
                                     </iframe>
                                     <div class="card-body">
                                         <div className='d-flex justify-content-between'>

@@ -6,44 +6,6 @@ import { VACANCY_URL } from '../../../api/Urls';
 import { useT } from '../../../custom/hooks/useT';
 import './style.css'
 
-const accor = [
-    {
-        id: 1,
-        name: "Moliyachi",
-        malumoti: "Oliy",
-        staj: "3 yil",
-        umumData: " 1C va Exelni a’lo darajada bilishi, - Ish vaqti 9:00 da 6:00 gacha, - Ishga talabchan"
-    },
-    {
-        id: 2,
-        name: "Haydovchi",
-        malumoti: "Oliy",
-        staj: "3 yil",
-        umumData: " 1C va Exelni a’lo darajada bilishi, - Ish vaqti 9:00 da 6:00 gacha, - Ishga talabchan"
-    },
-    {
-        id: 3,
-        name: "Varius quis quisque facilisi sem.",
-        malumoti: "Oliy",
-        staj: "3 yil",
-        umumData: " 1C va Exelni a’lo darajada bilishi, - Ish vaqti 9:00 da 6:00 gacha, - Ishga talabchan"
-    },
-    {
-        id: 4,
-        name: "Mi nisl eget elementum.",
-        malumoti: "Oliy",
-        staj: "3 yil",
-        umumData: " 1C va Exelni a’lo darajada bilishi, - Ish vaqti 9:00 da 6:00 gacha, - Ishga talabchan"
-    },
-    {
-        id: 5,
-        name: "Mi nisl eget elementum.",
-        malumoti: "Oliy",
-        staj: "3 yil",
-        umumData: " 1C va Exelni a’lo darajada bilishi, - Ish vaqti 9:00 da 6:00 gacha, - Ishga talabchan"
-    },
-]
-
 const BoshIshOrinlari = () => {
 
     const [expanded, setExpanded] = React.useState(false);
@@ -92,8 +54,11 @@ const BoshIshOrinlari = () => {
                             {
                                 isLoading ? <h5>Loading...</h5> : vacancy.map(item => (
                                     <Accordion.Item key={item.created_at} eventKey={item.created_at}>
-                                        <Accordion.Header className='d-flex justify-content-center w-100'>
-                                            <h5 className='p-0 m-0'>{item.name}</h5> <span className='text-secondary p-0 mt-1 ml-auto'> {t(`terms.${lang}`)}</span>
+                                        <Accordion.Header className='w-100'>
+                                            <div className='d-flex justify-content-center'>
+                                                <h5 className='p-0 m-0'>{item.name}</h5> 
+                                                {/* <span className=' text-secondary p-0 mt-1 ml-auto'> {t(`terms.${lang}`)}</span> */}
+                                            </div>
                                         </Accordion.Header>
                                         <Accordion.Body>
                                             <ListGroup variant="flush">

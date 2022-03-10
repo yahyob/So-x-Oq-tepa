@@ -69,10 +69,10 @@ const MarkaziyApparat = () => {
                                                             </tbody>
                                                         </Table>
                                                     </div>
-                                                    <Accordion className='bg-primary'>
+                                                    <Accordion className='bg-primary' style={{marginTop: '0'}}>
                                                         <AccordionSummary
                                                             aria-controls="panel1a-content"
-                                                            id="panel1a-header"
+                                                            id="panel1a-header" style={{marginTop: '0'}}
                                                         >
                                                             <Typography>{t(`bio.${lang}`)}</Typography>
                                                         </AccordionSummary>

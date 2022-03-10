@@ -34,16 +34,20 @@ const Section2 = () => {
                 </div>
                 <div className='row'>
                     {
-                        isLoading ? <h5>Loading...</h5> : news.slice(0,3).map(item => (
+                        isLoading ? <h5>Loading...</h5> : news.slice(0, 3).map(item => (
                             <div className='col-md-6 col-lg-4 mb-4'>
                                 <Card style={{ width: '100%' }}>
-                                    <Card.Img variant="top" src={item.image} />
+                                    <Card.Img style={{
+                                        height: '250px',
+                                        width: '100 %',
+                                        objectFit: 'cover'
+                                        }} variant="top" src={item.image} />
                                     <Card.Body>
-                                        <Card.Title>{item.title}</Card.Title>
+                                        <Card.Title className='text-dark'>{item.title}</Card.Title>
                                         <Card.Text>
-                                            {item.content.slice(0, 190)}...
+                                            {item.content.slice(0, 200)}...
                                         </Card.Text>
-                                        <Link to="News"><Button variant="primary">{t(`ReadMore.${lang}`)}</Button></Link>
+                                        <Link to={`News/${item.created_at}`}><Button variant="primary">{t(`ReadMore.${lang}`)}</Button></Link>
                                     </Card.Body>
                                 </Card>
                             </div>

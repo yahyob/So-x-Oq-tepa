@@ -35,21 +35,24 @@ const TadDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row justify-content-center'>
                     {
                         isLoading ? <h5>{t(`load.${lang}`)}...</h5> : tadbir.filter(item => item.title == id).map(card => (
-                            <div key={card.title} className='col-12 mb-3'>
-                                <div className="card mb-3 p-3 tad-card border-2">
+                            <div key={card.title} className='col-8 mb-3'>
+                                <div className="card mb-3 p-3 tad-card border-1">
                                     <div className="row g-0">
+                                    <h5 className="card-title mb-3">{card.title}</h5>
                                         <div className="col-12">
                                             <img src={card.image} className="img-fluid rounded-start" alt="image" />
                                         </div>
                                         <div className="col-12">
                                             <div className="card-body">
-                                                <h5 className="card-title">{card.title}</h5>
-                                                <p className="card-text">Tashkilotchi: {card.organizer}</p>
-                                                <p className="card-text">Boshlanish sanasi: {card.start_date}</p>
-                                                <p className="card-text">Tugash sanasi: {card.end_date}</p>
+                                                <p>{card.content}</p>
+                                                <div className='d-flex justify-content-between'>
+                                                    <p className="fw-bold">Boshlanish sanasi: {card.start_date} </p>
+                                                    <p className="card-text fw-bold">Tugash sanasi: {card.end_date}</p>
+                                                </div>
+                                                <p className="card-text fw-bold">Tashkilotchi: {card.organizer}</p>
                                             </div>
                                         </div>
                                     </div>

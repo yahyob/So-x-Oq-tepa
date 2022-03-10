@@ -7,7 +7,7 @@ import {
     CDBSidebarMenuItem,
 } from 'cdbreact';
 import { Link, NavLink, Outlet } from 'react-router-dom';
-import './style.css';
+import '../Boshqarma/style.css';
 import { useT } from '../../custom/hooks/useT';
 
 const Sidebar = () => {
@@ -15,8 +15,8 @@ const Sidebar = () => {
     return (
         <div>
             <div className='container-fluid d-flex w-100 p-0 contact'>
-                <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21" }}>
-                    <CDBSidebar textColor="#fff" backgroundColor="#1976D2">
+                <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21", borderRight: "1px solid rgb(197, 191, 191) " }}>
+                    <CDBSidebar textColor="#000000" backgroundColor="#fff">
                         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
                             <a className="text-decoration-none" style={{ color: 'inherit' }}>
                                 {t(`Boglanish.${lang}`)}

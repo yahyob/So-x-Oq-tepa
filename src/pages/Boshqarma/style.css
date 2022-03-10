@@ -3,7 +3,7 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #fff;
+    color: #000000;
     display: block;
   }
   
@@ -15,9 +15,17 @@
      /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
-    background-color: #1976D2;
+    /* background-color: #1976D2; */
   }
   
+  .item-content {
+    white-space: normal !important;
+  }
+
+  .sc-khQegj .cefTao.active{
+    color: #1976D2;
+  }
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -33,8 +41,18 @@
   }
 
 
-  
-  
+  .sc-khQegj {
+    color: #000000 !important;
+    font-weight: 500 !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .sc-khQegj.active{
+    color: #fff !important;
+    background-color: #1976D2 !important;
+  }
+
   .MuiPaper-root{
     /* position: relative; */
     margin-top: 187px !important;
@@ -43,16 +61,14 @@
   .css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
     /* position: relative !important; */
     background-color: #1976D2 !important;
-    color: #fff !important;
+    color: #000000 !important;
   }
 
   .margin{
     margin-top: 0 !important;
   }
   
-  .MuiToolbar-root{
-  /* top: 200px !important; */
-}
+  
   @media (max-width: 599px) {
     /* .sidenav {
       position: relative;
@@ -73,3 +89,4 @@
     position: relative;
     z-index: 21 !important;
   }
+

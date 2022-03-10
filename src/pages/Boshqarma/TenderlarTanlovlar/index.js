@@ -46,9 +46,9 @@ const TenderTanlovlar = () => {
                                         </div>
                                         <div className="col-md-8">
                                             <div className="card-body">
-                                                <Link to={`${item.created_at}`} className="card-title"><h5>{item.title}</h5></Link>
+                                                <Link to={`${item.created_at}`} className="card-title"><h5 className='text-dark'>{item.title}</h5></Link>
                                                 <p className="card-text">
-                                                    {item.content.slice(0, 400)}...
+                                                    {item.content.slice(0, 350)}...
                                                 </p>
                                             </div>
                                         </div>

@@ -9,15 +9,15 @@ const Tenddetails = () => {
     const { id } = useParams();
     const { t, lang } = useT();
     const [isLoading, setisLoading] = useState(true);
-    const [ Tender, setTender ] = useState([]);
+    const [Tender, setTender] = useState([]);
 
     const getTender = useCallback(
         async () => {
             baseApi.fetchAll(TENDER_URL)
-            .then(response => {
-                setTender(response.data);
-                setisLoading(false);
-            })
+                .then(response => {
+                    setTender(response.data);
+                    setisLoading(false);
+                })
         }, [])
 
     useEffect(() => {
@@ -35,17 +35,19 @@ const Tenddetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row justify-content-center'>
                     {
                         isLoading ? <h5>{t(`load.${lang}`)}....</h5> : Tender.filter(item => item.created_at == id).map(card => (
-                            <div key={card.created_at} className="card mb-3">
-                                <img src={card.image} className="card-img-top w-100" alt="image"/>
+                            <div className='col-8 '>
+                                <div key={card.created_at} className="card mb-3 p-3">
+                                    <h5 className="card-title mb-3 text-dark">{card.title}</h5>
+                                    <img src={card.image} className="card-img-top w-100" alt="image" />
                                     <div className="card-body">
-                                        <h5 className="card-title">{card.title}</h5>
                                         <p className="card-text">{card.content}</p>
-                                        <h5 className="card-title">{t(`terms.${lang}`)}</h5>
+                                        <h5 className="card-title text-dark">{t(`terms.${lang}`)}</h5>
                                         <p className="card-text">{card.terms_of_participation}</p>
                                     </div>
+                                </div>
                             </div>
                         ))
                     }
