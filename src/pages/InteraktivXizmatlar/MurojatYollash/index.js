@@ -31,7 +31,7 @@ const MurojatYollash = () => {
     const SubmitHandler = () => {
         axios.post('http://94.228.124.9/api/appeal/', formData)
             .then(res => {
-                alert("Success");
+                alert(t(`Alert.${lang}`));
                 // setFio(''), 
                 // setBirthday(''),
                 // setPassport(''),
@@ -41,7 +41,7 @@ const MurojatYollash = () => {
                 // setPhone_number(''),
                 // setEntity(''),
                 // setContent('')
-            }).catch((err) => alert("Error"))
+            }).catch(() => alert(t(`AlertNot.${lang}`)))
     }
 
     return (
@@ -63,7 +63,7 @@ const MurojatYollash = () => {
                 <div className='row pl-5 pr-5 pb-5 '>
                     <div className='col-12'>
                         <Form>
-                            <Form.Group className="mb-3 w-100" controlId="formBasicEmail">
+                            <Form.Group className="mb-3 w-100">
                                 <Form.Label>{t(`fio.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={fio}
@@ -72,7 +72,7 @@ const MurojatYollash = () => {
                                     placeholder={t(`fioI.${lang}`)} />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Group className="mb-3">
                                 <Form.Label>{t(`HDate.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={birthday}
@@ -81,16 +81,16 @@ const MurojatYollash = () => {
                                     placeholder={t(`HDateI.${lang}`)} />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Group className="mb-3">
                                 <Form.Label>{t(`Passport.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={passport}
                                     onChange={e => setPassport(e.target.value)}
                                     type="text"
-                                    placeholder={t(`PassportI.${lang}`)}/>
+                                    placeholder={t(`PassportI.${lang}`)} />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Group className="mb-3">
                                 <Form.Label>{t(`address.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={address}
@@ -99,7 +99,7 @@ const MurojatYollash = () => {
                                     placeholder={t(`AddressI.${lang}`)} />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Group className="mb-3">
                                 <Form.Label>{t(`ZIPCode.${lang}`)}  :</Form.Label>
                                 <Form.Control
                                     value={postal_code}
@@ -108,16 +108,16 @@ const MurojatYollash = () => {
                                     placeholder={t(`ZIPCodeI.${lang}`)} />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Group className="mb-3">
                                 <Form.Label>{t(`Email.${lang}`)}:</Form.Label>
                                 <Form.Control
                                     value={email}
                                     onChange={e => setEmail(e.target.value)}
-                                    type="text"
+                                    type="email"
                                     placeholder={t(`EmailI.${lang}`)} />
                             </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Group className="mb-3">
                                 <Form.Label>{t(`PhoneNumber.${lang}`)}:</Form.Label>
                                 <Form.Control
                                     value={phone_number}

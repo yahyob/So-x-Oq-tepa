@@ -7,7 +7,7 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useT } from '../../custom/hooks/useT';
 import '../Boshqarma/style.css'
 // import { Link } from "react-scroll";
@@ -15,6 +15,14 @@ import '../Boshqarma/style.css'
 const Sidebar = () => {
 
   const { t, lang } = useT();
+  const { pathname } = useLocation();
+
+  const setActiveClass = (path) => {
+    if(pathname === path) {
+      return "active"
+    }
+    return ""
+  }
 
   return (
     <div className=' w-100'>
@@ -29,16 +37,16 @@ const Sidebar = () => {
             <CDBSidebarContent className="sidebar-content">
               <CDBSidebarMenu>
                 <Link to="/Interaktive">
-                  <CDBSidebarMenuItem icon="columns">{t(`Jismoniy.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive")} icon="columns">{t(`Jismoniy.${lang}`)}</CDBSidebarMenuItem>
                 </Link>
                 <NavLink to="/Interaktive/MurojatYollash">
-                  <CDBSidebarMenuItem icon="user">{t(`murojat.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive/MurojatYollash")} icon="user">{t(`murojat.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Interaktive/TarjimaiHol">
-                  <CDBSidebarMenuItem icon="table">{t(`tarjimaiy.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive/TarjimaiHol")} icon="table">{t(`tarjimaiy.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Interaktive/IshTartibi" spy={true} smooth={true} offset={50} duration={500}>
-                  <CDBSidebarMenuItem icon="chart-line">{t(`ishTartib.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive/IshTartibi")} icon="chart-line">{t(`ishTartib.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
 
               </CDBSidebarMenu>

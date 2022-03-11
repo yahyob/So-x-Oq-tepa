@@ -6,12 +6,20 @@ import {
     CDBSidebarMenu,
     CDBSidebarMenuItem,
 } from 'cdbreact';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import '../Boshqarma/style.css';
 import { useT } from '../../custom/hooks/useT';
 
 const Sidebar = () => {
-    const { t, lang } = useT()
+    const { t, lang } = useT();
+    const { pathname } = useLocation();
+
+    const setActiveClass = (path) => {
+        if(path === pathname) {
+            return "active"
+        }
+        return ""
+    }
     return (
         <div>
             <div className='container-fluid d-flex w-100 p-0 contact'>
@@ -25,10 +33,10 @@ const Sidebar = () => {
                         <CDBSidebarContent className="sidebar-content">
                             <CDBSidebarMenu>
                                 <Link to="/Boglanish">
-                                    <CDBSidebarMenuItem icon="columns">{t(`AloqaXizmati.${lang}`)}</CDBSidebarMenuItem>
+                                    <CDBSidebarMenuItem className={setActiveClass('/Boglanish')} icon="columns">{t(`AloqaXizmati.${lang}`)}</CDBSidebarMenuItem>
                                 </Link>
                                 <NavLink to="/Boglanish/murojat">
-                                    <CDBSidebarMenuItem icon="user">{t(`fikrMulohaza.${lang}`)}</CDBSidebarMenuItem>
+                                    <CDBSidebarMenuItem className={setActiveClass('/Boglanish/murojat')} icon="user">{t(`fikrMulohaza.${lang}`)}</CDBSidebarMenuItem>
                                 </NavLink>
                             </CDBSidebarMenu>
                         </CDBSidebarContent>

@@ -6,13 +6,21 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useT } from '../../custom/hooks/useT';
 import '../Boshqarma/style.css'
 
 const Sidebar = () => {
 
   const { t, lang } = useT();
+  const { pathname } = useLocation();
+
+  const setActiveClass = (path) => {
+    if(path === pathname) {
+      return "active"
+    }
+    return ""
+  }
 
   return (
     <div>
@@ -27,13 +35,13 @@ const Sidebar = () => {
           <CDBSidebarContent className="sidebar-content">
             <CDBSidebarMenu>
               <Link to="/News">
-                <CDBSidebarMenuItem icon="columns">{t(`Yangiliklar.${lang}`)}</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem className={setActiveClass('/News')} icon="columns">{t(`Yangiliklar.${lang}`)}</CDBSidebarMenuItem>
               </Link>
               <NavLink to="/News/AxborotXizmati">
-                <CDBSidebarMenuItem icon="user">{t(`AXizmati.${lang}`)}</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem className={setActiveClass('/News/AxborotXizmati')} icon="user">{t(`AXizmati.${lang}`)}</CDBSidebarMenuItem>
               </NavLink>
               <NavLink to="/News/Elonlar">
-                <CDBSidebarMenuItem icon="table">{t(`Elonlar.${lang}`)}</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem className={setActiveClass('/News/Elonlar')} icon="table">{t(`Elonlar.${lang}`)}</CDBSidebarMenuItem>
               </NavLink>
               {/* <NavLink to="/News/PresRelizlar">
                 <CDBSidebarMenuItem icon="chart-line">{t(`pres.${lang}`)}</CDBSidebarMenuItem>

@@ -152,10 +152,10 @@ const Dasturlar = () => {
                                         <span className='p-1 bg-secondary text-white ml-3'>Raqami {item.number}</span>
                                     </div>
                                     <div>
-                                        <a href={item.lexUrl} className='text-decoration-none font-italic'>Lex.uz da o’qish</a>
+                                        <a href={item.lexUrl} className='text-decoration-none font-italic'>Lex.uz da o’qish </a>
                                         <a href={item.docxUrl} target="_blank" rel="noopener noreferrer">
                                             <button className='btn btn-success ml-3' type="button">
-                                                <FileDownloadIcon /> Yuklab olish
+                                                <FileDownloadIcon />  Yuklab olish
                                             </button>
                                         </a>
                                     </div>

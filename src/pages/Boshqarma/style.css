@@ -68,6 +68,11 @@
     margin-top: 0 !important;
   }
   
+
+  .text-section{
+    padding-left: 50px;
+    padding-right: 50px;
+}
   
   @media (max-width: 599px) {
     /* .sidenav {

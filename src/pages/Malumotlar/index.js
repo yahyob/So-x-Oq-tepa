@@ -6,7 +6,7 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useT } from '../../custom/hooks/useT';
 
 // const NavlinkDatas = [
@@ -16,8 +16,15 @@ import { useT } from '../../custom/hooks/useT';
 // ]
 
 const Sidebar = () => {
-  const { t, lang } = useT()
+  const { t, lang } = useT();
+  const {pathname} = useLocation();
 
+  const setActiveClass = (path) => {
+    if(pathname === path) {
+      return "active"
+    }
+    return ""
+  }
 
   return (
 
@@ -40,25 +47,25 @@ const Sidebar = () => {
                   ))
                 } */}
                 <Link to="/datas">
-                  <CDBSidebarMenuItem icon="columns">{t(`Fidoiy.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas')} icon="columns">{t(`Fidoiy.${lang}`)}</CDBSidebarMenuItem>
                 </Link>
                 <NavLink to="/datas/KorrupsiyagaQarshiKurash">
-                  <CDBSidebarMenuItem icon="user">{t(`korrupsiyaTitle.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/KorrupsiyagaQarshiKurash')} icon="user">{t(`korrupsiyaTitle.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/RahbariyatMaruzalari">
-                  <CDBSidebarMenuItem icon="table">{t(`maruza.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/RahbariyatMaruzalari')} icon="table">{t(`maruza.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/Statistika">
-                  <CDBSidebarMenuItem icon="chart-line">{t(`Statistics.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/Statistika')} icon="chart-line">{t(`Statistics.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/SuvXojalikFaoliyatiTogrisida">
-                  <CDBSidebarMenuItem icon="table">{t(`faol.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/SuvXojalikFaoliyatiTogrisida')} icon="table">{t(`faol.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/RasmiyWebSahifa">
-                  <CDBSidebarMenuItem icon="table">{t(`web.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/RasmiyWebSahifa')} icon="table">{t(`web.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/AxborotdanFoydalanuvchilarningSorovnomasi">
-                  <CDBSidebarMenuItem icon="table">{t(`sorovnoma.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/AxborotdanFoydalanuvchilarningSorovnomasi')} icon="table">{t(`sorovnoma.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
               </CDBSidebarMenu>
             </CDBSidebarContent>

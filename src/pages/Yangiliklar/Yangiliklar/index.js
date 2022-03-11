@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import { BASE_URL, NEWS_URL } from '../../../api/Urls';
 import baseApi from '../../../api/baseApi';
-import {useT} from '../../../custom/hooks/useT';
+import { useT } from '../../../custom/hooks/useT';
+import { CalendarToday } from '@mui/icons-material';
 
 
 const Yangiliklar = () => {
@@ -41,14 +42,23 @@ const Yangiliklar = () => {
                         isLoading ? <h5>Loading...</h5> : news.map((item) => (
                             <div key={item.created_at} className='col-md-6 mb-3'>
                                 <div className="card mb-3">
-                                    <img src={item.image} className="card-img-top" alt="..." />
+                                    <img style={{ objectFit: "cover", height: "300px" }} src={item.image} className="card-img-top" alt="image" />
                                     <div className="card-body">
-                                        <div className='d-flex justify-content-between'>
-                                        <Link to={`${item.created_at}`} className="card-title"><h5>{item.title}</h5></Link>
-                                            <p className="card-text text-right"><small className="text-muted">{item.created_at.slice(0,10)} <br/> {item.created_at.slice(11,16)}</small></p>
+                                        <p className="card-text text-right d-flex justify-content-end m-0">
+                                            <div>
+                                                <CalendarToday sx={{ fontSize: "18px", color: "gray" }} />
+                                                <small className="text-muted">
+                                                    {item.created_at.slice(0, 10)} / {item.created_at.slice(11, 16)}
+                                                </small>
+                                            </div>
+                                        </p>
+                                        <div>
+                                            <Link to={`${item.created_at}`} className="card-title text-dark hover-blue">
+                                                <h5>{item.title}</h5>
+                                            </Link>
                                         </div>
-                                        <h5>{item.author}</h5>
                                         <p className="card-text">{item.content.slice(0, 190)}....</p>
+                                        <h5 className='text-right'>{item.author}</h5>
                                     </div>
                                 </div>
                             </div>

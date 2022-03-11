@@ -7,12 +7,23 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useT } from '../../custom/hooks/useT';
 import '../Boshqarma/style.css';
 
 const Sidebar = () => {
   const { t, lang } = useT();
+  const { pathname } = useLocation();
+
+  // active class qoshish funksiyasi
+
+  const setActiveClass = (path) => {
+    if(path === pathname){
+      return "active"
+    }
+    return ""
+  }
+
   return (
     <div >
       <div className='container-fluid d-flex w-100 p-0'>
@@ -26,22 +37,22 @@ const Sidebar = () => {
             <CDBSidebarContent className="sidebar-content">
               <CDBSidebarMenu>
                 <Link to="/Hujjatlar">
-                  <CDBSidebarMenuItem icon="columns">{t(`laws.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar')} icon="columns">{t(`laws.${lang}`)}</CDBSidebarMenuItem>
                 </Link>
                 <NavLink to="/Hujjatlar/Qarorlar">
-                  <CDBSidebarMenuItem icon="user">{t(`Decisions.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Qarorlar')} icon="user">{t(`Decisions.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Hujjatlar/Farmonlar">
-                  <CDBSidebarMenuItem icon="table">{t(`farmon.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Farmonlar')} icon="table">{t(`farmon.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Hujjatlar/NormativHujjatlar">
-                  <CDBSidebarMenuItem icon="chart-line">{t(`normative.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/NormativHujjatlar')} icon="chart-line">{t(`normative.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Hujjatlar/Dasturlar">
-                  <CDBSidebarMenuItem icon="table">{t(`dastur.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Dasturlar')} icon="table">{t(`dastur.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Hujjatlar/Loyihalar">
-                  <CDBSidebarMenuItem icon="table">{t(`Loyihalar.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Loyihalar')} icon="table">{t(`Loyihalar.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
               </CDBSidebarMenu>
             </CDBSidebarContent>

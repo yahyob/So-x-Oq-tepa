@@ -1,3 +1,4 @@
+import { CalendarToday } from '@mui/icons-material';
 import React, { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import baseApi from '../../../api/baseApi';
@@ -5,47 +6,6 @@ import { PHOTO_URL } from '../../../api/Urls';
 import { useT } from '../../../custom/hooks/useT';
 import './style.css'
 
-const tend = [
-    {
-        id: 1,
-        detail: [
-            "/img/1.png", 
-            "/img/1.png",
-            "/img/1.png",
-            "/img/1.png",
-        ],
-        title: "Lorem ipsum dolor sit amet 1",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-    {
-        id: 2,
-        detail: [
-            "/img/1.png", 
-            "/img/1.png",
-            "/img/1.png",
-            "/img/1.png",
-        ],
-        title: "Lorem ipsum dolor sit amet 2",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-    {
-        id: 3,
-        detail: [
-            "/img/1.png", 
-            "/img/1.png",
-            "/img/1.png",
-            "/img/1.png",
-        ],
-        title: "Lorem ipsum dolor sit amet 3",
-        person: "Shanayev Shuhrat",
-        start: "17.02.2022",
-
-    },
-]
 
 const Fotogalereya = () => {
 
@@ -86,7 +46,7 @@ const Fotogalereya = () => {
                                         <div className="card-body">
                                             <div className='d-flex justify-content-between'>
                                             <Link to={`${item.created_at}`} className="card-title"><h5>{item.title}</h5></Link>
-                                                <p className="card-text"><small className="text-muted">{item.created_at.slice(0,10)}</small></p>
+                                                <p className="card-text"><small className="text-muted"><CalendarToday sx={{fontSize: "18px", color: "gray"}} /> {item.created_at.slice(0,10)}</small></p>
                                             </div>
                                         </div>
                                     </div>

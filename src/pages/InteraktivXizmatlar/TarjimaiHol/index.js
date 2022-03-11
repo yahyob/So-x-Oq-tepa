@@ -26,9 +26,9 @@ const TarjimaiyHol = () => {
         axios
             .post("http://94.228.124.9/api/autobiography/", formData)
             .then((res) => {
-                alert("File Upload success");
+                alert(t(`Alert.${lang}`));;
             })
-            .catch((err) => alert("File Upload Error"));
+            .catch(() =>alert(t(`AlertNot.${lang}`)));
     };
 
 
