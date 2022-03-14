@@ -40,7 +40,7 @@ const Yangiliklar = () => {
                 <div className='row pl-5 pr-5'>
                     {
                         isLoading ? <h5>Loading...</h5> : news.map((item) => (
-                            <div key={item.created_at} className='col-md-6 mb-3'>
+                            <div key={item.created_at} className='col-md-4 mb-3'>
                                 <div className="card mb-3">
                                     <img style={{ objectFit: "cover", height: "300px" }} src={item.image} className="card-img-top" alt="image" />
                                     <div className="card-body">
@@ -57,7 +57,7 @@ const Yangiliklar = () => {
                                                 <h5>{item.title}</h5>
                                             </Link>
                                         </div>
-                                        <p className="card-text">{item.content.slice(0, 190)}....</p>
+                                        <p className="card-text">{item.content.slice(0, 150)}....</p>
                                         <h5 className='text-right'>{item.author}</h5>
                                     </div>
                                 </div>

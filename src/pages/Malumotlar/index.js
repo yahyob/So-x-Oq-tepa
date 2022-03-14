@@ -47,13 +47,13 @@ const Sidebar = () => {
                   ))
                 } */}
                 <Link to="/datas">
-                  <CDBSidebarMenuItem className={setActiveClass('/datas')} icon="columns">{t(`Fidoiy.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas')} icon="users">{t(`Fidoiy.${lang}`)}</CDBSidebarMenuItem>
                 </Link>
                 <NavLink to="/datas/KorrupsiyagaQarshiKurash">
                   <CDBSidebarMenuItem className={setActiveClass('/datas/KorrupsiyagaQarshiKurash')} icon="user">{t(`korrupsiyaTitle.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/RahbariyatMaruzalari">
-                  <CDBSidebarMenuItem className={setActiveClass('/datas/RahbariyatMaruzalari')} icon="table">{t(`maruza.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/RahbariyatMaruzalari')} icon="book">{t(`maruza.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/Statistika">
                   <CDBSidebarMenuItem className={setActiveClass('/datas/Statistika')} icon="chart-line">{t(`Statistics.${lang}`)}</CDBSidebarMenuItem>
@@ -62,10 +62,10 @@ const Sidebar = () => {
                   <CDBSidebarMenuItem className={setActiveClass('/datas/SuvXojalikFaoliyatiTogrisida')} icon="table">{t(`faol.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/RasmiyWebSahifa">
-                  <CDBSidebarMenuItem className={setActiveClass('/datas/RasmiyWebSahifa')} icon="table">{t(`web.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/RasmiyWebSahifa')} icon="globe">{t(`web.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/datas/AxborotdanFoydalanuvchilarningSorovnomasi">
-                  <CDBSidebarMenuItem className={setActiveClass('/datas/AxborotdanFoydalanuvchilarningSorovnomasi')} icon="table">{t(`sorovnoma.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/datas/AxborotdanFoydalanuvchilarningSorovnomasi')} icon="file">{t(`sorovnoma.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
               </CDBSidebarMenu>
             </CDBSidebarContent>

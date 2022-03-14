@@ -1,33 +1,103 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Table } from 'react-bootstrap';
+import { useT } from '../../../custom/hooks/useT';
 
 const SuvBolimlari = () => {
+    const { t, lang } = useT();
+    const [loading, isLoading] = useState();
+
+    const datas = [
+        {
+            title: t(`SuvBolimlari1.title.${lang}`),
+            name: t(`SuvBolimlari1.name.${lang}`),
+            address: t(`SuvBolimlari1.address.${lang}`),
+            phone: '(97)-417-86-40'
+        },
+        {
+            title: t(`SuvBolimlari2.title.${lang}`),
+            name: t(`SuvBolimlari2.name.${lang}`),
+            address: t(`SuvBolimlari2.address.${lang}`),
+            phone: '(97)-590-44-33'
+        },
+        {
+            title: t(`SuvBolimlari3.title.${lang}`),
+            name: t(`SuvBolimlari3.name.${lang}`),
+            address: t(`SuvBolimlari3.address.${lang}`),
+            phone: '(90)-851-24-24'
+        },
+        {
+            title: t(`SuvBolimlari4.title.${lang}`),
+            name: t(`SuvBolimlari4.name.${lang}`),
+            address: t(`SuvBolimlari4.address.${lang}`),
+            phone: '(91)-699-97-33'
+        },
+        {
+            title: t(`SuvBolimlari5.title.${lang}`),
+            name: t(`SuvBolimlari5.name.${lang}`),
+            address: t(`SuvBolimlari5.address.${lang}`),
+            phone: '(90)-164-09-51'
+        },
+        {
+            title: t(`SuvBolimlari6.title.${lang}`),
+            name: t(`SuvBolimlari6.name.${lang}`),
+            address: t(`SuvBolimlari6.address.${lang}`),
+            phone: '(90)-570-23-10'
+        },
+        {
+            title: t(`SuvBolimlari7.title.${lang}`),
+            name: t(`SuvBolimlari7.name.${lang}`),
+            address: t(`SuvBolimlari7.address.${lang}`),
+            phone: '(90)-856-11-45'
+        },
+        {
+            title: t(`SuvBolimlari8.title.${lang}`),
+            name: t(`SuvBolimlari8.name.${lang}`),
+            address: t(`SuvBolimlari8.address.${lang}`),
+            phone: '(99)-222-82-80'
+        },
+    ]
+
     return (
         <section className='text-section'>
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Suv bo'limlari</h3>
+                            <h3>{t(`SuvBolimlari.${lang}`)}</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>
                 </div>
                 <div className='row pl-5'>
                     <div className='col'>
-                        <h5 className='mt-3 mb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                        <h5 className='mt-3 mb-3'>{t(`SuvBolimlariT.${lang}`)}</h5>
                     </div>
                 </div>
                 <div className='row pl-3 pr-3'>
-                    <div className='col'>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium in turpis imperdiet ut tortor et consectetur a pellentesque. Ut fermentum ultricies amet volutpat dignissim dignissim semper dignissim. Quis hendrerit tempus velit interdum tincidunt nulla nec. Viverra pretium convallis massa gravida tellus malesuada. Ut ac nunc lectus tempor amet pulvinar auctor euismod. Arcu libero ut euismod ut fermentum amet venenatis. Ullamcorper tortor non sit pharetra nulla nunc. A, quisque iaculis vitae nulla tincidunt nibh integer ultrices tincidunt. Ullamcorper nunc malesuada sed scelerisque quis ac sed leo commodo. Netus massa convallis id sit posuere semper. Turpis egestas nisl, id pulvinar luctus. A odio sit fringilla duis. Risus dolor, dignissim nunc, accumsan tellus. Integer lectus at elementum interdum.
-                            Felis, rhoncus nascetur ut eget  eget elit enim pulvinar. <br /> Neque, amet, accumsan, habitasse nec euismod amet, neque nec aliquam. Enim consectetur interdum pellentesque amet. Auctor justo, nullam euismod dignissim dolor sem at magna. Nullam nunc molestie ultricies tincidunt vitae nulla facilisis neque. Elit ligula vulputate porttitor dui mi, neque magna at tellus. Urna enim amet, adipiscing mattis sagittis odio iaculis sagittis. Ut amet, vestibulum pretium nulla enim ultrices. Id maecenas purus est velit, enim nunc amet. Egestas semper pellentesque integer est pulvinar et. Auctor sit ut est interdum erat. Vestibulum venenatis sagittis ipsum malesuada quam semper pharetra.
-                            Urna, turpis quis leo egestas euismod. Tortor commodo ac eget donec blandit non. Tortor vitae vel non mattis. Dolor sem lectus id enim. Eget ac egestas semper risus lobortis eget. Eget amet vitae eu, sed fusce. Quis lorem eget malesuada quis at facilisis et rhoncus, tristique. Posuere suspendisse neque purus parturient aliquam. Mattis id congue egestas risus bibendum tristique sit. Felis risus habitasse luctus tellus pellentesque senectus aenean semper nibh. Massa est turpis libero nisi, ut ullamcorper enim, feugiat.
-                            At malesuada aliquet mattis tortor id convallis cursus ut risus. <br /> Est arcu mauris, id fringilla consectetur mi. Amet tellus dignissim arcu nec. In pretium, et varius leo dignissim sagittis. Aliquet nunc tincidunt at mauris, scelerisque sed. Molestie morbi pharetra viverra elementum bibendum pharetra. Posuere parturient justo, commodo et ultrices fermentum imperdiet vulputate. Dolor, mattis euismod amet faucibus bibendum aliquet nunc consectetur. Eget posuere est, sit etiam cursus. Pellentesque auctor dignissim duis ut tortor vel justo, consequat fames.
-                            Pretium, aliquet praesent facilisis sed condimentum. Curabitur et, vivamus mollis justo nisl metus. Volutpat, arcu habitant habitasse at eget eu. Laoreet porttitor velit cursus mattis gravida rhoncus at. In gravida vel urna feugiat ullamcorper. Luctus ut enim at pellentesque vitae, arcu proin etiam. Fames sit commodo varius in quis consequat. Nisl donec ut egestas odio amet lobortis pellentesque. Porttitor at sit feugiat donec et, elementum sed. Metus, faucibus sed viverra neque neque, pulvinar vel. Pellentesque risus fames aenean posuere. Eget at eget elementum quam aliquam sapien commodo. Sodales lectus lectus rutrum eget fermentum scelerisque fames. Id scelerisque aliquet amet volutpat leo placerat.
-
-                        </p>
-                    </div>
+                    {
+                        datas.map((item, inx) => (
+                            <div key={inx} className='col-12 col-md-10 mb-4 mx-auto'>
+                                <Table striped bordered hover>
+                                    <tbody>
+                                        <tr>
+                                            <th colSpan={2}>{item.title}</th>
+                                        </tr>
+                                        <tr>
+                                            <th colSpan={2}>{item.name}</th>
+                                        </tr>
+                                        <tr>
+                                            <td>{t(`PhoneNumber.${lang}`)}</td>
+                                            <td>{item.phone}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{t(`address.${lang}`)}</td>
+                                            <td>{item.address}</td>
+                                        </tr>
+                                    </tbody>
+                                </Table>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </section>

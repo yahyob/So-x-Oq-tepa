@@ -33,10 +33,10 @@ const Sidebar = () => {
                         <CDBSidebarContent className="sidebar-content">
                             <CDBSidebarMenu>
                                 <Link to="/Boglanish">
-                                    <CDBSidebarMenuItem className={setActiveClass('/Boglanish')} icon="columns">{t(`AloqaXizmati.${lang}`)}</CDBSidebarMenuItem>
+                                    <CDBSidebarMenuItem className={setActiveClass('/Boglanish')} icon="database">{t(`AloqaXizmati.${lang}`)}</CDBSidebarMenuItem>
                                 </Link>
                                 <NavLink to="/Boglanish/murojat">
-                                    <CDBSidebarMenuItem className={setActiveClass('/Boglanish/murojat')} icon="user">{t(`fikrMulohaza.${lang}`)}</CDBSidebarMenuItem>
+                                    <CDBSidebarMenuItem className={setActiveClass('/Boglanish/murojat')} icon="comment">{t(`fikrMulohaza.${lang}`)}</CDBSidebarMenuItem>
                                 </NavLink>
                             </CDBSidebarMenu>
                         </CDBSidebarContent>

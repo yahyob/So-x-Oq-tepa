@@ -40,19 +40,19 @@ const Sidebar = () => {
                   <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar')} icon="columns">{t(`laws.${lang}`)}</CDBSidebarMenuItem>
                 </Link>
                 <NavLink to="/Hujjatlar/Qarorlar">
-                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Qarorlar')} icon="user">{t(`Decisions.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Qarorlar')} icon="file">{t(`Decisions.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Hujjatlar/Farmonlar">
                   <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Farmonlar')} icon="table">{t(`farmon.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
-                <NavLink to="/Hujjatlar/NormativHujjatlar">
-                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/NormativHujjatlar')} icon="chart-line">{t(`normative.${lang}`)}</CDBSidebarMenuItem>
-                </NavLink>
+                {/* <NavLink to="/Hujjatlar/NormativHujjatlar">
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/NormativHujjatlar')} icon="folder-open">{t(`normative.${lang}`)}</CDBSidebarMenuItem>
+                </NavLink> */}
                 <NavLink to="/Hujjatlar/Dasturlar">
                   <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Dasturlar')} icon="table">{t(`dastur.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Hujjatlar/Loyihalar">
-                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Loyihalar')} icon="table">{t(`Loyihalar.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass('/Hujjatlar/Loyihalar')} icon="list-alt">{t(`Loyihalar.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
               </CDBSidebarMenu>
             </CDBSidebarContent>

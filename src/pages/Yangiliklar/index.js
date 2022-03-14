@@ -35,13 +35,13 @@ const Sidebar = () => {
           <CDBSidebarContent className="sidebar-content">
             <CDBSidebarMenu>
               <Link to="/News">
-                <CDBSidebarMenuItem className={setActiveClass('/News')} icon="columns">{t(`Yangiliklar.${lang}`)}</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem className={setActiveClass('/News')} icon="newspaper">{t(`Yangiliklar.${lang}`)}</CDBSidebarMenuItem>
               </Link>
               <NavLink to="/News/AxborotXizmati">
-                <CDBSidebarMenuItem className={setActiveClass('/News/AxborotXizmati')} icon="user">{t(`AXizmati.${lang}`)}</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem className={setActiveClass('/News/AxborotXizmati')} icon="info">{t(`AXizmati.${lang}`)}</CDBSidebarMenuItem>
               </NavLink>
               <NavLink to="/News/Elonlar">
-                <CDBSidebarMenuItem className={setActiveClass('/News/Elonlar')} icon="table">{t(`Elonlar.${lang}`)}</CDBSidebarMenuItem>
+                <CDBSidebarMenuItem className={setActiveClass('/News/Elonlar')} icon="bullhorn">{t(`Elonlar.${lang}`)}</CDBSidebarMenuItem>
               </NavLink>
               {/* <NavLink to="/News/PresRelizlar">
                 <CDBSidebarMenuItem icon="chart-line">{t(`pres.${lang}`)}</CDBSidebarMenuItem>

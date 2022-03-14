@@ -37,16 +37,16 @@ const Sidebar = () => {
             <CDBSidebarContent className="sidebar-content">
               <CDBSidebarMenu>
                 <Link to="/Interaktive">
-                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive")} icon="columns">{t(`Jismoniy.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive")} icon="users">{t(`Jismoniy.${lang}`)}</CDBSidebarMenuItem>
                 </Link>
                 <NavLink to="/Interaktive/MurojatYollash">
                   <CDBSidebarMenuItem className={setActiveClass("/Interaktive/MurojatYollash")} icon="user">{t(`murojat.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Interaktive/TarjimaiHol">
-                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive/TarjimaiHol")} icon="table">{t(`tarjimaiy.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive/TarjimaiHol")} icon="address-card">{t(`tarjimaiy.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/Interaktive/IshTartibi" spy={true} smooth={true} offset={50} duration={500}>
-                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive/IshTartibi")} icon="chart-line">{t(`ishTartib.${lang}`)}</CDBSidebarMenuItem>
+                  <CDBSidebarMenuItem className={setActiveClass("/Interaktive/IshTartibi")} icon="calendar">{t(`ishTartib.${lang}`)}</CDBSidebarMenuItem>
                 </NavLink>
 
               </CDBSidebarMenu>
