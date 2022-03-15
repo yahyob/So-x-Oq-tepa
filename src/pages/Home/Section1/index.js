@@ -25,9 +25,9 @@ const HomeSection1 = () => {
                         <Card style={{ width: '100%' }}>
                             <Card.Img variant="top" src='/img/1.png' />
                             <Card.Body>
-                                <Card.Title>{t(`AboutUs.${lang}`)}</Card.Title>
+                                <Card.Title className='text-dark'>{t(`AboutUs.${lang}`)}</Card.Title>
                                 <Card.Text>
-                                    {t(`AboutUsDesc.${lang}`)}
+                                    {t(`bHaqida.${lang}`).slice(0,400)}...
                                 </Card.Text>
                                 <Link to="boshqarma"><Button variant="primary">{t(`ReadMore.${lang}`)}</Button></Link>
                             </Card.Body>
