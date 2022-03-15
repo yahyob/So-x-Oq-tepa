@@ -319,7 +319,7 @@ const qonunlar = [
                     <Stack spacing={2}>
                         {
                                 qonunlar.slice(pages-10, pages).map(item => (
-                                    <div key={item.id} className='col-12 mb-4 p-2'>
+                                    <div key={item.id} className='col-12 mb-2 p-2'>
                                         <Link className='text-dark text-decoration-none' to={`${item.id}`}>
                                             <h6>{item.title}</h6>
                                         </Link>
@@ -329,7 +329,7 @@ const qonunlar = [
                                                 <span className='p-1 bg-secondary text-white ml-3'>{t(`Number.${lang}`)}: {item.number}</span>
                                             </div>
                                             <div>
-                                                <a href={item.lexUrl} className='text-decoration-non font-italic'  style={{fontStyle: "italic", marginRight: "20px", textDecoration: "none"}}>{t(`lex.${lang}`)}</a>
+                                                <a href={item.lexUrl} className='text-decoration-non font-italic' style={{fontStyle: "italic", marginRight: "20px", textDecoration: "none"}}>{t(`lex.${lang}`)}</a>
                                                 <a href={item.docxUrl} target="_blank" rel="noopener noreferrer">
                                                     <button className='btn btn-success ml-3' type="button">
                                                         <FileDownloadIcon /> {t(`download.${lang}`)}

@@ -1,13 +1,15 @@
 import React from 'react';
+import { useT } from '../../../custom/hooks/useT';
 
 const SuvXojalikFaoliyati = () => {
+    const { t, lang } = useT()
     return (
         <section className='text-section'>
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Boshqarma faoliyat to’g’risida</h3>
+                            <h3>{t(`action.${lang}`)}</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>

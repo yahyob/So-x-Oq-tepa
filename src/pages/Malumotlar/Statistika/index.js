@@ -22,8 +22,6 @@ const Statistika = () => {
         getStatistics();
     }, [])
 
-    console.log(statistics);
-
     return (
         <section className='text-section'>
             <div className='container-fluid'>

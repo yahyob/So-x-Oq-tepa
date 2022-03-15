@@ -30,7 +30,7 @@ const Elonlar = () => {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>E'lonlar</h3>
+                            <h3>{t(`Elonlar.${lang}`)}</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>

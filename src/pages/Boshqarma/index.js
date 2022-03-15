@@ -77,15 +77,15 @@ const Sidebar = () => {
                 </NavLink>
                 <Dropdown style={{ paddingLeft: "18px" }}>
                   <Dropdown.Toggle className={setActiveClass("/boshqarma/normativ")} style={{ fontWeight: "500", outline: "none", border: "none" }} variant="white" id="dropdown-basic">
-                    <PersonIcon style={{ marginRight: "15px" }} /> Yoshlar siyosati
+                    <PersonIcon style={{ marginRight: "15px" }} /> {t(`yoshlargaOid.${lang}`)}
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
                     <NavLink to="/boshqarma/normativ">
-                      <Dropdown.Item href="#/action-1">Normativ</Dropdown.Item>
+                      <Dropdown.Item href="#/action-1">{t(`normativeNavbar.${lang}`)}</Dropdown.Item>
                     </NavLink>
                     <NavLink to="/boshqarma/yoshYangilik">
-                      <Dropdown.Item href="#/action-2">Yoshlarga oid yangiliklar</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">{t(`YangiliklarYoshlar.${lang}`)}</Dropdown.Item>
                     </NavLink>
                   </Dropdown.Menu>
                 </Dropdown>

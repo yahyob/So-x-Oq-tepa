@@ -42,7 +42,7 @@ export default function DasturlarDetails() {
                                         <span className='p-1 bg-secondary text-white ml-3'>{t(`Number.${lang}`)}: {item.number}</span>
                                     </div>
                                     <div>
-                                        <a href={item.lexUrl} className='text-decoration-none font-italic'>Lex.uz da o’qish </a>
+                                        <a href={item.lexUrl} className='text-decoration-none font-italic'>{t(`lex.${lang}`)}</a>
                                         <a href={item.docxUrl} target="_blank" rel="noopener noreferrer">
                                             <button className='btn btn-success ml-3' type="button">
                                                 <FileDownloadIcon /> {t(`download.${lang}`)}

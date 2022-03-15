@@ -141,7 +141,7 @@ const MurojatYollash = () => {
                                 <Form.Label>{t(`qisqaMurojaat.${lang}`)} :</Form.Label>
                                 <Form.Control
                                     value={content}
-                                    onChange={e => setContent(e.target.value)} placeholder='Qisqacha murojat matni kiriting...' as="textarea" rows={3} />
+                                    onChange={e => setContent(e.target.value)} placeholder={t(`qisqaMurojaatI.${lang}`)} as="textarea" rows={3} />
                             </Form.Group>
 
                             <Button onClick={() => SubmitHandler()} variant="primary" type="button">

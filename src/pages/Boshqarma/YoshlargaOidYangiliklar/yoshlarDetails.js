@@ -34,7 +34,7 @@ export default function YoshlarDetails() {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Yoshlarga oid yangiliklar</h3>
+                            <h3>{t(`yoshlargaOid.${lang}`)}</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>

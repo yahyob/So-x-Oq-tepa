@@ -19,22 +19,22 @@ const Footer = () => {
                         <h4 className='footer-title'>{t(`footerSmap.${lang}`)}</h4>
                         <ul>
                             <li>
-                                <Link to="boshqarma">Boshqarma haqida</Link>
+                                <Link to="boshqarma">{t(`bHaqidaTitle1.${lang}`)}</Link>
                             </li>
                             <li>
-                                <Link to="News">Yangiliklar</Link>
+                                <Link to="News">{t(`Yangiliklar.${lang}`)}</Link>
                             </li>
                             <li>
-                                <Link to="Fotogalereya">Mediagalereya</Link>
+                                <Link to="Fotogalereya">{t(`Mediagalereya.${lang}`)}</Link>
                             </li>
                             <li>
-                                <Link to="datas">Ma’lumotlar</Link>
+                                <Link to="datas">{t(`Malumotlar.${lang}`)}</Link>
                             </li>
                             <li>
-                                <Link to="Hujjatlar">Hujjatlat</Link>
+                                <Link to="Hujjatlar">{t(`Hujjatlar.${lang}`)}</Link>
                             </li>
                             <li>
-                                <Link to="Interaktive">Interaktiv xizmatlar</Link>
+                                <Link to="Interaktive">{t(`Interaktiv.${lang}`)}</Link>
                             </li>
                         </ul>
                     </div>
@@ -45,7 +45,7 @@ const Footer = () => {
 
                     </div>
                     <div className='col-lg-3 col-md-6 mt-5 mt-md-0'>
-                        <h4 className='footer-title'>Kontaktlar</h4>
+                        <h4 className='footer-title'>{t(`Boglanish.${lang}`)}</h4>
                         <ul>
                             <li>
                                 <a href='tel:998 90 000 00 00'> <PhoneIcon /> + 998 90 000 00 00</a>
@@ -57,7 +57,7 @@ const Footer = () => {
                                 <a href='#'> <TelegramIcon /> + 998 90 000 00 00</a>
                             </li>
                             <li>
-                                <RoomIcon /> Farg’ona viloyati, Bag’dod tumani, Bag’dod shaxarchasi 25-uy.
+                                <RoomIcon /> {t(`FooterAddress.${lang}`)}
                             </li>
                         </ul>
                     </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                             iFraganus IT & Design Group
                         </div>
                         <div className='col-md-6 col-lg-6 d-flex align-items-center'>
-                            Barcha huquqlar himoyalangan 2021-2022
+                            {t(`iFraganus.${lang}`)}
                         </div>
                         <div className='col-md-6 col-lg-2 d-flex align-items-center'>
                             <a className='text-black' href='tel:998909256308 '>+998 90 925 63 08 </a>

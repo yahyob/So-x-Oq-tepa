@@ -29,7 +29,7 @@ const RahbariyatMaruzalari = () => {
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
-                            <h3>Rahbariyat Maruzalari</h3>
+                            <h3>{t(`maruza.${lang}`)}</h3>
                             <div className='text-title-line'></div>
                         </div>
                     </div>
