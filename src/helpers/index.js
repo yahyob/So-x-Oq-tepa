@@ -1,8 +1,8 @@
-import i18next from "i18next"
+import i18next from "i18next";
 import { fallbackLng } from "../constants";
 
 export const setLang = (lang) => {
-    localStorage.setItem("langu", lang)
+    localStorage.setItem("langu", lang);
 }
 
 export const getLang = () => {
@@ -12,5 +12,5 @@ export const getLang = () => {
 }
 
 export const changeLang = (lang) => {
-    i18next.changeLanguage(lang)
+    i18next.changeLanguage(lang);
 }

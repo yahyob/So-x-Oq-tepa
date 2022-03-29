@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Banner from './pages/Banner';
 import NavbarMain from './pages/Navbar';
 import Home from './pages/Home';
+import './App.css';
 
 import Boshqarma from './pages/Boshqarma'
 import BoshqarmaHaqida from './pages/Boshqarma/BoshqarmaHaqida';
@@ -96,8 +97,6 @@ function App() {
     } else if (languages.includes(currentLang)) {
       i18next.changeLanguage(currentLang);
     };
-
-    // console.log = () => null
   }, [i18next]);
 
   return (

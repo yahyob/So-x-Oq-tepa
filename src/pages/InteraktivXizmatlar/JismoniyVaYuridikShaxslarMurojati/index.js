@@ -42,13 +42,13 @@ const JismoniyYuridikShaxslar = () => {
                                     <td>{t(`HeadDepartment.${lang}`)}</td>
                                     <td>{t(`JismoniyJ1.name.${lang}`)}</td>
                                     <td>{t(`JismoniyJ1.day.${lang}`)}</td>
-                                    <td>@{t(`JismoniyJ1.time.${lang}`)}</td>
+                                    <td>{t(`JismoniyJ1.time.${lang}`)}</td>
                                 </tr>
                                 <tr>
                                     <td>{t(`HeadDepartmentDeputy.${lang}`)}</td>
                                     <td>{t(`JismoniyJ2.name.${lang}`)}</td>
                                     <td>{t(`JismoniyJ2.day.${lang}`)}</td>
-                                    <td>@{t(`JismoniyJ2.time.${lang}`)}</td>
+                                    <td>{t(`JismoniyJ2.time.${lang}`)}</td>
                                 </tr>
                             </tbody>
                         </Table>

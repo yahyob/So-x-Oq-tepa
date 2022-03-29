@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import i18n from 'i18next';
-import { useTranslation, initReactI18next } from "react-i18next";
+import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import SimpleReactLightbox from 'simple-react-lightbox'
@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
-import SingleImages from './components/SingleImages';
+// import SingleImages from './components/SingleImages';
 
 
 i18n
@@ -44,11 +44,11 @@ const loading = (
 ReactDOM.render(
   <Suspense fallback={loading}>
     <React.StrictMode>
-    <SimpleReactLightbox>
-{/* <SingleImages /> */}
-    <BrowserRouter>
-      <App />
-      </BrowserRouter>
+      <SimpleReactLightbox>
+        {/* <SingleImages /> */}
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </SimpleReactLightbox>
     </React.StrictMode>
   </Suspense>,

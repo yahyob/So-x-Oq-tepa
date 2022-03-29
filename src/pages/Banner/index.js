@@ -3,7 +3,7 @@ import './style.css';
 import PhoneIcon from '@mui/icons-material/Phone';
 import HomeIcon from '@mui/icons-material/Home';
 import { changeLang, setLang, getLang } from '../../helpers';
-import {useT} from '../../custom/hooks/useT';
+import { useT } from '../../custom/hooks/useT';
 
 
 const language = [
@@ -30,10 +30,9 @@ const handleChangeLng = (code) => {
   window.location.reload();
 }
 
-
 const Banner = () => {
 
-const {t, lang} = useT()
+  const { t, lang } = useT()
 
   return (
     <section className='banner-section'>
@@ -55,11 +54,11 @@ const {t, lang} = useT()
           <HomeIcon className='icon' sx={{ fontSize: 33 }} />
           <div className="m-2">
             <span>{t(`address.${lang}`)}</span>
-            <h6 className='' style={{ fontSize: "14px", maxWidth: "150px" }}>{t(`tAddress.${lang}`)}</h6>
+            <h6 style={{ fontSize: "14px", maxWidth: "150px" }}>{t(`tAddress.${lang}`)}</h6>
           </div>
         </div>
 
-        <div className="dropdown language"  style={{zIndex: "999898989898898"}}>
+        <div className="dropdown language" style={{ zIndex: "999898989898898" }}>
           <button className="btn btn-outline-primary dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             {getLang()}
           </button>
