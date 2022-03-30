@@ -8,7 +8,7 @@
     max-width: 80px;
 }
 .logo-title{
-    max-width: 330px;
+    max-width: 680px;
     font-size: 17px;
     font-weight: 500;
     color: #1976D2;
@@ -60,18 +60,38 @@
     color: #fff !important;
 }
 
+.flag img{
+    max-width: 200px;
+}
+
 @media (max-width: 504px) {
+    .flag{
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .ummmm{
+        display: flex;
+        flex-direction: column;
+    }
+    .flag img, .logo{
+        margin-bottom: 20px;
+    }
     .logo img{
         max-width: 70px;
     }
     .logo-title{
         max-width: 100% !important;
-        font-size: 15px;
+        font-size: 10px;
     }
 }
 
-@media (max-width: 599px) {
-    .banner-section{
-        /* margin-top: 50px; */
+@media (max-width: 800px) {
+    .flag img{
+        max-width: 150px;
+    }
+    .logo-title{
+        font-size: 13px;
+        line-height: 1.3;
     }
 }
