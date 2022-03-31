@@ -20,9 +20,9 @@
         "en": "Address"
     },
     "tAddress": {
-        "uz": "Farg'ona viloyati Qo'qon shaxri 35-uy",
-        "ru": "Ферганская область, г. Коканд, 35",
-        "en": "35, Kokand city, Fergana region"
+        "uz": "Farg'ona viloyati Qo'qon shaxri 5-uy",
+        "ru": "Ферганская область, г. Коканд, 5",
+        "en": "5, Kokand city, Fergana region"
     },
     "Boshqarma": {
         "uz": "Boshqarma",
@@ -519,9 +519,9 @@
         "en": "Welcome"
     },
     "welcomeP": {
-        "uz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quisque imperdiet etiam id vitae faucibus. Amet sed  dolor.",
-        "ru": "Добро пожаловать",
-        "en": "Welcome"
+        "uz": "O’zbekiston Respublikasi Suv xo’jaligi Vazirligi Sirdaryo-So’x irrigatsiya tizimlari xavza boshqarmasi xuzuridagi So’x-Oqtepa irrigatsiya tizimi boshqarmasi",
+        "ru": "Сох-Октепинское управление ирригационных систем при Сырдарьинско-Сохском бассейновом управлении ирригации Министерства водного хозяйства Республики Узбекистан",
+        "en": "Sokh-Oktepa Irrigation System Department under the Syrdarya-Sokh Irrigation Basin Department of the Ministry of Water Resources of the Republic of Uzbekistan"
     },
     "AboutUs": {
         "uz": "Biz haqimizda",

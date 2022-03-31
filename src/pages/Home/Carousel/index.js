@@ -29,7 +29,7 @@ const Carousels = () => {
                     <Carousel.Item>
                         <img height='100%'
                             className="d-block w-100"
-                            src="./1.png"
+                            src="./3.jpg"
                             alt="Third slide"
                         />
                         {/* <Carousel.Caption>

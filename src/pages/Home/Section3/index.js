@@ -11,7 +11,7 @@ const Section3Home = () => {
     const { t, lang } = useT();
 
     return (
-        <section className=' statistikaHomeSection w-100'>
+        <section className=' statistikaHomeSection w-100 text-white'>
             <div className='row main-title text-center bgsta'>
                 <div className='col'>
                     <h1 className='mb-4 mt-4 text-white'>{t(`Statistics.${lang}`)}</h1>
@@ -23,7 +23,7 @@ const Section3Home = () => {
                         <div className='sta-item text-center'>
                             <BrowserUpdatedIcon sx={{ fontSize: "60px", marginBottom: "20px" }} />
                             <div className='sta-number-text'>
-                                <h3>100</h3>
+                                <h3>50</h3>
                                 <p>Quis aliquet in a enim ipsum non sodales.</p>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ const Section3Home = () => {
                         <div className='sta-item text-center'>
                             <GroupIcon sx={{ fontSize: "60px", marginBottom: "20px" }} />
                             <div className='sta-number-text'>
-                                <h3>100</h3>
+                                <h3>23</h3>
                                 <p>Quis aliquet in a enim ipsum non sodales.</p>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ const Section3Home = () => {
                         <div className='sta-item text-center'>
                             <ComputerIcon sx={{ fontSize: "60px", marginBottom: "20px" }} />
                             <div className='sta-number-text'>
-                                <h3>100</h3>
+                                <h3>36</h3>
                                 <p>Quis aliquet in a enim ipsum non sodales.</p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ const Section3Home = () => {
                         <div className='sta-item text-center'>
                             <BusinessCenterIcon sx={{ fontSize: "60px", marginBottom: "20px" }} />
                             <div className='sta-number-text'>
-                                <h3>100</h3>
+                                <h3>290</h3>
                                 <p>Quis aliquet in a enim ipsum non sodales.</p>
                             </div>
                         </div>

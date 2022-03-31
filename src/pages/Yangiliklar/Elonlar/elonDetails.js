@@ -38,13 +38,13 @@ const ElonDetails = () => {
                 <div className='row justify-content-center'>
                     {
                         isLoading ? <h5>Loading...</h5> : Anonc.filter(item => item.created_at == id).map(card => (
-                            <div key={card.created_at} className='col-8 mb-3'>
+                            <div key={card.created_at} className='col-12 col-md-9 mb-3'>
                                 <div className="card mb-3">
                                         <div className='p-2'>
                                             <p className="card-text text-right m-0">
                                                 <CalendarToday sx={{fontSize: "18px", color: "gray"}} /> <small className="text-muted">{card.created_at.slice(0, 10)} / {card.created_at.slice(11, 16)}</small>
                                             </p>
-                                            <h5 className="card-title text-dark">{card.title}</h5>
+                                            <h5 className="card-title text-dark m-2">{card.title}</h5>
                                         </div>
                                     <img src={card.image} className="card-img-top" alt="image" />
                                     <div className="card-body">

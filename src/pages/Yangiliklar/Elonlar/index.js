@@ -48,10 +48,10 @@ const Elonlar = () => {
                                             </div>
                                         </p>
                                         <div>
-                                            <Link to={`${item.created_at}`} className="card-title text-dark"><h5>{item.title}</h5></Link>
+                                            <Link to={`${item.created_at}`} className="card-title text-dark"><h5>{item.title.slice(0, 75)}...</h5></Link>
                                         </div>
-                                        <h5>{item.note}</h5>
-                                        <p className="card-text">{item.content.slice(0, 190)}....</p>
+                                        {/* <h5>{item.note.slice(0, 100)}...</h5> */}
+                                        <p className="card-text">{item.content.slice(0, 200)}...</p>
                                     </div>
                                 </div>
                             </div>

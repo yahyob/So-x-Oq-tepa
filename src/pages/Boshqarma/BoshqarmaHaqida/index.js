@@ -30,9 +30,9 @@ const BoshqarmaHaqida = () => {
                     <div className='col'>
                            {
                                letter.map(item => (
-                                   <div key={item} style={{textIndent: "30px", marginBottom: "20px"}}>
+                                   <p key={item} style={{textIndent: "30px", marginBottom: "20px"}}>
                                     {item}<br/>
-                                   </div>
+                                   </p>
                                ))
                            }
                         <div className='d-flex justify-content-between fw-bold mt-5 mb-5'>

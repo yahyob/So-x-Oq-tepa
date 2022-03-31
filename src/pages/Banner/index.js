@@ -40,7 +40,7 @@ const Banner = () => {
 
         <div className='flag d-flex align-items-center'>
           <img src='/img/flag.jpg' alt='flag' />
-          <font className='logo-title '>O’zbekiston Respublikasi Suv xo’jaligi Vazirligi Sirdaryo-So’x irrigatsiya tizimlari xavza boshqarmasi xuzuridagi So’x-Oqtepa irrigatsiya tizimi boshqarmasi</font>
+          <font className='logo-title '>{t(`welcomeP.${lang}`)}</font>
         </div>
 
         <div className='ummmm d-flex align-items-center'>
@@ -53,7 +53,7 @@ const Banner = () => {
               <PhoneIcon className='icon' sx={{ fontSize: 33 }} />
               <div className="m-2">
                 <span>{t(`contactCenter.${lang}`)}</span>
-                <h6><a className='text-decoration-none' href="tel: +998 90 000 00 00">+998 90 000 00 00</a></h6>
+                <h6><a className='text-decoration-none' href="tel: +998 73 542 21 28">+998 73 542 21 28</a></h6>
               </div>
             </div>
             <div className='address d-flex align-items-center d-none d-lg-flex'>

@@ -14,7 +14,7 @@ const HomeSection1 = () => {
                 <div className='row main-title text-center'>
                     <div className='col'>
                         <h1>{t(`welcome.${lang}`)}</h1>
-                        <p>{t(`welcomeP.${lang}`)}</p>
+                        <p style={{maxWidth: "700px", fontWeight: "500"}} className='text-black'>{t(`welcomeP.${lang}`)}</p>
                     </div>
                 </div>
                 <div className='row'>

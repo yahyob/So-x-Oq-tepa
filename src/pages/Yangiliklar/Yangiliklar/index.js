@@ -40,7 +40,7 @@ const Yangiliklar = () => {
                 <div className='row pl-5 pr-5'>
                     {
                         isLoading ? <h5>Loading...</h5> : news.map((item) => (
-                            <div key={item.created_at} className='col-md-4 mb-3'>
+                            <div key={item.created_at} className='col-lg-4 mb-3'>
                                 <div className="card mb-3" style={{minHeight: "500px"}}>
                                     <img style={{ objectFit: "cover", height: "300px" }} src={item.image} className="card-img-top" alt="image" />
                                     <div className="card-body">

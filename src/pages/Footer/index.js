@@ -48,16 +48,16 @@ const Footer = () => {
                         <h4 className='footer-title'>{t(`Boglanish.${lang}`)}</h4>
                         <ul>
                             <li>
-                                <a href='tel:998 90 000 00 00'> <PhoneIcon /> + 998 90 000 00 00</a>
+                                <a href='tel:998 73 542 21 28'> <PhoneIcon /> + 998 73 542 21 28</a>
                             </li>
                             <li>
                                 <a href='#'> <EmailIcon /> Sox_Oqtepa@mail.ru</a>
                             </li>
                             <li>
-                                <a href='#'> <TelegramIcon /> + 998 90 000 00 00</a>
+                                <a href='#'> <TelegramIcon /> + 998 73 542 21 28</a>
                             </li>
                             <li>
-                                <RoomIcon /> {t(`FooterAddress.${lang}`)}
+                                <RoomIcon /> {t(`tAddress.${lang}`)}
                             </li>
                         </ul>
                     </div>

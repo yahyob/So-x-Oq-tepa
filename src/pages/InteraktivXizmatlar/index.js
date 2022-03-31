@@ -19,15 +19,15 @@ const Sidebar = () => {
 
   const setActiveClass = (path) => {
     if(pathname === path) {
-      return "active"
+      return "active";
     }
     return ""
   }
 
   return (
     <div className=' w-100'>
-      <div className='container-fluid d-flex p-0'>
-        <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21", borderRight: "1px solid rgb(197, 191, 191) " }}>
+      <div className='container-fluid d-flex p-0 my-4'>
+        <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21", borderRight: "1px solid rgb(197, 191, 191) ", height: '380px' }}>
           <CDBSidebar textColor="#000000" backgroundColor="#fff">
             <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
               <a className="text-decoration-none" style={{ color: 'inherit' }}>
