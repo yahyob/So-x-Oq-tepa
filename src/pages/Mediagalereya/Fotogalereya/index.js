@@ -27,8 +27,8 @@ const Fotogalereya = () => {
     }, [])
 
     return (
-        <section className='text-section my-4'>
-            <div className='container-fluid'>
+        <section className=' my-4'>
+            <div className='container-fluid bg-white'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
@@ -40,7 +40,7 @@ const Fotogalereya = () => {
                     <div className='row'>
                         {
                             isLoading ? <h5>Loading...</h5> : photos.map((item) => (
-                                <div key={item.created_at} className='col-md-4 mb-4'>
+                                <div key={item.created_at} className='col-md-6 col-lg-4 mb-4'>
                                     <div className="card">
                                         <img src={item.detail[0].image} className="card-img-top" alt={item.title} />
                                         <div className="card-body">
