@@ -26,8 +26,8 @@ const FotoDetails = () => {
     })
 
     return (
-        <section className='text-section'>
-            <div className='container-fluid pl-5 pr-5'>
+        <section className="my-4">
+            <div className='container-fluid bg-white pl-5 pr-5'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
@@ -36,22 +36,22 @@ const FotoDetails = () => {
                         </div>
                     </div>
                 </div>
-                    <SRLWrapper>
-                <div className='row'>
+                <SRLWrapper>
+                    <div className='row'>
                         {
                             isLoading ? <h5>Loading...</h5> : photos.filter(item => item.created_at == id).map(card => (
                                 card.detail.map(item => (
                                     <div className='col-md-6 col-lg-4 mb-4'>
 
                                         <a href={item.image}>
-                                            <img className='galery_image' src={item.image} width="100%" alt='image' />
+                                            <img className='galery_image' src={item.image} width="100%" alt=" " />
                                         </a>
                                     </div>
                                 ))
                             ))
                         }
-                </div>
-                    </SRLWrapper>
+                    </div>
+                </SRLWrapper>
             </div>
         </section>
     );

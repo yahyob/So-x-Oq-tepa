@@ -27,7 +27,7 @@ const Fotogalereya = () => {
     }, [])
 
     return (
-        <section className='text-section'>
+        <section className='text-section my-4'>
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-12'>
@@ -42,9 +42,9 @@ const Fotogalereya = () => {
                             isLoading ? <h5>Loading...</h5> : photos.map((item) => (
                                 <div key={item.created_at} className='col-md-4 mb-4'>
                                     <div className="card">
-                                        <img src={item.detail[0].image} className="card-img-top" alt="image" />
+                                        <img src={item.detail[0].image} className="card-img-top" alt={item.title} />
                                         <div className="card-body">
-                                            <div className='d-flex justify-content-between'>
+                                            <div className='d-flex justify-content-between flex-wrap'>
                                             <Link to={`${item.created_at}`} className="card-title"><h5>{item.title}</h5></Link>
                                                 <p className="card-text"><small className="text-muted"><CalendarToday sx={{fontSize: "18px", color: "gray"}} /> {item.created_at.slice(0,10)}</small></p>
                                             </div>

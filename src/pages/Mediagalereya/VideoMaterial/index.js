@@ -26,8 +26,8 @@ const VideoMaterial = () => {
     })
 
     return (
-        <section className='text-section'>
-            <div className='container-fluid'>
+        <section className='my-4'>
+            <div className='container-fluid bg-white'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='title-name'>
@@ -45,7 +45,7 @@ const VideoMaterial = () => {
                                         src={`https://www.youtube.com/embed/${item.detail[0].video.substr(32)}`} allowFullScreen>
                                     </iframe>
                                     <div class="card-body">
-                                        <div className='d-flex justify-content-between'>
+                                        <div className='d-flex justify-content-between flex-wrap'>
                                             <Link to={`${item.created_at}`} className="card-title"><h5>{item.title}</h5></Link>
                                             <p class="card-text"><small class="text-muted">{item.created_at.slice(0, 10)}</small></p>
                                         </div>
