@@ -71,7 +71,7 @@ const Sidebar = () => {
             </CDBSidebarContent>
           </CDBSidebar>
         </div>
-        <div>
+        <div className="w-100">
           <Outlet />
         </div>
       </div>

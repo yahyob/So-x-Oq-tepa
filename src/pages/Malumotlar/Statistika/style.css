@@ -54,7 +54,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0ms ease-in-out;
-    z-index: 99999999999999999999999999999999999999999999;
+    z-index: 99999999999999999999999999999999999999999999999999999999999 !important;
   }
   .gallery-lightboxes .image-lightbox:target {
     opacity: 1;

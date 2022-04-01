@@ -47,11 +47,11 @@ const Statistika = () => {
                                     <img src={statistics.statistics2} alt="image" />
                                 </a>
                             </div>
-                            {/* <div className="image-wrapper">
+                            <div className="image-wrapper">
                                 <a href="#lightbox-image-3">
-                                    <img src="/img/1.png" alt="" />
+                                    <img src={statistics.statistics3} alt="" />
                                 </a>
-                            </div> */}
+                            </div>
                         </div>
 
                         <div className="gallery-lightboxes">
@@ -74,14 +74,14 @@ const Statistika = () => {
                                 </div>
                             </div>
 
-                            {/* <div className="image-lightbox" id="lightbox-image-3">
+                            <div className="image-lightbox" id="lightbox-image-3">
                                 <div className="image-lightbox-wrapper">
                                     <a href="#" className="close"></a>
                                     <a href="#lightbox-image-2" className="arrow-left"></a>
                                     <a href="#lightbox-image-1" className="arrow-right"></a>
-                                    <img src="/img/1.png" alt="" />
+                                    <img src={statistics.statistics3} alt="" />
                                 </div>
-                            </div> */}
+                            </div>
 
                         </div>
                     </div>
