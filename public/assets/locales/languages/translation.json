@@ -4,6 +4,7 @@
         "ru": "Ru",
         "en": "En"
     },
+
     "tName": {
         "uz": "So'x-Oqtepa Irrigatsiya tizimi boshqarmasi",
         "ru": "Сох-Октепинское управление ирригационных систем",
@@ -672,6 +673,11 @@
         "uz": "Hayat",
         "en": "Team",
         "ru": "Команда"
+    },
+    "HayatT": {
+        "uz": "Бошқарма ички буйруғи",
+        "en": "Internal order of the Board",
+        "ru": "Внутренний порядок правления"
     },
     "SuvBolimlari": {
         "uz": "Suv bo’limlari",
