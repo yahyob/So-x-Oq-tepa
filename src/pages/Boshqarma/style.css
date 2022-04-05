@@ -74,6 +74,18 @@
     padding-right: 50px;
 }
   
+
+@media (max-width: 700px) {
+  .text-section{
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 0;
+  }
+  .text-title-line{
+      display: none;
+  }
+}
+
   @media (max-width: 599px) {
     /* .sidenav {
       position: relative;

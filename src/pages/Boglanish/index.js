@@ -23,8 +23,8 @@ const Sidebar = () => {
     return (
         <div>
             <div className='container-fluid d-flex w-100 p-0 contact my-4'>
-                <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21", borderRight: "1px solid rgb(197, 191, 191)", height: "30vh"}}>
-                    <CDBSidebar textColor="#000000" backgroundColor="#fff" height="30vh">
+                <div id='zindex' style={{ display: 'flex', overflow: 'scroll initial', zIndex: "21", borderRight: "1px solid rgb(197, 191, 191)", height: "270px"}}>
+                    <CDBSidebar textColor="#000000" backgroundColor="#fff" height="500px">
                         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
                             <a className="text-decoration-none" style={{ color: 'inherit' }}>
                                 {t(`Boglanish.${lang}`)}

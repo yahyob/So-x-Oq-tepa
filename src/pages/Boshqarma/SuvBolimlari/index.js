@@ -77,24 +77,31 @@ const SuvBolimlari = () => {
                     {
                         datas.map((item, inx) => (
                             <div key={inx} className='col-12 col-md-10 mb-4 mx-auto'>
-                                <Table striped bordered hover>
-                                    <tbody>
-                                        <tr>
-                                            <th colSpan={2}>{item.title}</th>
-                                        </tr>
-                                        <tr>
-                                            <th colSpan={2}>{item.name}</th>
-                                        </tr>
-                                        <tr>
-                                            <td>{t(`PhoneNumber.${lang}`)}</td>
-                                            <td>{item.phone}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{t(`address.${lang}`)}</td>
-                                            <td>{item.address}</td>
-                                        </tr>
-                                    </tbody>
-                                </Table>
+                                <div className='row'>
+                                    <div className='col-md-3'>
+                                        <img src='/img/rah1.png' width={'100%'} alt='image' />
+                                    </div>
+                                    <div className='col-md-9'>
+                                        <Table striped bordered hover>
+                                            <tbody>
+                                                <tr>
+                                                    <th colSpan={2}>{item.title}</th>
+                                                </tr>
+                                                <tr>
+                                                    <th colSpan={2}>{item.name}</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>{t(`PhoneNumber.${lang}`)}</td>
+                                                    <td>{item.phone}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{t(`address.${lang}`)}</td>
+                                                    <td>{item.address}</td>
+                                                </tr>
+                                            </tbody>
+                                        </Table>
+                                    </div>
+                                </div>
                             </div>
                         ))
                     }

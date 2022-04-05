@@ -35,10 +35,10 @@ const BoshqarmaHaqida = () => {
                                    </p>
                                ))
                            }
-                        <div className='d-flex justify-content-between fw-bold mt-5 mb-5'>
+                        {/* <div className='d-flex justify-content-between fw-bold mt-5 mb-5'>
                             <span>{t(`bHaqidaTitleBottom.${lang}`)}</span>
                             <span>И.Хошимов</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

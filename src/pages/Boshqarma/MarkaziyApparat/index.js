@@ -5,6 +5,7 @@ import { useT } from '../../../custom/hooks/useT';
 // import { baseApi } from '../../../api/baseApi';
 import { CENTRALHARDWARE_URL } from '../../../api/Urls';
 import baseApi from '../../../api/baseApi';
+import './style.css';
 
 const MarkaziyApparat = () => {
 
@@ -43,15 +44,15 @@ const MarkaziyApparat = () => {
 
                             {
                                 isLoading ? <h5>Loading....</h5> : stuff.map(item => (
-                                    <Card key={item.phone_number} style={{ width: '100%', marginTop: "20px" }}>
+                                    <Card key={item.phone_number} style={{ maxWidth: '100%', marginTop: "20px" }}>
                                         <Row className='no-gutters'>
                                             <Col md={3} lg={3} className="text-center" >
                                                 <Card.Img variant="top" width="100%" src={item.image} />
-                                                <Card.Title className='mt-2 mb-2'>{item.fio}</Card.Title>
+                                                <Card.Title className='rah-title mt-2 mb-2'>{item.fio}</Card.Title>
                                             </Col>
                                             <Col>
                                                 <Card.Body style={{ paddingBottom: "50px" }}>
-                                                    <div>
+                                                    <div className='table-responsive'>
                                                         <Table striped bordered hover>
                                                             <tbody>
                                                                 <tr>
@@ -69,7 +70,7 @@ const MarkaziyApparat = () => {
                                                             </tbody>
                                                         </Table>
                                                     </div>
-                                                    <Accordion className='bg-primary' style={{marginTop: '0'}}>
+                                                    <Accordion className='rah-acc bg-primary w-100' style={{marginTop: '0'}}>
                                                         <AccordionSummary
                                                             aria-controls="panel1a-content"
                                                             id="panel1a-header" style={{marginTop: '0'}}
