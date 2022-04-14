@@ -51,7 +51,7 @@ const MarkaziyApparat = () => {
                                                 <Card.Title className='rah-title mt-2 mb-2'>{item.fio}</Card.Title>
                                             </Col>
                                             <Col>
-                                                <Card.Body style={{ paddingBottom: "50px" }}>
+                                                <Card.Body >
                                                     <div className='table-responsive'>
                                                         <Table striped bordered hover>
                                                             <tbody>
@@ -61,19 +61,27 @@ const MarkaziyApparat = () => {
                                                                 </tr>
                                                                 <tr>
                                                                     <td>{t(`handPhone.${lang}`)}:</td>
-                                                                    <td>{item.phone_number}</td>
+                                                                    <td>{item.mobile_phone_number}</td>
                                                                 </tr>
-                                                                {/* <tr>
-                                                                    <td>E-mail:</td>
+                                                                <tr>
+                                                                    <td>{t(`homePhone.${lang}`)}:</td>
+                                                                    <td>{item.home_phone_number}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{t(`email.${lang}`)}:</td>
                                                                     <td>{item.email}</td>
-                                                                </tr> */}
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{t(`accceptDate.${lang}`)}:</td>
+                                                                    <td>{item.reception_days}</td>
+                                                                </tr>
                                                             </tbody>
                                                         </Table>
                                                     </div>
-                                                    <Accordion className='rah-acc bg-primary w-100' style={{marginTop: '0'}}>
+                                                    <Accordion className='rah-acc bg-primary w-100' style={{ marginTop: '0' }}>
                                                         <AccordionSummary
                                                             aria-controls="panel1a-content"
-                                                            id="panel1a-header" style={{marginTop: '0'}}
+                                                            id="panel1a-header" style={{ marginTop: '0' }}
                                                         >
                                                             <Typography>{t(`bio.${lang}`)}</Typography>
                                                         </AccordionSummary>
