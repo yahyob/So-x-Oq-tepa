@@ -60,11 +60,11 @@ const MarkaziyApparat = () => {
                                                                     <td>{item.rank}</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>{t(`homePhone.${lang}`)}:</td>
+                                                                    <td>{t(`homePhone.${lang}`)} 1:</td>
                                                                     <td>{item.mobile_phone_number}</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>{t(`homePhone.${lang}`)}:</td>
+                                                                    <td>{t(`homePhone.${lang}`)} 2:</td>
                                                                     <td>{item.home_phone_number}</td>
                                                                 </tr>
                                                                 <tr>
